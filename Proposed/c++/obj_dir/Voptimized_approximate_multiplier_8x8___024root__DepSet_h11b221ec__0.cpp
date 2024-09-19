@@ -780,7 +780,7 @@ void Voptimized_approximate_multiplier_8x8___024root___eval(Voptimized_approxima
 #ifdef VL_DEBUG
             Voptimized_approximate_multiplier_8x8___024root___dump_triggers__ico(vlSelf);
 #endif
-            VL_FATAL_MT("../verilog/../verilog/optimized_approximate_multiplier_8x8.v", 6, "", "Input combinational region did not converge.");
+            VL_FATAL_MT("../verilog/../verilog/optimized_approximate_multiplier_8x8.v", 7, "", "Input combinational region did not converge.");
         }
         __VicoIterCount = ((IData)(1U) + __VicoIterCount);
         __VicoContinue = 0U;
@@ -796,7 +796,7 @@ void Voptimized_approximate_multiplier_8x8___024root___eval(Voptimized_approxima
 #ifdef VL_DEBUG
             Voptimized_approximate_multiplier_8x8___024root___dump_triggers__nba(vlSelf);
 #endif
-            VL_FATAL_MT("../verilog/../verilog/optimized_approximate_multiplier_8x8.v", 6, "", "NBA region did not converge.");
+            VL_FATAL_MT("../verilog/../verilog/optimized_approximate_multiplier_8x8.v", 7, "", "NBA region did not converge.");
         }
         __VnbaIterCount = ((IData)(1U) + __VnbaIterCount);
         __VnbaContinue = 0U;
@@ -807,7 +807,7 @@ void Voptimized_approximate_multiplier_8x8___024root___eval(Voptimized_approxima
 #ifdef VL_DEBUG
                 Voptimized_approximate_multiplier_8x8___024root___dump_triggers__act(vlSelf);
 #endif
-                VL_FATAL_MT("../verilog/../verilog/optimized_approximate_multiplier_8x8.v", 6, "", "Active region did not converge.");
+                VL_FATAL_MT("../verilog/../verilog/optimized_approximate_multiplier_8x8.v", 7, "", "Active region did not converge.");
             }
             vlSelf->__VactIterCount = ((IData)(1U) 
                                        + vlSelf->__VactIterCount);
@@ -827,5 +827,8 @@ void Voptimized_approximate_multiplier_8x8___024root___eval_debug_assertions(Vop
     (void)vlSelf;  // Prevent unused variable warning
     Voptimized_approximate_multiplier_8x8__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     VL_DEBUG_IF(VL_DBG_MSGF("+    Voptimized_approximate_multiplier_8x8___024root___eval_debug_assertions\n"); );
+    // Body
+    if (VL_UNLIKELY((vlSelf->CLK & 0xfeU))) {
+        Verilated::overWidthError("CLK");}
 }
 #endif  // VL_DEBUG

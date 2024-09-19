@@ -28,6 +28,7 @@ class alignas(VL_CACHE_LINE_BYTES) Voptimized_approximate_multiplier_8x8 VL_NOT_
     // PORTS
     // The application code writes and reads these signals to
     // propagate new values into/out from the Verilated model.
+    VL_IN8(&CLK,0,0);
     VL_IN8(&a,7,0);
     VL_IN8(&b,7,0);
     VL_OUT16(&final_sum,15,0);

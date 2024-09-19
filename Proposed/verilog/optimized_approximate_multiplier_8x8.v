@@ -1,9 +1,11 @@
 `include "./only_sum_compressor.v"
 `include "./only_carry_compressor.v"
 `include "./exact_4to2_compressor.v"
-`include "./adder.v"
+`include "./FA.v"
+`include "./HA.v"
 
 module optimized_approximate_multiplier_8x8(
+    input CLK,
     input [7:0] a,
     input [7:0] b,
     output [15:0] final_sum
@@ -42,7 +44,6 @@ assign stage1_pp1 [7:6] = { pp7[6], pp5[7]};
 assign stage1_pp2 [3:2] = { pp6[6], pp6[5]};
 assign stage1_pp3 [3:1] = { pp7[5], pp7[4], pp7[3]};
  
-
 
 
     // 实例化 only_sum_compressor

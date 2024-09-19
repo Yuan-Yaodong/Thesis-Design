@@ -9,6 +9,7 @@
 Voptimized_approximate_multiplier_8x8::Voptimized_approximate_multiplier_8x8(VerilatedContext* _vcontextp__, const char* _vcname__)
     : VerilatedModel{*_vcontextp__}
     , vlSymsp{new Voptimized_approximate_multiplier_8x8__Syms(contextp(), _vcname__, this)}
+    , CLK{vlSymsp->TOP.CLK}
     , a{vlSymsp->TOP.a}
     , b{vlSymsp->TOP.b}
     , final_sum{vlSymsp->TOP.final_sum}

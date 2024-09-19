@@ -1,4 +1,4 @@
-#include "Voptimized_approximate_multiplier_8x8.h"
+#include "VZero_ME_7_8.h"
 #include "verilated.h"
 #include <opencv2/opencv.hpp>
 #include <iostream>
@@ -9,7 +9,7 @@
 double sc_time_stamp() { return 0; }
 
 uint16_t approx_mult(uint8_t a, uint8_t b) {
-    static Voptimized_approximate_multiplier_8x8* top = new Voptimized_approximate_multiplier_8x8;
+    static VZero_ME_7_8* top = new VZero_ME_7_8;
     top->a = a;
     top->b = b;
     top->eval();

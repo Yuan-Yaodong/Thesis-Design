@@ -27,7 +27,7 @@ clang++ -std=c++20 \
     -I$VERILATOR_OBJ_DIR \
     -I$VERILATOR_INCLUDE_DIR \
     image_processing.cpp \
-    $VERILATOR_OBJ_DIR/Voptimized_approximate_multiplier_8x8__ALL.cpp \
+    $VERILATOR_OBJ_DIR/VZero_ME_7_8__ALL.cpp \
     $VERILATED_CPP \
     $VERILATED_THREADS_CPP \
     $VERILATED_TIMING_CPP \

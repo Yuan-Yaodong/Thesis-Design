@@ -44,7 +44,7 @@ VL_ATTR_COLD void Voptimized_approximate_multiplier_8x8___024root___eval_settle(
 #ifdef VL_DEBUG
             Voptimized_approximate_multiplier_8x8___024root___dump_triggers__stl(vlSelf);
 #endif
-            VL_FATAL_MT("../verilog/../verilog/optimized_approximate_multiplier_8x8.v", 6, "", "Settle region did not converge.");
+            VL_FATAL_MT("../verilog/../verilog/optimized_approximate_multiplier_8x8.v", 7, "", "Settle region did not converge.");
         }
         __VstlIterCount = ((IData)(1U) + __VstlIterCount);
         __VstlContinue = 0U;
@@ -143,6 +143,7 @@ VL_ATTR_COLD void Voptimized_approximate_multiplier_8x8___024root___ctor_var_res
     Voptimized_approximate_multiplier_8x8__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     VL_DEBUG_IF(VL_DBG_MSGF("+    Voptimized_approximate_multiplier_8x8___024root___ctor_var_reset\n"); );
     // Body
+    vlSelf->CLK = VL_RAND_RESET_I(1);
     vlSelf->a = VL_RAND_RESET_I(8);
     vlSelf->b = VL_RAND_RESET_I(8);
     vlSelf->final_sum = VL_RAND_RESET_I(16);

@@ -3,6 +3,7 @@
 #include <iostream>
 #include <iomanip>
 #include <cmath>
+#include <bitset>
 
 int main(int argc, char** argv) {
     Verilated::commandArgs(argc, argv);
@@ -14,6 +15,8 @@ int main(int argc, char** argv) {
     long double total_NMED = 0.0L;
     long double total_RED = 0.0L;
     int max_ED = 0;
+    int max_ED_a = 0;
+    int max_ED_b = 0;
     int num_tests = 0;
 
     // Test all 65536 combinations
@@ -44,7 +47,11 @@ int main(int argc, char** argv) {
             total_error_distance += error_distance;
             total_NMED += current_NMED;
             total_RED += current_RED;
-            if (error_distance > max_ED) max_ED = error_distance;
+            if (error_distance > max_ED) {
+                max_ED = error_distance;
+                max_ED_a = a;
+                max_ED_b = b;
+            }
             num_tests++;
 
             // Optional: Print results for each combination
@@ -59,9 +66,12 @@ int main(int argc, char** argv) {
 
 
     // Print final statistics
-    std::cout << "Testing completed for optimized_approximate_multiplier_8x8." << std::endl;
+    std::cout << "Testing completed for Zero_ME_7_8." << std::endl;
     std::cout << "Total number of tests: " << num_tests << std::endl;
     std::cout << "Maximum error distance: " << max_ED << std::endl;
+    std::cout << "Maximum error distance combination: ";
+    std::cout << "a = " << std::bitset<8>(max_ED_a) << " (" << max_ED_a << "), ";
+    std::cout << "b = " << std::bitset<8>(max_ED_b) << " (" << max_ED_b << ")" << std::endl;
     std::cout << std::fixed << std::setprecision(9);
     std::cout << "Mean error: " << mean_error << std::endl;
     std::cout << "NMED: " << total_NMED << std::endl;

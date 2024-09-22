@@ -30,6 +30,7 @@ int main(int argc, char** argv) {
     Voptimized_approximate_multiplier_8x8* top = new Voptimized_approximate_multiplier_8x8;
 
     // 在这里添加您想要测试的输入组合
+    test_multiplier(top, 0, 0);
     test_multiplier(top, 5, 7);
     test_multiplier(top, 10, 10);
     test_multiplier(top, 15, 16);

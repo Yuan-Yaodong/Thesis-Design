@@ -229,6 +229,10 @@ FA u_FA_3(
 
 
 // Stage 3
+
+
+// assign final_sum [5:0] = { stage2_pp0[0], a[3], 4'b0110 };
+
 assign final_sum [5:0] = { stage2_pp0[0], 5'b00110 };
 // assign final_sum [5:0] = { stage2_pp0[0], 5'b00000 };
 

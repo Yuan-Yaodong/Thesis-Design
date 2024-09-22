@@ -8,7 +8,7 @@ rm -rf obj_dir
 
 # 使用 Verilator 编译 Verilog 和 C++ 文件
 # verilator -Wall --cc --exe  sim_optimized_main.cpp optimized_approximate_multiplier_8x8.v
-# verilator -Wall --cc optimized_approximate_multiplier_8x8.v --exe sim_optimized_single_test.cpp
+# verilator -Wall --cc optimized_approximate_multiplier_8x8.v --exe sim_optimized_single_test.cpp -I../verilog
 verilator -Wall --cc ../verilog/optimized_approximate_multiplier_8x8.v --exe sim_optimized_main.cpp -I../verilog
 
 # 进入生成的目录

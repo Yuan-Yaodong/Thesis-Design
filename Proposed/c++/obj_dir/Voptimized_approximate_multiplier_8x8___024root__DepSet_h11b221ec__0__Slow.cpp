@@ -44,7 +44,7 @@ VL_ATTR_COLD void Voptimized_approximate_multiplier_8x8___024root___eval_settle(
 #ifdef VL_DEBUG
             Voptimized_approximate_multiplier_8x8___024root___dump_triggers__stl(vlSelf);
 #endif
-            VL_FATAL_MT("../verilog/../verilog/optimized_approximate_multiplier_8x8.v", 7, "", "Settle region did not converge.");
+            VL_FATAL_MT("../verilog/../verilog/optimized_approximate_multiplier_8x8.v", 8, "", "Settle region did not converge.");
         }
         __VstlIterCount = ((IData)(1U) + __VstlIterCount);
         __VstlContinue = 0U;
@@ -147,22 +147,4 @@ VL_ATTR_COLD void Voptimized_approximate_multiplier_8x8___024root___ctor_var_res
     vlSelf->a = VL_RAND_RESET_I(8);
     vlSelf->b = VL_RAND_RESET_I(8);
     vlSelf->final_sum = VL_RAND_RESET_I(16);
-    for (int __Vi0 = 0; __Vi0 < 10; ++__Vi0) {
-        vlSelf->optimized_approximate_multiplier_8x8__DOT__stage1_pp0[__Vi0] = VL_RAND_RESET_I(1);
-    }
-    for (int __Vi0 = 0; __Vi0 < 8; ++__Vi0) {
-        vlSelf->optimized_approximate_multiplier_8x8__DOT__stage1_pp1[__Vi0] = VL_RAND_RESET_I(1);
-    }
-    for (int __Vi0 = 0; __Vi0 < 4; ++__Vi0) {
-        vlSelf->optimized_approximate_multiplier_8x8__DOT__stage1_pp2[__Vi0] = VL_RAND_RESET_I(1);
-    }
-    for (int __Vi0 = 0; __Vi0 < 4; ++__Vi0) {
-        vlSelf->optimized_approximate_multiplier_8x8__DOT__stage1_pp3[__Vi0] = VL_RAND_RESET_I(1);
-    }
-    for (int __Vi0 = 0; __Vi0 < 10; ++__Vi0) {
-        vlSelf->optimized_approximate_multiplier_8x8__DOT__stage2_pp0[__Vi0] = VL_RAND_RESET_I(1);
-    }
-    for (int __Vi0 = 0; __Vi0 < 8; ++__Vi0) {
-        vlSelf->optimized_approximate_multiplier_8x8__DOT__stage2_pp1[__Vi0] = VL_RAND_RESET_I(1);
-    }
 }

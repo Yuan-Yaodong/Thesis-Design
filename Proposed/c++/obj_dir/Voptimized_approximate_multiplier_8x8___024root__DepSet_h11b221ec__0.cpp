@@ -22,28 +22,22 @@ VL_INLINE_OPT void Voptimized_approximate_multiplier_8x8___024root___ico_sequent
     Voptimized_approximate_multiplier_8x8__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     VL_DEBUG_IF(VL_DBG_MSGF("+    Voptimized_approximate_multiplier_8x8___024root___ico_sequent__TOP__0\n"); );
     // Init
-    CData/*7:0*/ optimized_approximate_multiplier_8x8__DOT__pp6;
-    optimized_approximate_multiplier_8x8__DOT__pp6 = 0;
-    CData/*7:0*/ optimized_approximate_multiplier_8x8__DOT__pp7;
-    optimized_approximate_multiplier_8x8__DOT__pp7 = 0;
-    CData/*0:0*/ optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_only_carry_compressor_2to1__x2;
-    optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_only_carry_compressor_2to1__x2 = 0;
-    CData/*0:0*/ optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_only_carry_compressor_3to1__x3;
-    optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_only_carry_compressor_3to1__x3 = 0;
-    CData/*0:0*/ optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_only_carry_compressor_3to1__x2;
-    optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_only_carry_compressor_3to1__x2 = 0;
+    CData/*0:0*/ optimized_approximate_multiplier_8x8__DOT____Vcellout__u_only_sum_compressor_2__sum;
+    optimized_approximate_multiplier_8x8__DOT____Vcellout__u_only_sum_compressor_2__sum = 0;
+    CData/*0:0*/ optimized_approximate_multiplier_8x8__DOT____Vcellout__u_only_sum_compressor_3__sum;
+    optimized_approximate_multiplier_8x8__DOT____Vcellout__u_only_sum_compressor_3__sum = 0;
+    CData/*0:0*/ optimized_approximate_multiplier_8x8__DOT____Vcellout__u_only_carry_compressor_2to1__carry;
+    optimized_approximate_multiplier_8x8__DOT____Vcellout__u_only_carry_compressor_2to1__carry = 0;
+    CData/*0:0*/ optimized_approximate_multiplier_8x8__DOT____Vcellout__u_only_carry_compressor_3to1__carry;
+    optimized_approximate_multiplier_8x8__DOT____Vcellout__u_only_carry_compressor_3to1__carry = 0;
     CData/*0:0*/ optimized_approximate_multiplier_8x8__DOT__carry_4to1;
     optimized_approximate_multiplier_8x8__DOT__carry_4to1 = 0;
-    CData/*0:0*/ optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_only_carry_compressor_4to1__x4;
-    optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_only_carry_compressor_4to1__x4 = 0;
-    CData/*0:0*/ optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_only_carry_compressor_4to1__x3;
-    optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_only_carry_compressor_4to1__x3 = 0;
-    CData/*0:0*/ optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_only_carry_compressor_4to1__x2;
-    optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_only_carry_compressor_4to1__x2 = 0;
     CData/*0:0*/ optimized_approximate_multiplier_8x8__DOT__exact_4to2_cout1;
     optimized_approximate_multiplier_8x8__DOT__exact_4to2_cout1 = 0;
     CData/*0:0*/ optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage1_1__carry;
     optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage1_1__carry = 0;
+    CData/*0:0*/ optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage1_1__sum;
+    optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage1_1__sum = 0;
     CData/*0:0*/ optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_1__x4;
     optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_1__x4 = 0;
     CData/*0:0*/ optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_1__x3;
@@ -82,6 +76,8 @@ VL_INLINE_OPT void Voptimized_approximate_multiplier_8x8___024root___ico_sequent
     optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x1 = 0;
     CData/*0:0*/ optimized_approximate_multiplier_8x8__DOT____Vcellout__u_FA_1__carry;
     optimized_approximate_multiplier_8x8__DOT____Vcellout__u_FA_1__carry = 0;
+    CData/*0:0*/ optimized_approximate_multiplier_8x8__DOT____Vcellout__u_FA_1__sum;
+    optimized_approximate_multiplier_8x8__DOT____Vcellout__u_FA_1__sum = 0;
     CData/*0:0*/ optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_FA_1__x3;
     optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_FA_1__x3 = 0;
     CData/*0:0*/ optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_FA_1__x2;
@@ -116,22 +112,38 @@ VL_INLINE_OPT void Voptimized_approximate_multiplier_8x8___024root___ico_sequent
     optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage2_2__carry = 0;
     CData/*0:0*/ optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage2_2__sum;
     optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage2_2__sum = 0;
+    CData/*0:0*/ optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage2_2__x4;
+    optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage2_2__x4 = 0;
     CData/*0:0*/ optimized_approximate_multiplier_8x8__DOT__stage2_exact_4to2_cout3;
     optimized_approximate_multiplier_8x8__DOT__stage2_exact_4to2_cout3 = 0;
     CData/*0:0*/ optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage2_3__carry;
     optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage2_3__carry = 0;
     CData/*0:0*/ optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage2_3__sum;
     optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage2_3__sum = 0;
+    CData/*0:0*/ optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage2_3__x4;
+    optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage2_3__x4 = 0;
+    CData/*0:0*/ optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage2_3__x3;
+    optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage2_3__x3 = 0;
     CData/*0:0*/ optimized_approximate_multiplier_8x8__DOT__stage2_exact_4to2_cout4;
     optimized_approximate_multiplier_8x8__DOT__stage2_exact_4to2_cout4 = 0;
     CData/*0:0*/ optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage2_4__carry;
     optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage2_4__carry = 0;
     CData/*0:0*/ optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage2_4__sum;
     optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage2_4__sum = 0;
+    CData/*0:0*/ optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage2_4__x4;
+    optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage2_4__x4 = 0;
+    CData/*0:0*/ optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage2_4__x3;
+    optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage2_4__x3 = 0;
+    CData/*0:0*/ optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage2_4__x2;
+    optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage2_4__x2 = 0;
     CData/*0:0*/ optimized_approximate_multiplier_8x8__DOT____Vcellout__u_FA_3__carry;
     optimized_approximate_multiplier_8x8__DOT____Vcellout__u_FA_3__carry = 0;
     CData/*0:0*/ optimized_approximate_multiplier_8x8__DOT____Vcellout__u_FA_3__sum;
     optimized_approximate_multiplier_8x8__DOT____Vcellout__u_FA_3__sum = 0;
+    CData/*0:0*/ optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_FA_3__x2;
+    optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_FA_3__x2 = 0;
+    CData/*0:0*/ optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_FA_3__x1;
+    optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_FA_3__x1 = 0;
     CData/*0:0*/ optimized_approximate_multiplier_8x8__DOT__cout_HA_stage3_1;
     optimized_approximate_multiplier_8x8__DOT__cout_HA_stage3_1 = 0;
     CData/*0:0*/ optimized_approximate_multiplier_8x8__DOT__cout_FA_stage3_1;
@@ -148,6 +160,8 @@ VL_INLINE_OPT void Voptimized_approximate_multiplier_8x8___024root___ico_sequent
     optimized_approximate_multiplier_8x8__DOT__cout_FA_stage3_5 = 0;
     CData/*0:0*/ optimized_approximate_multiplier_8x8__DOT__cout_FA_stage3_6;
     optimized_approximate_multiplier_8x8__DOT__cout_FA_stage3_6 = 0;
+    CData/*0:0*/ optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_FA_stage3_7__x2;
+    optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_FA_stage3_7__x2 = 0;
     CData/*0:0*/ optimized_approximate_multiplier_8x8__DOT__u_exact_4to2_compressor_stage1_1__DOT____VdfgRegularize_h0d3b8a33_0_0;
     optimized_approximate_multiplier_8x8__DOT__u_exact_4to2_compressor_stage1_1__DOT____VdfgRegularize_h0d3b8a33_0_0 = 0;
     CData/*0:0*/ optimized_approximate_multiplier_8x8__DOT__u_exact_4to2_compressor_stage1_2__DOT____VdfgRegularize_h0d3b8a33_0_0;
@@ -163,32 +177,29 @@ VL_INLINE_OPT void Voptimized_approximate_multiplier_8x8___024root___ico_sequent
     CData/*0:0*/ optimized_approximate_multiplier_8x8__DOT__u_exact_4to2_compressor_stage2_4__DOT____VdfgRegularize_h0d3b8a33_0_0;
     optimized_approximate_multiplier_8x8__DOT__u_exact_4to2_compressor_stage2_4__DOT____VdfgRegularize_h0d3b8a33_0_0 = 0;
     // Body
-    vlSelf->optimized_approximate_multiplier_8x8__DOT__stage1_pp0[0U] 
-        = (1U & ((((IData)(vlSelf->a) >> 5U) & (IData)(vlSelf->b)) 
-                 | ((((IData)(vlSelf->a) >> 4U) & ((IData)(vlSelf->b) 
-                                                   >> 1U)) 
-                    | ((((IData)(vlSelf->a) >> 3U) 
-                        & ((IData)(vlSelf->b) >> 2U)) 
-                       | (((IData)(vlSelf->a) >> 2U) 
-                          & ((IData)(vlSelf->b) >> 3U))))));
-    optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_only_carry_compressor_2to1__x2 
-        = (1U & ((IData)(vlSelf->a) & ((IData)(vlSelf->b) 
-                                       >> 5U)));
-    optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_only_carry_compressor_3to1__x2 
-        = (1U & (((IData)(vlSelf->a) >> 1U) & ((IData)(vlSelf->b) 
-                                               >> 5U)));
-    vlSelf->optimized_approximate_multiplier_8x8__DOT__stage1_pp1[6U] 
+    optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_FA_stage3_7__x2 
+        = (1U & (((IData)(vlSelf->a) & (IData)(vlSelf->b)) 
+                 >> 7U));
+    optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_FA_3__x1 
         = (IData)((((IData)(vlSelf->a) >> 7U) & ((IData)(vlSelf->b) 
-                                                 >> 5U)));
-    vlSelf->optimized_approximate_multiplier_8x8__DOT__stage1_pp1[0U] 
-        = (1U & ((((IData)(vlSelf->a) >> 6U) & (IData)(vlSelf->b)) 
-                 | ((((IData)(vlSelf->a) >> 5U) & ((IData)(vlSelf->b) 
-                                                   >> 1U)) 
-                    | ((((IData)(vlSelf->a) >> 4U) 
-                        & ((IData)(vlSelf->b) >> 2U)) 
-                       | (((IData)(vlSelf->a) & (IData)(vlSelf->b)) 
-                          >> 3U)))));
-    vlSelf->optimized_approximate_multiplier_8x8__DOT__stage1_pp1[1U] 
+                                                 >> 6U)));
+    optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_FA_3__x2 
+        = (IData)((((IData)(vlSelf->a) >> 6U) & ((IData)(vlSelf->b) 
+                                                 >> 7U)));
+    optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage2_4__x4 
+        = (IData)((((IData)(vlSelf->a) >> 5U) & ((IData)(vlSelf->b) 
+                                                 >> 7U)));
+    optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage2_3__x4 
+        = (IData)((((IData)(vlSelf->a) >> 4U) & ((IData)(vlSelf->b) 
+                                                 >> 7U)));
+    optimized_approximate_multiplier_8x8__DOT____Vcellout__u_only_carry_compressor_3to1__carry 
+        = (1U & ((((IData)(vlSelf->a) >> 2U) & ((IData)(vlSelf->b) 
+                                                >> 4U)) 
+                 | ((((IData)(vlSelf->a) >> 1U) & ((IData)(vlSelf->b) 
+                                                   >> 5U)) 
+                    | ((IData)(vlSelf->a) & ((IData)(vlSelf->b) 
+                                             >> 6U)))));
+    optimized_approximate_multiplier_8x8__DOT____Vcellout__u_only_sum_compressor_3__sum 
         = (1U & ((((IData)(vlSelf->a) >> 7U) & (IData)(vlSelf->b)) 
                  | ((((IData)(vlSelf->a) >> 6U) & ((IData)(vlSelf->b) 
                                                    >> 1U)) 
@@ -196,30 +207,79 @@ VL_INLINE_OPT void Voptimized_approximate_multiplier_8x8___024root___ico_sequent
                         & ((IData)(vlSelf->b) >> 2U)) 
                        | (((IData)(vlSelf->a) >> 4U) 
                           & ((IData)(vlSelf->b) >> 3U))))));
-    optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_1__x4 
+    optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage2_4__x2 
+        = (IData)((((IData)(vlSelf->a) >> 7U) & ((IData)(vlSelf->b) 
+                                                 >> 5U)));
+    optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage2_4__x3 
         = (1U & (((IData)(vlSelf->a) & (IData)(vlSelf->b)) 
-                 >> 4U));
-    optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_only_carry_compressor_4to1__x2 
-        = (1U & (((IData)(vlSelf->a) >> 2U) & ((IData)(vlSelf->b) 
-                                               >> 5U)));
-    optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_FA_1__x1 
-        = (1U & (((IData)(vlSelf->a) >> 3U) & ((IData)(vlSelf->b) 
-                                               >> 5U)));
-    optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_FA_2__x2 
-        = (1U & (((IData)(vlSelf->a) >> 6U) & ((IData)(vlSelf->b) 
-                                               >> 5U)));
+                 >> 6U));
+    optimized_approximate_multiplier_8x8__DOT____Vcellout__u_only_carry_compressor_2to1__carry 
+        = (1U & ((((IData)(vlSelf->a) >> 1U) & ((IData)(vlSelf->b) 
+                                                >> 4U)) 
+                 | ((IData)(vlSelf->a) & ((IData)(vlSelf->b) 
+                                          >> 5U))));
+    optimized_approximate_multiplier_8x8__DOT____Vcellout__u_only_sum_compressor_2__sum 
+        = (1U & ((((IData)(vlSelf->a) >> 6U) & (IData)(vlSelf->b)) 
+                 | ((((IData)(vlSelf->a) >> 5U) & ((IData)(vlSelf->b) 
+                                                   >> 1U)) 
+                    | ((((IData)(vlSelf->a) >> 4U) 
+                        & ((IData)(vlSelf->b) >> 2U)) 
+                       | (((IData)(vlSelf->a) & (IData)(vlSelf->b)) 
+                          >> 3U)))));
+    optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage2_2__x4 
+        = (IData)((((IData)(vlSelf->a) >> 3U) & ((IData)(vlSelf->b) 
+                                                 >> 7U)));
+    optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage2_3__x3 
+        = (1U & (((IData)(vlSelf->a) >> 5U) & ((IData)(vlSelf->b) 
+                                               >> 6U)));
     optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_FA_2__x1 
         = (IData)((((IData)(vlSelf->a) >> 7U) & ((IData)(vlSelf->b) 
                                                  >> 4U)));
+    optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_FA_2__x2 
+        = (1U & (((IData)(vlSelf->a) >> 6U) & ((IData)(vlSelf->b) 
+                                               >> 5U)));
+    optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_1__x4 
+        = (1U & (((IData)(vlSelf->a) & (IData)(vlSelf->b)) 
+                 >> 4U));
+    optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_FA_1__x1 
+        = (1U & (((IData)(vlSelf->a) >> 3U) & ((IData)(vlSelf->b) 
+                                               >> 5U)));
+    optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_FA_1__x2 
+        = (1U & (((IData)(vlSelf->a) >> 2U) & ((IData)(vlSelf->b) 
+                                               >> 6U)));
+    optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_FA_1__x3 
+        = (IData)((((IData)(vlSelf->a) >> 1U) & ((IData)(vlSelf->b) 
+                                                 >> 7U)));
+    optimized_approximate_multiplier_8x8__DOT__carry_4to1 
+        = (1U & ((((IData)(vlSelf->a) >> 3U) & ((IData)(vlSelf->b) 
+                                                >> 4U)) 
+                 | ((((IData)(vlSelf->a) >> 2U) & ((IData)(vlSelf->b) 
+                                                   >> 5U)) 
+                    | ((((IData)(vlSelf->a) >> 1U) 
+                        & ((IData)(vlSelf->b) >> 6U)) 
+                       | ((IData)(vlSelf->a) & ((IData)(vlSelf->b) 
+                                                >> 7U))))));
+    optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_HA_1__x1 
+        = (1U & (((IData)(vlSelf->a) >> 3U) & ((IData)(vlSelf->b) 
+                                               >> 6U)));
+    optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_HA_1__x2 
+        = (IData)((((IData)(vlSelf->a) >> 2U) & ((IData)(vlSelf->b) 
+                                                 >> 7U)));
+    optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x4 
+        = (1U & (((IData)(vlSelf->a) >> 4U) & ((IData)(vlSelf->b) 
+                                               >> 6U)));
     optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_2__x4 
         = (1U & (((IData)(vlSelf->a) >> 4U) & ((IData)(vlSelf->b) 
                                                >> 5U)));
-    optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_only_carry_compressor_3to1__x3 
-        = (1U & ((IData)(vlSelf->a) & ((IData)(vlSelf->b) 
-                                       >> 6U)));
-    optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_only_carry_compressor_4to1__x3 
-        = (1U & (((IData)(vlSelf->a) >> 1U) & ((IData)(vlSelf->b) 
-                                               >> 6U)));
+    optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x1 
+        = (IData)((((IData)(vlSelf->a) >> 7U) & ((IData)(vlSelf->b) 
+                                                 >> 3U)));
+    optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x2 
+        = (1U & (((IData)(vlSelf->a) >> 6U) & ((IData)(vlSelf->b) 
+                                               >> 4U)));
+    optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x3 
+        = (1U & (((IData)(vlSelf->a) & (IData)(vlSelf->b)) 
+                 >> 5U));
     optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_1__x1 
         = (IData)((((IData)(vlSelf->a) >> 7U) & ((IData)(vlSelf->b) 
                                                  >> 1U)));
@@ -229,24 +289,6 @@ VL_INLINE_OPT void Voptimized_approximate_multiplier_8x8___024root___ico_sequent
     optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_1__x3 
         = (1U & (((IData)(vlSelf->a) >> 5U) & ((IData)(vlSelf->b) 
                                                >> 3U)));
-    optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_HA_1__x1 
-        = (1U & (((IData)(vlSelf->a) >> 3U) & ((IData)(vlSelf->b) 
-                                               >> 6U)));
-    optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_FA_1__x2 
-        = (1U & (((IData)(vlSelf->a) >> 2U) & ((IData)(vlSelf->b) 
-                                               >> 6U)));
-    optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x4 
-        = (1U & (((IData)(vlSelf->a) >> 4U) & ((IData)(vlSelf->b) 
-                                               >> 6U)));
-    optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x3 
-        = (1U & (((IData)(vlSelf->a) & (IData)(vlSelf->b)) 
-                 >> 5U));
-    optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x1 
-        = (IData)((((IData)(vlSelf->a) >> 7U) & ((IData)(vlSelf->b) 
-                                                 >> 3U)));
-    optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x2 
-        = (1U & (((IData)(vlSelf->a) >> 6U) & ((IData)(vlSelf->b) 
-                                               >> 4U)));
     optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_2__x1 
         = (IData)((((IData)(vlSelf->a) >> 7U) & ((IData)(vlSelf->b) 
                                                  >> 2U)));
@@ -256,24 +298,35 @@ VL_INLINE_OPT void Voptimized_approximate_multiplier_8x8___024root___ico_sequent
     optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_2__x3 
         = (1U & (((IData)(vlSelf->a) >> 5U) & ((IData)(vlSelf->b) 
                                                >> 4U)));
-    optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_only_carry_compressor_4to1__x4 
-        = ((IData)(vlSelf->a) & ((IData)(vlSelf->b) 
-                                 >> 7U));
-    optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_HA_1__x2 
-        = (IData)((((IData)(vlSelf->a) >> 2U) & ((IData)(vlSelf->b) 
-                                                 >> 7U)));
-    optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_FA_1__x3 
-        = (IData)((((IData)(vlSelf->a) >> 1U) & ((IData)(vlSelf->b) 
-                                                 >> 7U)));
-    vlSelf->optimized_approximate_multiplier_8x8__DOT__stage1_pp0[1U] 
-        = (1U & ((((IData)(vlSelf->a) >> 1U) & ((IData)(vlSelf->b) 
-                                                >> 4U)) 
-                 | (IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_only_carry_compressor_2to1__x2)));
-    vlSelf->optimized_approximate_multiplier_8x8__DOT__stage1_pp0[2U] 
-        = (1U & ((((IData)(vlSelf->a) >> 2U) & ((IData)(vlSelf->b) 
-                                                >> 4U)) 
-                 | ((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_only_carry_compressor_3to1__x2) 
-                    | (IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_only_carry_compressor_3to1__x3))));
+    optimized_approximate_multiplier_8x8__DOT__cout_HA_stage3_1 
+        = ((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellout__u_only_carry_compressor_2to1__carry) 
+           & (IData)(optimized_approximate_multiplier_8x8__DOT____Vcellout__u_only_sum_compressor_2__sum));
+    optimized_approximate_multiplier_8x8__DOT____Vcellout__u_FA_1__sum 
+        = ((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_FA_1__x1) 
+           ^ ((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_FA_1__x2) 
+              ^ (IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_FA_1__x3)));
+    optimized_approximate_multiplier_8x8__DOT____Vcellout__u_FA_1__carry 
+        = (((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_FA_1__x1) 
+            & (IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_FA_1__x2)) 
+           | (((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_FA_1__x2) 
+               | (IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_FA_1__x1)) 
+              & (IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_FA_1__x3)));
+    optimized_approximate_multiplier_8x8__DOT____Vcellout__u_HA_1__sum 
+        = ((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_HA_1__x1) 
+           ^ (IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_HA_1__x2));
+    optimized_approximate_multiplier_8x8__DOT____Vcellout__u_HA_1__carry 
+        = ((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_HA_1__x1) 
+           & (IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_HA_1__x2));
+    optimized_approximate_multiplier_8x8__DOT__exact_4to2_cout3 
+        = (((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x1) 
+            & (IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x2)) 
+           | ((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x3) 
+              & ((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x1) 
+                 | (IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x2))));
+    optimized_approximate_multiplier_8x8__DOT__u_exact_4to2_compressor_stage1_3__DOT____VdfgRegularize_h0d3b8a33_0_0 
+        = ((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x1) 
+           ^ ((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x2) 
+              ^ (IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x3)));
     optimized_approximate_multiplier_8x8__DOT__u_exact_4to2_compressor_stage1_1__DOT____VdfgRegularize_h0d3b8a33_0_0 
         = ((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_1__x1) 
            ^ ((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_1__x2) 
@@ -284,32 +337,6 @@ VL_INLINE_OPT void Voptimized_approximate_multiplier_8x8___024root___ico_sequent
            | ((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_1__x3) 
               & ((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_1__x1) 
                  | (IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_1__x2))));
-    optimized_approximate_multiplier_8x8__DOT__pp6 
-        = (((IData)((((IData)(vlSelf->a) >> 7U) & ((IData)(vlSelf->b) 
-                                                   >> 6U))) 
-            << 7U) | ((0x40U & ((IData)(vlSelf->a) 
-                                & (IData)(vlSelf->b))) 
-                      | ((0x20U & ((IData)(vlSelf->a) 
-                                   & ((IData)(vlSelf->b) 
-                                      >> 1U))) | (((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x4) 
-                                                   << 4U) 
-                                                  | (((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_HA_1__x1) 
-                                                      << 3U) 
-                                                     | (((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_FA_1__x2) 
-                                                         << 2U) 
-                                                        | (((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_only_carry_compressor_4to1__x3) 
-                                                            << 1U) 
-                                                           | (IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_only_carry_compressor_3to1__x3))))))));
-    optimized_approximate_multiplier_8x8__DOT__u_exact_4to2_compressor_stage1_3__DOT____VdfgRegularize_h0d3b8a33_0_0 
-        = ((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x1) 
-           ^ ((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x2) 
-              ^ (IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x3)));
-    optimized_approximate_multiplier_8x8__DOT__exact_4to2_cout3 
-        = (((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x1) 
-            & (IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x2)) 
-           | ((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x3) 
-              & ((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x1) 
-                 | (IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x2))));
     optimized_approximate_multiplier_8x8__DOT__exact_4to2_cout2 
         = (((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_2__x1) 
             & (IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_2__x2)) 
@@ -320,59 +347,12 @@ VL_INLINE_OPT void Voptimized_approximate_multiplier_8x8___024root___ico_sequent
         = ((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_2__x1) 
            ^ ((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_2__x2) 
               ^ (IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_2__x3)));
-    optimized_approximate_multiplier_8x8__DOT__carry_4to1 
-        = (1U & ((((IData)(vlSelf->a) >> 3U) & ((IData)(vlSelf->b) 
-                                                >> 4U)) 
-                 | ((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_only_carry_compressor_4to1__x2) 
-                    | ((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_only_carry_compressor_4to1__x3) 
-                       | (IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_only_carry_compressor_4to1__x4)))));
-    optimized_approximate_multiplier_8x8__DOT____Vcellout__u_HA_1__sum 
-        = ((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_HA_1__x1) 
-           ^ (IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_HA_1__x2));
-    optimized_approximate_multiplier_8x8__DOT____Vcellout__u_HA_1__carry 
-        = ((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_HA_1__x1) 
-           & (IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_HA_1__x2));
-    vlSelf->optimized_approximate_multiplier_8x8__DOT__stage1_pp1[2U] 
-        = ((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_FA_1__x1) 
-           ^ ((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_FA_1__x2) 
-              ^ (IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_FA_1__x3)));
-    optimized_approximate_multiplier_8x8__DOT____Vcellout__u_FA_1__carry 
-        = (((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_FA_1__x1) 
-            & (IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_FA_1__x2)) 
-           | (((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_FA_1__x2) 
-               | (IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_FA_1__x1)) 
-              & (IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_FA_1__x3)));
-    optimized_approximate_multiplier_8x8__DOT__pp7 
-        = ((0x80U & ((IData)(vlSelf->a) & (IData)(vlSelf->b))) 
-           | (((IData)((((IData)(vlSelf->a) >> 6U) 
-                        & ((IData)(vlSelf->b) >> 7U))) 
-               << 6U) | (((IData)((((IData)(vlSelf->a) 
-                                    >> 5U) & ((IData)(vlSelf->b) 
-                                              >> 7U))) 
-                          << 5U) | (((IData)((((IData)(vlSelf->a) 
-                                               >> 4U) 
-                                              & ((IData)(vlSelf->b) 
-                                                 >> 7U))) 
-                                     << 4U) | (((IData)(
-                                                        (((IData)(vlSelf->a) 
-                                                          >> 3U) 
-                                                         & ((IData)(vlSelf->b) 
-                                                            >> 7U))) 
-                                                << 3U) 
-                                               | (((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_HA_1__x2) 
-                                                   << 2U) 
-                                                  | (((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_FA_1__x3) 
-                                                      << 1U) 
-                                                     | (IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_only_carry_compressor_4to1__x4))))))));
-    vlSelf->optimized_approximate_multiplier_8x8__DOT__stage1_pp0[8U] 
-        = (1U & ((IData)(optimized_approximate_multiplier_8x8__DOT__pp6) 
-                 >> 7U));
-    vlSelf->optimized_approximate_multiplier_8x8__DOT__stage1_pp2[3U] 
-        = (1U & ((IData)(optimized_approximate_multiplier_8x8__DOT__pp6) 
-                 >> 6U));
-    vlSelf->optimized_approximate_multiplier_8x8__DOT__stage1_pp2[2U] 
-        = (1U & ((IData)(optimized_approximate_multiplier_8x8__DOT__pp6) 
-                 >> 5U));
+    optimized_approximate_multiplier_8x8__DOT__cout_FA_stage3_1 
+        = (((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellout__u_only_carry_compressor_3to1__carry) 
+            & (IData)(optimized_approximate_multiplier_8x8__DOT____Vcellout__u_only_sum_compressor_3__sum)) 
+           | (((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellout__u_only_sum_compressor_3__sum) 
+               | (IData)(optimized_approximate_multiplier_8x8__DOT____Vcellout__u_only_carry_compressor_3to1__carry)) 
+              & (IData)(optimized_approximate_multiplier_8x8__DOT__cout_HA_stage3_1)));
     optimized_approximate_multiplier_8x8__DOT____Vcellout__u_FA_2__carry 
         = (((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_FA_2__x1) 
             & (IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_FA_2__x2)) 
@@ -383,6 +363,16 @@ VL_INLINE_OPT void Voptimized_approximate_multiplier_8x8___024root___ico_sequent
         = ((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_FA_2__x1) 
            ^ ((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_FA_2__x2) 
               ^ (IData)(optimized_approximate_multiplier_8x8__DOT__exact_4to2_cout3)));
+    optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage1_1__sum 
+        = ((IData)(optimized_approximate_multiplier_8x8__DOT__u_exact_4to2_compressor_stage1_1__DOT____VdfgRegularize_h0d3b8a33_0_0) 
+           ^ ((IData)(optimized_approximate_multiplier_8x8__DOT__carry_4to1) 
+              ^ (IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_1__x4)));
+    optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage1_1__carry 
+        = (((IData)(optimized_approximate_multiplier_8x8__DOT__u_exact_4to2_compressor_stage1_1__DOT____VdfgRegularize_h0d3b8a33_0_0) 
+            & (IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_1__x4)) 
+           | ((IData)(optimized_approximate_multiplier_8x8__DOT__carry_4to1) 
+              & ((IData)(optimized_approximate_multiplier_8x8__DOT__u_exact_4to2_compressor_stage1_1__DOT____VdfgRegularize_h0d3b8a33_0_0) 
+                 | (IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_1__x4))));
     optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage1_3__carry 
         = (((IData)(optimized_approximate_multiplier_8x8__DOT__u_exact_4to2_compressor_stage1_3__DOT____VdfgRegularize_h0d3b8a33_0_0) 
             & (IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x4)) 
@@ -403,45 +393,32 @@ VL_INLINE_OPT void Voptimized_approximate_multiplier_8x8___024root___ico_sequent
         = ((IData)(optimized_approximate_multiplier_8x8__DOT__u_exact_4to2_compressor_stage1_2__DOT____VdfgRegularize_h0d3b8a33_0_0) 
            ^ ((IData)(optimized_approximate_multiplier_8x8__DOT__exact_4to2_cout1) 
               ^ (IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_2__x4)));
-    vlSelf->optimized_approximate_multiplier_8x8__DOT__stage1_pp0[3U] 
-        = ((IData)(optimized_approximate_multiplier_8x8__DOT__u_exact_4to2_compressor_stage1_1__DOT____VdfgRegularize_h0d3b8a33_0_0) 
-           ^ ((IData)(optimized_approximate_multiplier_8x8__DOT__carry_4to1) 
-              ^ (IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_1__x4)));
-    optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage1_1__carry 
-        = (((IData)(optimized_approximate_multiplier_8x8__DOT__u_exact_4to2_compressor_stage1_1__DOT____VdfgRegularize_h0d3b8a33_0_0) 
-            & (IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_1__x4)) 
-           | ((IData)(optimized_approximate_multiplier_8x8__DOT__carry_4to1) 
-              & ((IData)(optimized_approximate_multiplier_8x8__DOT__u_exact_4to2_compressor_stage1_1__DOT____VdfgRegularize_h0d3b8a33_0_0) 
-                 | (IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_1__x4))));
-    vlSelf->optimized_approximate_multiplier_8x8__DOT__stage1_pp3[0U] 
-        = optimized_approximate_multiplier_8x8__DOT____Vcellout__u_HA_1__sum;
-    vlSelf->optimized_approximate_multiplier_8x8__DOT__stage1_pp1[4U] 
-        = optimized_approximate_multiplier_8x8__DOT____Vcellout__u_HA_1__carry;
-    vlSelf->optimized_approximate_multiplier_8x8__DOT__stage1_pp1[3U] 
-        = optimized_approximate_multiplier_8x8__DOT____Vcellout__u_FA_1__carry;
-    vlSelf->optimized_approximate_multiplier_8x8__DOT__stage1_pp3[3U] 
-        = (1U & ((IData)(optimized_approximate_multiplier_8x8__DOT__pp7) 
-                 >> 5U));
-    vlSelf->optimized_approximate_multiplier_8x8__DOT__stage1_pp3[2U] 
-        = (1U & ((IData)(optimized_approximate_multiplier_8x8__DOT__pp7) 
-                 >> 4U));
-    vlSelf->optimized_approximate_multiplier_8x8__DOT__stage1_pp3[1U] 
-        = (1U & ((IData)(optimized_approximate_multiplier_8x8__DOT__pp7) 
-                 >> 3U));
-    vlSelf->optimized_approximate_multiplier_8x8__DOT__stage1_pp0[9U] 
-        = (1U & ((IData)(optimized_approximate_multiplier_8x8__DOT__pp7) 
-                 >> 7U));
-    vlSelf->optimized_approximate_multiplier_8x8__DOT__stage1_pp1[7U] 
-        = (1U & ((IData)(optimized_approximate_multiplier_8x8__DOT__pp7) 
-                 >> 6U));
-    vlSelf->optimized_approximate_multiplier_8x8__DOT__stage1_pp0[7U] 
-        = optimized_approximate_multiplier_8x8__DOT____Vcellout__u_FA_2__carry;
-    vlSelf->optimized_approximate_multiplier_8x8__DOT__stage1_pp1[5U] 
-        = optimized_approximate_multiplier_8x8__DOT____Vcellout__u_FA_2__sum;
-    vlSelf->optimized_approximate_multiplier_8x8__DOT__stage1_pp0[6U] 
-        = optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage1_3__carry;
-    vlSelf->optimized_approximate_multiplier_8x8__DOT__stage1_pp2[1U] 
-        = optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage1_3__sum;
+    optimized_approximate_multiplier_8x8__DOT__stage2_exact_4to2_cout4 
+        = (((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellout__u_FA_2__carry) 
+            & (IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage2_4__x2)) 
+           | ((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage2_4__x3) 
+              & ((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellout__u_FA_2__carry) 
+                 | (IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage2_4__x2))));
+    optimized_approximate_multiplier_8x8__DOT__u_exact_4to2_compressor_stage2_4__DOT____VdfgRegularize_h0d3b8a33_0_0 
+        = ((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellout__u_FA_2__carry) 
+           ^ ((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage2_4__x2) 
+              ^ (IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage2_4__x3)));
+    optimized_approximate_multiplier_8x8__DOT__cout_FA_stage3_2 
+        = (((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage1_1__sum) 
+            & (IData)(optimized_approximate_multiplier_8x8__DOT____Vcellout__u_FA_1__sum)) 
+           | (((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellout__u_FA_1__sum) 
+               | (IData)(optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage1_1__sum)) 
+              & (IData)(optimized_approximate_multiplier_8x8__DOT__cout_FA_stage3_1)));
+    optimized_approximate_multiplier_8x8__DOT__stage2_exact_4to2_cout3 
+        = (((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage1_3__carry) 
+            & (IData)(optimized_approximate_multiplier_8x8__DOT____Vcellout__u_FA_2__sum)) 
+           | ((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage2_3__x3) 
+              & ((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage1_3__carry) 
+                 | (IData)(optimized_approximate_multiplier_8x8__DOT____Vcellout__u_FA_2__sum))));
+    optimized_approximate_multiplier_8x8__DOT__u_exact_4to2_compressor_stage2_3__DOT____VdfgRegularize_h0d3b8a33_0_0 
+        = ((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage1_3__carry) 
+           ^ ((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellout__u_FA_2__sum) 
+              ^ (IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage2_3__x3)));
     optimized_approximate_multiplier_8x8__DOT__stage2_exact_4to2_cout2 
         = (((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage1_2__carry) 
             & (IData)(optimized_approximate_multiplier_8x8__DOT____Vcellout__u_HA_1__carry)) 
@@ -452,10 +429,6 @@ VL_INLINE_OPT void Voptimized_approximate_multiplier_8x8___024root___ico_sequent
         = ((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage1_2__carry) 
            ^ ((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellout__u_HA_1__carry) 
               ^ (IData)(optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage1_3__sum)));
-    vlSelf->optimized_approximate_multiplier_8x8__DOT__stage1_pp0[5U] 
-        = optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage1_2__carry;
-    vlSelf->optimized_approximate_multiplier_8x8__DOT__stage1_pp2[0U] 
-        = optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage1_2__sum;
     optimized_approximate_multiplier_8x8__DOT__stage2_exact_4to2_cout1 
         = (((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage1_1__carry) 
             & (IData)(optimized_approximate_multiplier_8x8__DOT____Vcellout__u_FA_1__carry)) 
@@ -466,143 +439,52 @@ VL_INLINE_OPT void Voptimized_approximate_multiplier_8x8___024root___ico_sequent
         = ((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage1_1__carry) 
            ^ ((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellout__u_FA_1__carry) 
               ^ (IData)(optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage1_2__sum)));
-    vlSelf->optimized_approximate_multiplier_8x8__DOT__stage1_pp0[4U] 
-        = optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage1_1__carry;
-    vlSelf->optimized_approximate_multiplier_8x8__DOT__stage2_pp1[2U] 
-        = vlSelf->optimized_approximate_multiplier_8x8__DOT__stage1_pp1
-        [2U];
-    vlSelf->optimized_approximate_multiplier_8x8__DOT__stage2_pp1[1U] 
-        = vlSelf->optimized_approximate_multiplier_8x8__DOT__stage1_pp1
-        [1U];
-    vlSelf->optimized_approximate_multiplier_8x8__DOT__stage2_pp1[0U] 
-        = vlSelf->optimized_approximate_multiplier_8x8__DOT__stage1_pp1
-        [0U];
-    optimized_approximate_multiplier_8x8__DOT__stage2_exact_4to2_cout4 
-        = (((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellout__u_FA_2__carry) 
-            & vlSelf->optimized_approximate_multiplier_8x8__DOT__stage1_pp1
-            [6U]) | (vlSelf->optimized_approximate_multiplier_8x8__DOT__stage1_pp2
-                     [3U] & ((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellout__u_FA_2__carry) 
-                             | vlSelf->optimized_approximate_multiplier_8x8__DOT__stage1_pp1
-                             [6U])));
-    optimized_approximate_multiplier_8x8__DOT__stage2_exact_4to2_cout3 
-        = (((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage1_3__carry) 
-            & (IData)(optimized_approximate_multiplier_8x8__DOT____Vcellout__u_FA_2__sum)) 
-           | (vlSelf->optimized_approximate_multiplier_8x8__DOT__stage1_pp2
-              [2U] & ((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage1_3__carry) 
-                      | (IData)(optimized_approximate_multiplier_8x8__DOT____Vcellout__u_FA_2__sum))));
-    optimized_approximate_multiplier_8x8__DOT__u_exact_4to2_compressor_stage2_4__DOT____VdfgRegularize_h0d3b8a33_0_0 
-        = ((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellout__u_FA_2__carry) 
-           ^ (vlSelf->optimized_approximate_multiplier_8x8__DOT__stage1_pp1
-              [6U] ^ vlSelf->optimized_approximate_multiplier_8x8__DOT__stage1_pp2
-              [3U]));
-    optimized_approximate_multiplier_8x8__DOT__u_exact_4to2_compressor_stage2_3__DOT____VdfgRegularize_h0d3b8a33_0_0 
-        = ((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage1_3__carry) 
-           ^ ((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellout__u_FA_2__sum) 
-              ^ vlSelf->optimized_approximate_multiplier_8x8__DOT__stage1_pp2
-              [2U]));
+    optimized_approximate_multiplier_8x8__DOT____Vcellout__u_FA_3__carry 
+        = (((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_FA_3__x1) 
+            & (IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_FA_3__x2)) 
+           | (((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_FA_3__x2) 
+               | (IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_FA_3__x1)) 
+              & (IData)(optimized_approximate_multiplier_8x8__DOT__stage2_exact_4to2_cout4)));
+    optimized_approximate_multiplier_8x8__DOT____Vcellout__u_FA_3__sum 
+        = ((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_FA_3__x1) 
+           ^ ((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_FA_3__x2) 
+              ^ (IData)(optimized_approximate_multiplier_8x8__DOT__stage2_exact_4to2_cout4)));
+    optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage2_4__carry 
+        = (((IData)(optimized_approximate_multiplier_8x8__DOT__u_exact_4to2_compressor_stage2_4__DOT____VdfgRegularize_h0d3b8a33_0_0) 
+            & (IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage2_4__x4)) 
+           | ((IData)(optimized_approximate_multiplier_8x8__DOT__stage2_exact_4to2_cout3) 
+              & ((IData)(optimized_approximate_multiplier_8x8__DOT__u_exact_4to2_compressor_stage2_4__DOT____VdfgRegularize_h0d3b8a33_0_0) 
+                 | (IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage2_4__x4))));
+    optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage2_4__sum 
+        = ((IData)(optimized_approximate_multiplier_8x8__DOT__u_exact_4to2_compressor_stage2_4__DOT____VdfgRegularize_h0d3b8a33_0_0) 
+           ^ ((IData)(optimized_approximate_multiplier_8x8__DOT__stage2_exact_4to2_cout3) 
+              ^ (IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage2_4__x4)));
+    optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage2_3__carry 
+        = (((IData)(optimized_approximate_multiplier_8x8__DOT__u_exact_4to2_compressor_stage2_3__DOT____VdfgRegularize_h0d3b8a33_0_0) 
+            & (IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage2_3__x4)) 
+           | ((IData)(optimized_approximate_multiplier_8x8__DOT__stage2_exact_4to2_cout2) 
+              & ((IData)(optimized_approximate_multiplier_8x8__DOT__u_exact_4to2_compressor_stage2_3__DOT____VdfgRegularize_h0d3b8a33_0_0) 
+                 | (IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage2_3__x4))));
+    optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage2_3__sum 
+        = ((IData)(optimized_approximate_multiplier_8x8__DOT__u_exact_4to2_compressor_stage2_3__DOT____VdfgRegularize_h0d3b8a33_0_0) 
+           ^ ((IData)(optimized_approximate_multiplier_8x8__DOT__stage2_exact_4to2_cout2) 
+              ^ (IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage2_3__x4)));
     optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage2_2__carry 
         = (((IData)(optimized_approximate_multiplier_8x8__DOT__u_exact_4to2_compressor_stage2_2__DOT____VdfgRegularize_h0d3b8a33_0_0) 
-            & vlSelf->optimized_approximate_multiplier_8x8__DOT__stage1_pp3
-            [1U]) | ((IData)(optimized_approximate_multiplier_8x8__DOT__stage2_exact_4to2_cout1) 
-                     & ((IData)(optimized_approximate_multiplier_8x8__DOT__u_exact_4to2_compressor_stage2_2__DOT____VdfgRegularize_h0d3b8a33_0_0) 
-                        | vlSelf->optimized_approximate_multiplier_8x8__DOT__stage1_pp3
-                        [1U])));
+            & (IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage2_2__x4)) 
+           | ((IData)(optimized_approximate_multiplier_8x8__DOT__stage2_exact_4to2_cout1) 
+              & ((IData)(optimized_approximate_multiplier_8x8__DOT__u_exact_4to2_compressor_stage2_2__DOT____VdfgRegularize_h0d3b8a33_0_0) 
+                 | (IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage2_2__x4))));
     optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage2_2__sum 
         = ((IData)(optimized_approximate_multiplier_8x8__DOT__u_exact_4to2_compressor_stage2_2__DOT____VdfgRegularize_h0d3b8a33_0_0) 
            ^ ((IData)(optimized_approximate_multiplier_8x8__DOT__stage2_exact_4to2_cout1) 
-              ^ vlSelf->optimized_approximate_multiplier_8x8__DOT__stage1_pp3
-              [1U]));
+              ^ (IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_exact_4to2_compressor_stage2_2__x4)));
     optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage2_1__carry 
         = ((IData)(optimized_approximate_multiplier_8x8__DOT__u_exact_4to2_compressor_stage2_1__DOT____VdfgRegularize_h0d3b8a33_0_0) 
            & (IData)(optimized_approximate_multiplier_8x8__DOT____Vcellout__u_HA_1__sum));
     optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage2_1__sum 
         = ((IData)(optimized_approximate_multiplier_8x8__DOT__u_exact_4to2_compressor_stage2_1__DOT____VdfgRegularize_h0d3b8a33_0_0) 
            ^ (IData)(optimized_approximate_multiplier_8x8__DOT____Vcellout__u_HA_1__sum));
-    vlSelf->optimized_approximate_multiplier_8x8__DOT__stage2_pp1[7U] 
-        = vlSelf->optimized_approximate_multiplier_8x8__DOT__stage1_pp0
-        [9U];
-    vlSelf->optimized_approximate_multiplier_8x8__DOT__stage2_pp0[3U] 
-        = vlSelf->optimized_approximate_multiplier_8x8__DOT__stage1_pp0
-        [3U];
-    vlSelf->optimized_approximate_multiplier_8x8__DOT__stage2_pp0[2U] 
-        = vlSelf->optimized_approximate_multiplier_8x8__DOT__stage1_pp0
-        [2U];
-    vlSelf->optimized_approximate_multiplier_8x8__DOT__stage2_pp0[1U] 
-        = vlSelf->optimized_approximate_multiplier_8x8__DOT__stage1_pp0
-        [1U];
-    vlSelf->optimized_approximate_multiplier_8x8__DOT__stage2_pp0[0U] 
-        = vlSelf->optimized_approximate_multiplier_8x8__DOT__stage1_pp0
-        [0U];
-    optimized_approximate_multiplier_8x8__DOT____Vcellout__u_FA_3__carry 
-        = ((vlSelf->optimized_approximate_multiplier_8x8__DOT__stage1_pp0
-            [8U] & vlSelf->optimized_approximate_multiplier_8x8__DOT__stage1_pp1
-            [7U]) | ((vlSelf->optimized_approximate_multiplier_8x8__DOT__stage1_pp1
-                      [7U] | vlSelf->optimized_approximate_multiplier_8x8__DOT__stage1_pp0
-                      [8U]) & (IData)(optimized_approximate_multiplier_8x8__DOT__stage2_exact_4to2_cout4)));
-    optimized_approximate_multiplier_8x8__DOT____Vcellout__u_FA_3__sum 
-        = (vlSelf->optimized_approximate_multiplier_8x8__DOT__stage1_pp0
-           [8U] ^ (vlSelf->optimized_approximate_multiplier_8x8__DOT__stage1_pp1
-                   [7U] ^ (IData)(optimized_approximate_multiplier_8x8__DOT__stage2_exact_4to2_cout4)));
-    optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage2_4__carry 
-        = (((IData)(optimized_approximate_multiplier_8x8__DOT__u_exact_4to2_compressor_stage2_4__DOT____VdfgRegularize_h0d3b8a33_0_0) 
-            & vlSelf->optimized_approximate_multiplier_8x8__DOT__stage1_pp3
-            [3U]) | ((IData)(optimized_approximate_multiplier_8x8__DOT__stage2_exact_4to2_cout3) 
-                     & ((IData)(optimized_approximate_multiplier_8x8__DOT__u_exact_4to2_compressor_stage2_4__DOT____VdfgRegularize_h0d3b8a33_0_0) 
-                        | vlSelf->optimized_approximate_multiplier_8x8__DOT__stage1_pp3
-                        [3U])));
-    optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage2_4__sum 
-        = ((IData)(optimized_approximate_multiplier_8x8__DOT__u_exact_4to2_compressor_stage2_4__DOT____VdfgRegularize_h0d3b8a33_0_0) 
-           ^ ((IData)(optimized_approximate_multiplier_8x8__DOT__stage2_exact_4to2_cout3) 
-              ^ vlSelf->optimized_approximate_multiplier_8x8__DOT__stage1_pp3
-              [3U]));
-    optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage2_3__carry 
-        = (((IData)(optimized_approximate_multiplier_8x8__DOT__u_exact_4to2_compressor_stage2_3__DOT____VdfgRegularize_h0d3b8a33_0_0) 
-            & vlSelf->optimized_approximate_multiplier_8x8__DOT__stage1_pp3
-            [2U]) | ((IData)(optimized_approximate_multiplier_8x8__DOT__stage2_exact_4to2_cout2) 
-                     & ((IData)(optimized_approximate_multiplier_8x8__DOT__u_exact_4to2_compressor_stage2_3__DOT____VdfgRegularize_h0d3b8a33_0_0) 
-                        | vlSelf->optimized_approximate_multiplier_8x8__DOT__stage1_pp3
-                        [2U])));
-    optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage2_3__sum 
-        = ((IData)(optimized_approximate_multiplier_8x8__DOT__u_exact_4to2_compressor_stage2_3__DOT____VdfgRegularize_h0d3b8a33_0_0) 
-           ^ ((IData)(optimized_approximate_multiplier_8x8__DOT__stage2_exact_4to2_cout2) 
-              ^ vlSelf->optimized_approximate_multiplier_8x8__DOT__stage1_pp3
-              [2U]));
-    vlSelf->optimized_approximate_multiplier_8x8__DOT__stage2_pp0[6U] 
-        = optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage2_2__carry;
-    vlSelf->optimized_approximate_multiplier_8x8__DOT__stage2_pp1[3U] 
-        = optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage2_2__sum;
-    vlSelf->optimized_approximate_multiplier_8x8__DOT__stage2_pp0[5U] 
-        = optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage2_1__carry;
-    vlSelf->optimized_approximate_multiplier_8x8__DOT__stage2_pp0[4U] 
-        = optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage2_1__sum;
-    vlSelf->optimized_approximate_multiplier_8x8__DOT__stage2_pp0[9U] 
-        = optimized_approximate_multiplier_8x8__DOT____Vcellout__u_FA_3__carry;
-    vlSelf->optimized_approximate_multiplier_8x8__DOT__stage2_pp1[6U] 
-        = optimized_approximate_multiplier_8x8__DOT____Vcellout__u_FA_3__sum;
-    vlSelf->optimized_approximate_multiplier_8x8__DOT__stage2_pp0[8U] 
-        = optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage2_4__carry;
-    vlSelf->optimized_approximate_multiplier_8x8__DOT__stage2_pp1[5U] 
-        = optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage2_4__sum;
-    vlSelf->optimized_approximate_multiplier_8x8__DOT__stage2_pp0[7U] 
-        = optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage2_3__carry;
-    vlSelf->optimized_approximate_multiplier_8x8__DOT__stage2_pp1[4U] 
-        = optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage2_3__sum;
-    optimized_approximate_multiplier_8x8__DOT__cout_HA_stage3_1 
-        = (vlSelf->optimized_approximate_multiplier_8x8__DOT__stage2_pp0
-           [1U] & vlSelf->optimized_approximate_multiplier_8x8__DOT__stage2_pp1
-           [0U]);
-    optimized_approximate_multiplier_8x8__DOT__cout_FA_stage3_1 
-        = ((vlSelf->optimized_approximate_multiplier_8x8__DOT__stage2_pp0
-            [2U] & vlSelf->optimized_approximate_multiplier_8x8__DOT__stage2_pp1
-            [1U]) | ((vlSelf->optimized_approximate_multiplier_8x8__DOT__stage2_pp1
-                      [1U] | vlSelf->optimized_approximate_multiplier_8x8__DOT__stage2_pp0
-                      [2U]) & (IData)(optimized_approximate_multiplier_8x8__DOT__cout_HA_stage3_1)));
-    optimized_approximate_multiplier_8x8__DOT__cout_FA_stage3_2 
-        = ((vlSelf->optimized_approximate_multiplier_8x8__DOT__stage2_pp0
-            [3U] & vlSelf->optimized_approximate_multiplier_8x8__DOT__stage2_pp1
-            [2U]) | ((vlSelf->optimized_approximate_multiplier_8x8__DOT__stage2_pp1
-                      [2U] | vlSelf->optimized_approximate_multiplier_8x8__DOT__stage2_pp0
-                      [3U]) & (IData)(optimized_approximate_multiplier_8x8__DOT__cout_FA_stage3_1)));
     optimized_approximate_multiplier_8x8__DOT__cout_HA_stage3_2 
         = ((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage2_1__sum) 
            & (IData)(optimized_approximate_multiplier_8x8__DOT__cout_FA_stage3_2));
@@ -630,62 +512,71 @@ VL_INLINE_OPT void Voptimized_approximate_multiplier_8x8___024root___ico_sequent
            | (((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellout__u_FA_3__sum) 
                | (IData)(optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage2_4__carry)) 
               & (IData)(optimized_approximate_multiplier_8x8__DOT__cout_FA_stage3_5)));
-    vlSelf->final_sum = (6U | (((((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellout__u_FA_3__carry) 
-                                  & vlSelf->optimized_approximate_multiplier_8x8__DOT__stage1_pp0
-                                  [9U]) | ((vlSelf->optimized_approximate_multiplier_8x8__DOT__stage1_pp0
-                                            [9U] | (IData)(optimized_approximate_multiplier_8x8__DOT____Vcellout__u_FA_3__carry)) 
-                                           & (IData)(optimized_approximate_multiplier_8x8__DOT__cout_FA_stage3_6))) 
-                                << 0xfU) | ((((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellout__u_FA_3__carry) 
-                                              ^ (vlSelf->optimized_approximate_multiplier_8x8__DOT__stage1_pp0
-                                                 [9U] 
-                                                 ^ (IData)(optimized_approximate_multiplier_8x8__DOT__cout_FA_stage3_6))) 
-                                             << 0xeU) 
-                                            | ((((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage2_4__carry) 
-                                                 ^ 
-                                                 ((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellout__u_FA_3__sum) 
-                                                  ^ (IData)(optimized_approximate_multiplier_8x8__DOT__cout_FA_stage3_5))) 
-                                                << 0xdU) 
-                                               | ((((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage2_3__carry) 
-                                                    ^ 
-                                                    ((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage2_4__sum) 
-                                                     ^ (IData)(optimized_approximate_multiplier_8x8__DOT__cout_FA_stage3_4))) 
-                                                   << 0xcU) 
-                                                  | ((((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage2_2__carry) 
-                                                       ^ 
-                                                       ((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage2_3__sum) 
-                                                        ^ (IData)(optimized_approximate_multiplier_8x8__DOT__cout_FA_stage3_3))) 
-                                                      << 0xbU) 
-                                                     | ((((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage2_1__carry) 
-                                                          ^ 
-                                                          ((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage2_2__sum) 
-                                                           ^ (IData)(optimized_approximate_multiplier_8x8__DOT__cout_HA_stage3_2))) 
-                                                         << 0xaU) 
-                                                        | ((((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage2_1__sum) 
-                                                             ^ (IData)(optimized_approximate_multiplier_8x8__DOT__cout_FA_stage3_2)) 
-                                                            << 9U) 
-                                                           | (((vlSelf->optimized_approximate_multiplier_8x8__DOT__stage2_pp0
-                                                                [3U] 
-                                                                ^ 
-                                                                (vlSelf->optimized_approximate_multiplier_8x8__DOT__stage2_pp1
-                                                                 [2U] 
-                                                                 ^ (IData)(optimized_approximate_multiplier_8x8__DOT__cout_FA_stage3_1))) 
-                                                               << 8U) 
-                                                              | (((vlSelf->optimized_approximate_multiplier_8x8__DOT__stage2_pp0
-                                                                   [2U] 
-                                                                   ^ 
-                                                                   (vlSelf->optimized_approximate_multiplier_8x8__DOT__stage2_pp1
-                                                                    [1U] 
-                                                                    ^ (IData)(optimized_approximate_multiplier_8x8__DOT__cout_HA_stage3_1))) 
-                                                                  << 7U) 
-                                                                 | (((vlSelf->optimized_approximate_multiplier_8x8__DOT__stage2_pp0
-                                                                      [1U] 
-                                                                      ^ 
-                                                                      vlSelf->optimized_approximate_multiplier_8x8__DOT__stage2_pp1
-                                                                      [0U]) 
-                                                                     << 6U) 
-                                                                    | (vlSelf->optimized_approximate_multiplier_8x8__DOT__stage2_pp0
-                                                                       [0U] 
-                                                                       << 5U))))))))))));
+    vlSelf->final_sum = (((((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellout__u_FA_3__carry) 
+                            & (IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_FA_stage3_7__x2)) 
+                           | (((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_FA_stage3_7__x2) 
+                               | (IData)(optimized_approximate_multiplier_8x8__DOT____Vcellout__u_FA_3__carry)) 
+                              & (IData)(optimized_approximate_multiplier_8x8__DOT__cout_FA_stage3_6))) 
+                          << 0xfU) | ((((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellout__u_FA_3__carry) 
+                                        ^ ((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellinp__u_FA_stage3_7__x2) 
+                                           ^ (IData)(optimized_approximate_multiplier_8x8__DOT__cout_FA_stage3_6))) 
+                                       << 0xeU) | (
+                                                   (((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage2_4__carry) 
+                                                     ^ 
+                                                     ((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellout__u_FA_3__sum) 
+                                                      ^ (IData)(optimized_approximate_multiplier_8x8__DOT__cout_FA_stage3_5))) 
+                                                    << 0xdU) 
+                                                   | ((((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage2_3__carry) 
+                                                        ^ 
+                                                        ((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage2_4__sum) 
+                                                         ^ (IData)(optimized_approximate_multiplier_8x8__DOT__cout_FA_stage3_4))) 
+                                                       << 0xcU) 
+                                                      | ((((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage2_2__carry) 
+                                                           ^ 
+                                                           ((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage2_3__sum) 
+                                                            ^ (IData)(optimized_approximate_multiplier_8x8__DOT__cout_FA_stage3_3))) 
+                                                          << 0xbU) 
+                                                         | ((((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage2_1__carry) 
+                                                              ^ 
+                                                              ((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage2_2__sum) 
+                                                               ^ (IData)(optimized_approximate_multiplier_8x8__DOT__cout_HA_stage3_2))) 
+                                                             << 0xaU) 
+                                                            | ((((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage2_1__sum) 
+                                                                 ^ (IData)(optimized_approximate_multiplier_8x8__DOT__cout_FA_stage3_2)) 
+                                                                << 9U) 
+                                                               | ((((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellout__u_exact_4to2_compressor_stage1_1__sum) 
+                                                                    ^ 
+                                                                    ((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellout__u_FA_1__sum) 
+                                                                     ^ (IData)(optimized_approximate_multiplier_8x8__DOT__cout_FA_stage3_1))) 
+                                                                   << 8U) 
+                                                                  | ((((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellout__u_only_carry_compressor_3to1__carry) 
+                                                                       ^ 
+                                                                       ((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellout__u_only_sum_compressor_3__sum) 
+                                                                        ^ (IData)(optimized_approximate_multiplier_8x8__DOT__cout_HA_stage3_1))) 
+                                                                      << 7U) 
+                                                                     | ((((IData)(optimized_approximate_multiplier_8x8__DOT____Vcellout__u_only_carry_compressor_2to1__carry) 
+                                                                          ^ (IData)(optimized_approximate_multiplier_8x8__DOT____Vcellout__u_only_sum_compressor_2__sum)) 
+                                                                         << 6U) 
+                                                                        | ((0x20U 
+                                                                            & (((IData)(vlSelf->a) 
+                                                                                & ((IData)(vlSelf->b) 
+                                                                                << 5U)) 
+                                                                               | ((((IData)(vlSelf->a) 
+                                                                                << 1U) 
+                                                                                & ((IData)(vlSelf->b) 
+                                                                                << 4U)) 
+                                                                                | ((((IData)(vlSelf->a) 
+                                                                                << 2U) 
+                                                                                & ((IData)(vlSelf->b) 
+                                                                                << 3U)) 
+                                                                                | (((IData)(vlSelf->a) 
+                                                                                << 3U) 
+                                                                                & ((IData)(vlSelf->b) 
+                                                                                << 2U)))))) 
+                                                                           | ((0x1cU 
+                                                                               & (IData)(vlSelf->a)) 
+                                                                              | (3U 
+                                                                                & (IData)(vlSelf->b))))))))))))));
 }
 
 void Voptimized_approximate_multiplier_8x8___024root___eval_triggers__ico(Voptimized_approximate_multiplier_8x8___024root* vlSelf);
@@ -780,7 +671,7 @@ void Voptimized_approximate_multiplier_8x8___024root___eval(Voptimized_approxima
 #ifdef VL_DEBUG
             Voptimized_approximate_multiplier_8x8___024root___dump_triggers__ico(vlSelf);
 #endif
-            VL_FATAL_MT("../verilog/../verilog/optimized_approximate_multiplier_8x8.v", 7, "", "Input combinational region did not converge.");
+            VL_FATAL_MT("../verilog/../verilog/optimized_approximate_multiplier_8x8.v", 8, "", "Input combinational region did not converge.");
         }
         __VicoIterCount = ((IData)(1U) + __VicoIterCount);
         __VicoContinue = 0U;
@@ -796,7 +687,7 @@ void Voptimized_approximate_multiplier_8x8___024root___eval(Voptimized_approxima
 #ifdef VL_DEBUG
             Voptimized_approximate_multiplier_8x8___024root___dump_triggers__nba(vlSelf);
 #endif
-            VL_FATAL_MT("../verilog/../verilog/optimized_approximate_multiplier_8x8.v", 7, "", "NBA region did not converge.");
+            VL_FATAL_MT("../verilog/../verilog/optimized_approximate_multiplier_8x8.v", 8, "", "NBA region did not converge.");
         }
         __VnbaIterCount = ((IData)(1U) + __VnbaIterCount);
         __VnbaContinue = 0U;
@@ -807,7 +698,7 @@ void Voptimized_approximate_multiplier_8x8___024root___eval(Voptimized_approxima
 #ifdef VL_DEBUG
                 Voptimized_approximate_multiplier_8x8___024root___dump_triggers__act(vlSelf);
 #endif
-                VL_FATAL_MT("../verilog/../verilog/optimized_approximate_multiplier_8x8.v", 7, "", "Active region did not converge.");
+                VL_FATAL_MT("../verilog/../verilog/optimized_approximate_multiplier_8x8.v", 8, "", "Active region did not converge.");
             }
             vlSelf->__VactIterCount = ((IData)(1U) 
                                        + vlSelf->__VactIterCount);

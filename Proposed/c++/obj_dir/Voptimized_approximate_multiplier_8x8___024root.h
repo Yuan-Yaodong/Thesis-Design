@@ -22,12 +22,6 @@ class alignas(VL_CACHE_LINE_BYTES) Voptimized_approximate_multiplier_8x8___024ro
     CData/*0:0*/ __VactContinue;
     VL_OUT16(final_sum,15,0);
     IData/*31:0*/ __VactIterCount;
-    VlUnpacked<CData/*0:0*/, 10> optimized_approximate_multiplier_8x8__DOT__stage1_pp0;
-    VlUnpacked<CData/*0:0*/, 8> optimized_approximate_multiplier_8x8__DOT__stage1_pp1;
-    VlUnpacked<CData/*0:0*/, 4> optimized_approximate_multiplier_8x8__DOT__stage1_pp2;
-    VlUnpacked<CData/*0:0*/, 4> optimized_approximate_multiplier_8x8__DOT__stage1_pp3;
-    VlUnpacked<CData/*0:0*/, 10> optimized_approximate_multiplier_8x8__DOT__stage2_pp0;
-    VlUnpacked<CData/*0:0*/, 8> optimized_approximate_multiplier_8x8__DOT__stage2_pp1;
     VlTriggerVec<1> __VstlTriggered;
     VlTriggerVec<1> __VicoTriggered;
     VlTriggerVec<0> __VactTriggered;

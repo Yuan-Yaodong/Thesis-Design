@@ -18,7 +18,7 @@ Voptimized_approximate_multiplier_8x8__Syms::Voptimized_approximate_multiplier_8
     , TOP{this, namep}
 {
         // Check resources
-        Verilated::stackCheck(305);
+        Verilated::stackCheck(333);
     // Configure time unit / time precision
     _vm_contextp__->timeunit(-12);
     _vm_contextp__->timeprecision(-12);

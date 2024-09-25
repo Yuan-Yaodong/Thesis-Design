@@ -147,16 +147,4 @@ VL_ATTR_COLD void VZero_ME_7_8___024root___ctor_var_reset(VZero_ME_7_8___024root
     vlSelf->a = VL_RAND_RESET_I(8);
     vlSelf->b = VL_RAND_RESET_I(8);
     vlSelf->final_sum = VL_RAND_RESET_I(16);
-    for (int __Vi0 = 0; __Vi0 < 11; ++__Vi0) {
-        vlSelf->Zero_ME_7_8__DOT__stage1_pp0[__Vi0] = VL_RAND_RESET_I(1);
-    }
-    for (int __Vi0 = 0; __Vi0 < 10; ++__Vi0) {
-        vlSelf->Zero_ME_7_8__DOT__stage1_pp1[__Vi0] = VL_RAND_RESET_I(1);
-    }
-    for (int __Vi0 = 0; __Vi0 < 9; ++__Vi0) {
-        vlSelf->Zero_ME_7_8__DOT__stage1_pp2[__Vi0] = VL_RAND_RESET_I(1);
-    }
-    for (int __Vi0 = 0; __Vi0 < 7; ++__Vi0) {
-        vlSelf->Zero_ME_7_8__DOT__stage1_pp3[__Vi0] = VL_RAND_RESET_I(1);
-    }
 }

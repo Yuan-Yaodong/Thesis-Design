@@ -63,10 +63,12 @@ int main(int argc, char** argv) {
     double mean_error = static_cast<double>(total_error) / num_tests;
     long double MRED = total_RED / 65025.0;
     // long double MRED = total_RED / 65536.0;
+    // long double MRED = total_RED / 65249.0; // 65249 = 65536 - 287
+
 
 
     // Print final statistics
-    std::cout << "Testing completed for Zero_ME_7_8." << std::endl;
+    std::cout << "Testing completed for optimized_approximate_multiplier_8x8." << std::endl;
     std::cout << "Total number of tests: " << num_tests << std::endl;
     std::cout << "Maximum error distance: " << max_ED << std::endl;
     std::cout << "Maximum error distance combination: ";

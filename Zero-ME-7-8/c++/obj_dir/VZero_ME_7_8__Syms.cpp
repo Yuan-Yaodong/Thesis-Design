@@ -18,7 +18,7 @@ VZero_ME_7_8__Syms::VZero_ME_7_8__Syms(VerilatedContext* contextp, const char* n
     , TOP{this, namep}
 {
         // Check resources
-        Verilated::stackCheck(369);
+        Verilated::stackCheck(377);
     // Configure time unit / time precision
     _vm_contextp__->timeunit(-12);
     _vm_contextp__->timeprecision(-12);

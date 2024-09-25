@@ -4,6 +4,7 @@
 `include "./FA.v"
 `include "./HA.v"
 
+
 module optimized_approximate_multiplier_8x8(
     input CLK,
     input [7:0] a,
@@ -34,17 +35,16 @@ module optimized_approximate_multiplier_8x8(
 
 
     // Stage 1
-    wire stage1_pp0 [9:0];
-    wire stage1_pp1 [7:0];
-    wire stage1_pp2 [3:0];
-    wire stage1_pp3 [3:0];
+    wire [9:0] stage1_pp0;
+    wire [7:0] stage1_pp1;
+    wire [3:0] stage1_pp2;
+    wire [3:0] stage1_pp3;
 
 assign stage1_pp0 [9:8] = { pp7[7], pp6[7]};
 assign stage1_pp1 [7:6] = { pp7[6], pp5[7]};
 assign stage1_pp2 [3:2] = { pp6[6], pp6[5]};
 assign stage1_pp3 [3:1] = { pp7[5], pp7[4], pp7[3]};
  
-
 
     // 实例化 only_sum_compressor
 
@@ -97,7 +97,7 @@ assign stage1_pp3 [3:1] = { pp7[5], pp7[4], pp7[3]};
         .carry 	( carry_4to1 )
     );
 
-
+// wire ecm = carry_4to1 & stage1_pp1[1] ;
 
 wire exact_4to2_cout1;
 exact_4to2_compressor u_exact_4to2_compressor_stage1_1(
@@ -163,11 +163,27 @@ HA u_HA_1(
 
 // Stage 2
 
-wire stage2_pp0 [9:0];
-wire stage2_pp1 [7:0];
+wire [9:0] stage2_pp0;
+wire [7:0] stage2_pp1;
 assign stage2_pp0 [3:0] = stage1_pp0 [3:0];
+assign stage2_pp0 [2:0] = stage1_pp0 [2:0];
+assign stage2_pp1 [1:0] = stage1_pp1 [1:0];
 assign stage2_pp1 [2:0] = stage1_pp1 [2:0];
 assign stage2_pp1 [7] = stage1_pp0[9];
+
+
+
+// wire stage1_pp2_extra = pp0[7];
+// wire u_FA_extra_carry;
+// FA u_FA_extra(
+//     .x1    	( stage2_pp0[3]     ),
+//     .x2    	( stage1_pp1[2]     ),
+//     .x3    	( stage1_pp2_extra    ),
+//     .sum   	( stage2_pp0[3]    ),
+//     .carry 	( u_FA_extra_carry  )
+// );
+
+
 
 wire stage2_exact_4to2_cout1;
 exact_4to2_compressor u_exact_4to2_compressor_stage2_1(
@@ -231,10 +247,9 @@ FA u_FA_3(
 // Stage 3
 
 
-// assign final_sum [5:0] = { stage2_pp0[0], a[3], 4'b0110 };
-
-assign final_sum [5:0] = { stage2_pp0[0], 5'b00110 };
-// assign final_sum [5:0] = { stage2_pp0[0], 5'b00000 };
+// assign final_sum [5:0] = { stage2_pp0[0], 5'b00110 };                     // proposed[1]
+// assign final_sum [5:0] = { stage2_pp0[0], a[4], a[3], a[2], 2'b00 };      // proposed[2]
+assign final_sum [5:0] = { stage2_pp0[0], a[4], a[3], a[2], b[1], b[0] };    // proposed[3]
 
 
 wire cout_HA_stage3_1;

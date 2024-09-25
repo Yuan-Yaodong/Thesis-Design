@@ -33,10 +33,10 @@ module Zero_ME_7_8(
 
 
     // Stage 1
-    wire stage1_pp0 [10:0];
-    wire stage1_pp1 [9:0];
-    wire stage1_pp2 [8:0];
-    wire stage1_pp3 [6:0];
+    wire [10:0] stage1_pp0;
+    wire [9:0] stage1_pp1;
+    wire [8:0] stage1_pp2;
+    wire [6:0] stage1_pp3;
 
 assign stage1_pp0 [3:0] = { pp0[3] | pp1[3], pp0[2] | pp1[2], pp0[1] | pp1[1], pp0[0] | pp1[0]};
 
@@ -118,8 +118,8 @@ HA u_HA_1(
 
 // Stage 2
 
-wire stage2_pp0 [10:0];
-wire stage2_pp1 [8:0];
+wire [10:0] stage2_pp0;
+wire [8:0] stage2_pp1;
 
 
 
@@ -234,6 +234,7 @@ assign stage2_pp1[8] = stage1_pp0[10];
 
 
 // Stage 3
+// assign final_sum [5:0] = { stage2_pp0[1], stage2_pp0[0],  b[4], 3'b100 };
 assign final_sum [5:0] = { stage2_pp0[1], stage2_pp0[0], 4'b1000 };
 // assign final_sum [5:0] = { stage2_pp0[0], 5'b00000 };
 

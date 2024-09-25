@@ -22,22 +22,6 @@ VL_INLINE_OPT void VZero_ME_7_8___024root___ico_sequent__TOP__0(VZero_ME_7_8___0
     VZero_ME_7_8__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     VL_DEBUG_IF(VL_DBG_MSGF("+    VZero_ME_7_8___024root___ico_sequent__TOP__0\n"); );
     // Init
-    CData/*3:0*/ Zero_ME_7_8__DOT__pp0;
-    Zero_ME_7_8__DOT__pp0 = 0;
-    CData/*4:0*/ Zero_ME_7_8__DOT__pp1;
-    Zero_ME_7_8__DOT__pp1 = 0;
-    CData/*5:0*/ Zero_ME_7_8__DOT__pp2;
-    Zero_ME_7_8__DOT__pp2 = 0;
-    CData/*6:0*/ Zero_ME_7_8__DOT__pp3;
-    Zero_ME_7_8__DOT__pp3 = 0;
-    CData/*7:0*/ Zero_ME_7_8__DOT__pp4;
-    Zero_ME_7_8__DOT__pp4 = 0;
-    CData/*7:0*/ Zero_ME_7_8__DOT__pp5;
-    Zero_ME_7_8__DOT__pp5 = 0;
-    CData/*7:0*/ Zero_ME_7_8__DOT__pp6;
-    Zero_ME_7_8__DOT__pp6 = 0;
-    CData/*7:0*/ Zero_ME_7_8__DOT__pp7;
-    Zero_ME_7_8__DOT__pp7 = 0;
     CData/*0:0*/ Zero_ME_7_8__DOT__ECM_Carry;
     Zero_ME_7_8__DOT__ECM_Carry = 0;
     CData/*0:0*/ Zero_ME_7_8__DOT__exact_4to2_cout1;
@@ -108,10 +92,8 @@ VL_INLINE_OPT void VZero_ME_7_8___024root___ico_sequent__TOP__0(VZero_ME_7_8___0
     Zero_ME_7_8__DOT____Vcellinp__u_HA_1__x2 = 0;
     CData/*0:0*/ Zero_ME_7_8__DOT____Vcellinp__u_HA_1__x1;
     Zero_ME_7_8__DOT____Vcellinp__u_HA_1__x1 = 0;
-    CData/*0:0*/ Zero_ME_7_8__DOT____Vcellout__u_FA_stage2_1__carry;
-    Zero_ME_7_8__DOT____Vcellout__u_FA_stage2_1__carry = 0;
-    CData/*0:0*/ Zero_ME_7_8__DOT____Vcellout__u_FA_stage2_1__sum;
-    Zero_ME_7_8__DOT____Vcellout__u_FA_stage2_1__sum = 0;
+    CData/*0:0*/ Zero_ME_7_8__DOT____Vcellinp__u_FA_stage2_1__x3;
+    Zero_ME_7_8__DOT____Vcellinp__u_FA_stage2_1__x3 = 0;
     CData/*0:0*/ Zero_ME_7_8__DOT____Vcellout__u_only_dual_carry_compressor_1__C2;
     Zero_ME_7_8__DOT____Vcellout__u_only_dual_carry_compressor_1__C2 = 0;
     CData/*0:0*/ Zero_ME_7_8__DOT____Vcellout__u_only_dual_carry_compressor_1__C1;
@@ -124,6 +106,8 @@ VL_INLINE_OPT void VZero_ME_7_8___024root___ico_sequent__TOP__0(VZero_ME_7_8___0
     Zero_ME_7_8__DOT____Vcellout__u_only_dual_carry_compressor_3__C2 = 0;
     CData/*0:0*/ Zero_ME_7_8__DOT____Vcellout__u_only_dual_carry_compressor_3__C1;
     Zero_ME_7_8__DOT____Vcellout__u_only_dual_carry_compressor_3__C1 = 0;
+    CData/*0:0*/ Zero_ME_7_8__DOT____Vcellinp__u_only_dual_carry_compressor_3__x4;
+    Zero_ME_7_8__DOT____Vcellinp__u_only_dual_carry_compressor_3__x4 = 0;
     CData/*0:0*/ Zero_ME_7_8__DOT____Vcellout__u_FA_stage2_2__carry;
     Zero_ME_7_8__DOT____Vcellout__u_FA_stage2_2__carry = 0;
     CData/*0:0*/ Zero_ME_7_8__DOT____Vcellout__u_FA_stage2_2__sum;
@@ -140,22 +124,38 @@ VL_INLINE_OPT void VZero_ME_7_8___024root___ico_sequent__TOP__0(VZero_ME_7_8___0
     Zero_ME_7_8__DOT____Vcellout__u_exact_4to2_compressor_stage2_2__carry = 0;
     CData/*0:0*/ Zero_ME_7_8__DOT____Vcellout__u_exact_4to2_compressor_stage2_2__sum;
     Zero_ME_7_8__DOT____Vcellout__u_exact_4to2_compressor_stage2_2__sum = 0;
+    CData/*0:0*/ Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage2_2__x4;
+    Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage2_2__x4 = 0;
     CData/*0:0*/ Zero_ME_7_8__DOT__stage2_exact_4to2_cout3;
     Zero_ME_7_8__DOT__stage2_exact_4to2_cout3 = 0;
     CData/*0:0*/ Zero_ME_7_8__DOT____Vcellout__u_exact_4to2_compressor_stage2_3__carry;
     Zero_ME_7_8__DOT____Vcellout__u_exact_4to2_compressor_stage2_3__carry = 0;
     CData/*0:0*/ Zero_ME_7_8__DOT____Vcellout__u_exact_4to2_compressor_stage2_3__sum;
     Zero_ME_7_8__DOT____Vcellout__u_exact_4to2_compressor_stage2_3__sum = 0;
+    CData/*0:0*/ Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage2_3__x4;
+    Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage2_3__x4 = 0;
+    CData/*0:0*/ Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage2_3__x3;
+    Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage2_3__x3 = 0;
     CData/*0:0*/ Zero_ME_7_8__DOT__stage2_exact_4to2_cout4;
     Zero_ME_7_8__DOT__stage2_exact_4to2_cout4 = 0;
     CData/*0:0*/ Zero_ME_7_8__DOT____Vcellout__u_exact_4to2_compressor_stage2_4__carry;
     Zero_ME_7_8__DOT____Vcellout__u_exact_4to2_compressor_stage2_4__carry = 0;
     CData/*0:0*/ Zero_ME_7_8__DOT____Vcellout__u_exact_4to2_compressor_stage2_4__sum;
     Zero_ME_7_8__DOT____Vcellout__u_exact_4to2_compressor_stage2_4__sum = 0;
+    CData/*0:0*/ Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage2_4__x4;
+    Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage2_4__x4 = 0;
+    CData/*0:0*/ Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage2_4__x3;
+    Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage2_4__x3 = 0;
+    CData/*0:0*/ Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage2_4__x2;
+    Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage2_4__x2 = 0;
     CData/*0:0*/ Zero_ME_7_8__DOT____Vcellout__u_FA_stage2_3__carry;
     Zero_ME_7_8__DOT____Vcellout__u_FA_stage2_3__carry = 0;
     CData/*0:0*/ Zero_ME_7_8__DOT____Vcellout__u_FA_stage2_3__sum;
     Zero_ME_7_8__DOT____Vcellout__u_FA_stage2_3__sum = 0;
+    CData/*0:0*/ Zero_ME_7_8__DOT____Vcellinp__u_FA_stage2_3__x2;
+    Zero_ME_7_8__DOT____Vcellinp__u_FA_stage2_3__x2 = 0;
+    CData/*0:0*/ Zero_ME_7_8__DOT____Vcellinp__u_FA_stage2_3__x1;
+    Zero_ME_7_8__DOT____Vcellinp__u_FA_stage2_3__x1 = 0;
     CData/*0:0*/ Zero_ME_7_8__DOT__cout_HA_stage3_1;
     Zero_ME_7_8__DOT__cout_HA_stage3_1 = 0;
     CData/*0:0*/ Zero_ME_7_8__DOT__cout_FA_stage3_1;
@@ -172,14 +172,18 @@ VL_INLINE_OPT void VZero_ME_7_8___024root___ico_sequent__TOP__0(VZero_ME_7_8___0
     Zero_ME_7_8__DOT__cout_FA_stage3_6 = 0;
     CData/*0:0*/ Zero_ME_7_8__DOT__cout_FA_stage3_7;
     Zero_ME_7_8__DOT__cout_FA_stage3_7 = 0;
+    CData/*0:0*/ Zero_ME_7_8__DOT____Vcellinp__u_FA_stage3_8__x2;
+    Zero_ME_7_8__DOT____Vcellinp__u_FA_stage3_8__x2 = 0;
     CData/*0:0*/ Zero_ME_7_8__DOT____VdfgRegularize_h40bac332_0_12;
     Zero_ME_7_8__DOT____VdfgRegularize_h40bac332_0_12 = 0;
-    CData/*0:0*/ Zero_ME_7_8__DOT____VdfgRegularize_h40bac332_0_15;
-    Zero_ME_7_8__DOT____VdfgRegularize_h40bac332_0_15 = 0;
-    CData/*0:0*/ Zero_ME_7_8__DOT____VdfgRegularize_h40bac332_0_17;
-    Zero_ME_7_8__DOT____VdfgRegularize_h40bac332_0_17 = 0;
-    CData/*0:0*/ Zero_ME_7_8__DOT____VdfgRegularize_h40bac332_0_19;
-    Zero_ME_7_8__DOT____VdfgRegularize_h40bac332_0_19 = 0;
+    CData/*0:0*/ Zero_ME_7_8__DOT____VdfgRegularize_h40bac332_0_16;
+    Zero_ME_7_8__DOT____VdfgRegularize_h40bac332_0_16 = 0;
+    CData/*3:0*/ Zero_ME_7_8__DOT____VdfgRegularize_h40bac332_0_22;
+    Zero_ME_7_8__DOT____VdfgRegularize_h40bac332_0_22 = 0;
+    CData/*3:0*/ Zero_ME_7_8__DOT____VdfgRegularize_h40bac332_0_23;
+    Zero_ME_7_8__DOT____VdfgRegularize_h40bac332_0_23 = 0;
+    CData/*1:0*/ Zero_ME_7_8__DOT____VdfgRegularize_h40bac332_0_24;
+    Zero_ME_7_8__DOT____VdfgRegularize_h40bac332_0_24 = 0;
     CData/*0:0*/ Zero_ME_7_8__DOT__u_exact_4to2_compressor_stage1_1__DOT____VdfgRegularize_h0d3b8a33_0_0;
     Zero_ME_7_8__DOT__u_exact_4to2_compressor_stage1_1__DOT____VdfgRegularize_h0d3b8a33_0_0 = 0;
     CData/*0:0*/ Zero_ME_7_8__DOT__u_exact_4to2_compressor_stage1_2__DOT____VdfgRegularize_h0d3b8a33_0_0;
@@ -195,82 +199,145 @@ VL_INLINE_OPT void VZero_ME_7_8___024root___ico_sequent__TOP__0(VZero_ME_7_8___0
     CData/*0:0*/ Zero_ME_7_8__DOT__u_exact_4to2_compressor_stage2_4__DOT____VdfgRegularize_h0d3b8a33_0_0;
     Zero_ME_7_8__DOT__u_exact_4to2_compressor_stage2_4__DOT____VdfgRegularize_h0d3b8a33_0_0 = 0;
     // Body
-    Zero_ME_7_8__DOT__pp0 = (((IData)((((IData)(vlSelf->a) 
-                                        >> 7U) & (IData)(vlSelf->b))) 
-                              << 3U) | ((4U & (((IData)(vlSelf->a) 
-                                                >> 4U) 
-                                               & ((IData)(vlSelf->b) 
-                                                  << 2U))) 
-                                        | ((2U & (((IData)(vlSelf->a) 
-                                                   >> 4U) 
-                                                  & ((IData)(vlSelf->b) 
-                                                     << 1U))) 
-                                           | (1U & 
-                                              (((IData)(vlSelf->a) 
-                                                >> 4U) 
-                                               & (IData)(vlSelf->b))))));
+    Zero_ME_7_8__DOT____Vcellinp__u_FA_stage2_1__x3 
+        = (1U & ((IData)(vlSelf->a) & ((IData)(vlSelf->b) 
+                                       >> 4U)));
+    Zero_ME_7_8__DOT____Vcellinp__u_FA_stage3_8__x2 
+        = (1U & (((IData)(vlSelf->a) & (IData)(vlSelf->b)) 
+                 >> 7U));
+    Zero_ME_7_8__DOT____Vcellinp__u_FA_stage2_3__x1 
+        = (IData)((((IData)(vlSelf->a) >> 7U) & ((IData)(vlSelf->b) 
+                                                 >> 6U)));
+    Zero_ME_7_8__DOT____Vcellinp__u_FA_stage2_3__x2 
+        = (IData)((((IData)(vlSelf->a) >> 6U) & ((IData)(vlSelf->b) 
+                                                 >> 7U)));
+    Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage2_4__x4 
+        = (IData)((((IData)(vlSelf->a) >> 5U) & ((IData)(vlSelf->b) 
+                                                 >> 7U)));
+    Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage2_3__x4 
+        = (IData)((((IData)(vlSelf->a) >> 4U) & ((IData)(vlSelf->b) 
+                                                 >> 7U)));
+    Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage2_4__x2 
+        = (IData)((((IData)(vlSelf->a) >> 7U) & ((IData)(vlSelf->b) 
+                                                 >> 5U)));
+    Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage2_4__x3 
+        = (1U & (((IData)(vlSelf->a) & (IData)(vlSelf->b)) 
+                 >> 6U));
+    Zero_ME_7_8__DOT____Vcellout__u_only_dual_carry_compressor_1__C2 
+        = (1U & (IData)(((3U == (3U & (IData)(vlSelf->a))) 
+                         & (0x30U == (0x30U & (IData)(vlSelf->b))))));
+    Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage2_2__x4 
+        = (IData)((((IData)(vlSelf->a) >> 3U) & ((IData)(vlSelf->b) 
+                                                 >> 7U)));
+    Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage2_3__x3 
+        = (1U & (((IData)(vlSelf->a) >> 5U) & ((IData)(vlSelf->b) 
+                                               >> 6U)));
     Zero_ME_7_8__DOT____Vcellinp__u_FA_2__x1 = (IData)(
                                                        (((IData)(vlSelf->a) 
                                                          >> 7U) 
                                                         & ((IData)(vlSelf->b) 
                                                            >> 4U)));
-    Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_1__x4 
-        = (1U & (((IData)(vlSelf->a) & (IData)(vlSelf->b)) 
-                 >> 4U));
-    Zero_ME_7_8__DOT____VdfgRegularize_h40bac332_0_12 
-        = (1U & (((IData)(vlSelf->a) >> 3U) & ((IData)(vlSelf->b) 
-                                               >> 4U)));
-    Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_2__x4 
-        = (1U & (((IData)(vlSelf->a) >> 4U) & ((IData)(vlSelf->b) 
-                                               >> 5U)));
     Zero_ME_7_8__DOT____Vcellinp__u_FA_2__x2 = (1U 
                                                 & (((IData)(vlSelf->a) 
                                                     >> 6U) 
                                                    & ((IData)(vlSelf->b) 
                                                       >> 5U)));
-    Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x4 
-        = (1U & (((IData)(vlSelf->a) >> 4U) & ((IData)(vlSelf->b) 
-                                               >> 6U)));
-    Zero_ME_7_8__DOT____VdfgRegularize_h40bac332_0_15 
-        = (1U & (((IData)(vlSelf->a) >> 2U) & ((IData)(vlSelf->b) 
-                                               >> 5U)));
     Zero_ME_7_8__DOT____Vcellinp__u_HA_1__x1 = (1U 
                                                 & (((IData)(vlSelf->a) 
                                                     >> 3U) 
                                                    & ((IData)(vlSelf->b) 
                                                       >> 6U)));
-    Zero_ME_7_8__DOT____Vcellinp__u_FA_1__x1 = (1U 
-                                                & (((IData)(vlSelf->a) 
-                                                    >> 3U) 
-                                                   & ((IData)(vlSelf->b) 
-                                                      >> 5U)));
-    Zero_ME_7_8__DOT____VdfgRegularize_h40bac332_0_17 
-        = (1U & (((IData)(vlSelf->a) >> 1U) & ((IData)(vlSelf->b) 
-                                               >> 6U)));
-    Zero_ME_7_8__DOT____Vcellinp__u_FA_1__x2 = (1U 
-                                                & (((IData)(vlSelf->a) 
-                                                    >> 2U) 
-                                                   & ((IData)(vlSelf->b) 
-                                                      >> 6U)));
-    Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_2__x3 
-        = (1U & (((IData)(vlSelf->a) >> 5U) & ((IData)(vlSelf->b) 
-                                               >> 4U)));
     Zero_ME_7_8__DOT____Vcellinp__u_HA_1__x2 = (IData)(
                                                        (((IData)(vlSelf->a) 
                                                          >> 2U) 
                                                         & ((IData)(vlSelf->b) 
                                                            >> 7U)));
-    Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x2 
-        = (1U & (((IData)(vlSelf->a) >> 6U) & ((IData)(vlSelf->b) 
-                                               >> 4U)));
-    Zero_ME_7_8__DOT____VdfgRegularize_h40bac332_0_19 
-        = ((IData)(vlSelf->a) & ((IData)(vlSelf->b) 
-                                 >> 7U));
+    Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x4 
+        = (1U & (((IData)(vlSelf->a) >> 4U) & ((IData)(vlSelf->b) 
+                                               >> 6U)));
+    Zero_ME_7_8__DOT____VdfgRegularize_h40bac332_0_22 
+        = ((((IData)((((IData)(vlSelf->a) >> 7U) & (IData)(vlSelf->b))) 
+             << 3U) | ((4U & (((IData)(vlSelf->a) >> 4U) 
+                              & ((IData)(vlSelf->b) 
+                                 << 2U))) | ((2U & 
+                                              (((IData)(vlSelf->a) 
+                                                >> 4U) 
+                                               & ((IData)(vlSelf->b) 
+                                                  << 1U))) 
+                                             | (1U 
+                                                & (((IData)(vlSelf->a) 
+                                                    >> 4U) 
+                                                   & (IData)(vlSelf->b)))))) 
+           | ((8U & (((IData)(vlSelf->a) >> 3U) & ((IData)(vlSelf->b) 
+                                                   << 2U))) 
+              | ((4U & (((IData)(vlSelf->a) >> 3U) 
+                        & ((IData)(vlSelf->b) << 1U))) 
+                 | ((2U & (((IData)(vlSelf->a) >> 3U) 
+                           & (IData)(vlSelf->b))) | 
+                    (1U & (((IData)(vlSelf->a) >> 3U) 
+                           & ((IData)(vlSelf->b) >> 1U)))))));
+    Zero_ME_7_8__DOT____VdfgRegularize_h40bac332_0_23 
+        = (((8U & (((IData)(vlSelf->a) >> 2U) & ((IData)(vlSelf->b) 
+                                                 << 1U))) 
+            | ((4U & (((IData)(vlSelf->a) >> 2U) & (IData)(vlSelf->b))) 
+               | ((2U & (((IData)(vlSelf->a) >> 2U) 
+                         & ((IData)(vlSelf->b) >> 1U))) 
+                  | (1U & (((IData)(vlSelf->a) & (IData)(vlSelf->b)) 
+                           >> 2U))))) | ((8U & (((IData)(vlSelf->a) 
+                                                 >> 1U) 
+                                                & (IData)(vlSelf->b))) 
+                                         | ((4U & (
+                                                   ((IData)(vlSelf->a) 
+                                                    & (IData)(vlSelf->b)) 
+                                                   >> 1U)) 
+                                            | ((2U 
+                                                & (((IData)(vlSelf->a) 
+                                                    >> 1U) 
+                                                   & ((IData)(vlSelf->b) 
+                                                      >> 2U))) 
+                                               | (1U 
+                                                  & (((IData)(vlSelf->a) 
+                                                      >> 1U) 
+                                                     & ((IData)(vlSelf->b) 
+                                                        >> 3U)))))));
+    Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_1__x4 
+        = (1U & (((IData)(vlSelf->a) & (IData)(vlSelf->b)) 
+                 >> 4U));
+    Zero_ME_7_8__DOT____Vcellinp__u_FA_1__x1 = (1U 
+                                                & (((IData)(vlSelf->a) 
+                                                    >> 3U) 
+                                                   & ((IData)(vlSelf->b) 
+                                                      >> 5U)));
+    Zero_ME_7_8__DOT____Vcellinp__u_FA_1__x2 = (1U 
+                                                & (((IData)(vlSelf->a) 
+                                                    >> 2U) 
+                                                   & ((IData)(vlSelf->b) 
+                                                      >> 6U)));
     Zero_ME_7_8__DOT____Vcellinp__u_FA_1__x3 = (IData)(
                                                        (((IData)(vlSelf->a) 
                                                          >> 1U) 
                                                         & ((IData)(vlSelf->b) 
                                                            >> 7U)));
+    Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_2__x4 
+        = (1U & (((IData)(vlSelf->a) >> 4U) & ((IData)(vlSelf->b) 
+                                               >> 5U)));
+    Zero_ME_7_8__DOT____Vcellinp__u_only_dual_carry_compressor_3__x4 
+        = (1U & ((((IData)(vlSelf->a) >> 1U) & ((IData)(vlSelf->b) 
+                                                >> 6U)) 
+                 | ((IData)(vlSelf->a) & ((IData)(vlSelf->b) 
+                                          >> 7U))));
+    Zero_ME_7_8__DOT____VdfgRegularize_h40bac332_0_12 
+        = (1U & (((IData)(vlSelf->a) >> 3U) & ((IData)(vlSelf->b) 
+                                               >> 4U)));
+    Zero_ME_7_8__DOT____VdfgRegularize_h40bac332_0_16 
+        = (1U & (((IData)(vlSelf->a) >> 2U) & ((IData)(vlSelf->b) 
+                                               >> 5U)));
+    Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x1 
+        = (IData)((((IData)(vlSelf->a) >> 7U) & ((IData)(vlSelf->b) 
+                                                 >> 3U)));
+    Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x2 
+        = (1U & (((IData)(vlSelf->a) >> 6U) & ((IData)(vlSelf->b) 
+                                               >> 4U)));
     Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x3 
         = (1U & (((IData)(vlSelf->a) & (IData)(vlSelf->b)) 
                  >> 5U));
@@ -280,68 +347,34 @@ VL_INLINE_OPT void VZero_ME_7_8___024root___ico_sequent__TOP__0(VZero_ME_7_8___0
     Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_2__x2 
         = (1U & (((IData)(vlSelf->a) >> 6U) & ((IData)(vlSelf->b) 
                                                >> 3U)));
+    Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_2__x3 
+        = (1U & (((IData)(vlSelf->a) >> 5U) & ((IData)(vlSelf->b) 
+                                               >> 4U)));
     Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_1__x1 
         = (IData)((((IData)(vlSelf->a) >> 7U) & ((IData)(vlSelf->b) 
                                                  >> 1U)));
-    Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x1 
-        = (IData)((((IData)(vlSelf->a) >> 7U) & ((IData)(vlSelf->b) 
-                                                 >> 3U)));
     Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_1__x2 
         = (1U & (((IData)(vlSelf->a) >> 6U) & ((IData)(vlSelf->b) 
                                                >> 2U)));
     Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_1__x3 
         = (1U & (((IData)(vlSelf->a) >> 5U) & ((IData)(vlSelf->b) 
                                                >> 3U)));
-    Zero_ME_7_8__DOT__pp6 = (((IData)((((IData)(vlSelf->a) 
-                                        >> 7U) & ((IData)(vlSelf->b) 
-                                                  >> 6U))) 
-                              << 7U) | ((0x40U & ((IData)(vlSelf->a) 
-                                                  & (IData)(vlSelf->b))) 
-                                        | ((0x20U & 
-                                            ((IData)(vlSelf->a) 
-                                             & ((IData)(vlSelf->b) 
-                                                >> 1U))) 
-                                           | (((IData)(Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x4) 
-                                               << 4U) 
-                                              | (((IData)(Zero_ME_7_8__DOT____Vcellinp__u_HA_1__x1) 
-                                                  << 3U) 
-                                                 | (((IData)(Zero_ME_7_8__DOT____Vcellinp__u_FA_1__x2) 
-                                                     << 2U) 
-                                                    | (((IData)(Zero_ME_7_8__DOT____VdfgRegularize_h40bac332_0_17) 
-                                                        << 1U) 
-                                                       | (1U 
-                                                          & ((IData)(vlSelf->a) 
-                                                             & ((IData)(vlSelf->b) 
-                                                                >> 6U))))))))));
     Zero_ME_7_8__DOT____Vcellout__u_HA_1__sum = ((IData)(Zero_ME_7_8__DOT____Vcellinp__u_HA_1__x1) 
                                                  ^ (IData)(Zero_ME_7_8__DOT____Vcellinp__u_HA_1__x2));
     Zero_ME_7_8__DOT____Vcellout__u_HA_1__carry = ((IData)(Zero_ME_7_8__DOT____Vcellinp__u_HA_1__x1) 
                                                    & (IData)(Zero_ME_7_8__DOT____Vcellinp__u_HA_1__x2));
-    Zero_ME_7_8__DOT__pp4 = (((IData)(Zero_ME_7_8__DOT____Vcellinp__u_FA_2__x1) 
-                              << 7U) | (((IData)(Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x2) 
-                                         << 6U) | (
-                                                   ((IData)(Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_2__x3) 
-                                                    << 5U) 
-                                                   | (((IData)(Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_1__x4) 
-                                                       << 4U) 
-                                                      | (((IData)(Zero_ME_7_8__DOT____VdfgRegularize_h40bac332_0_12) 
-                                                          << 3U) 
-                                                         | ((4U 
-                                                             & ((IData)(vlSelf->a) 
-                                                                & ((IData)(vlSelf->b) 
-                                                                   >> 2U))) 
-                                                            | ((2U 
-                                                                & ((IData)(vlSelf->a) 
-                                                                   & ((IData)(vlSelf->b) 
-                                                                      >> 3U))) 
-                                                               | (1U 
-                                                                  & ((IData)(vlSelf->a) 
-                                                                     & ((IData)(vlSelf->b) 
-                                                                        >> 4U))))))))));
-    Zero_ME_7_8__DOT__ECM_Carry = (((IData)(Zero_ME_7_8__DOT____VdfgRegularize_h40bac332_0_12) 
-                                    | (IData)(Zero_ME_7_8__DOT____VdfgRegularize_h40bac332_0_15)) 
-                                   & ((IData)(Zero_ME_7_8__DOT____VdfgRegularize_h40bac332_0_17) 
-                                      | (IData)(Zero_ME_7_8__DOT____VdfgRegularize_h40bac332_0_19)));
+    Zero_ME_7_8__DOT____Vcellout__u_only_dual_carry_compressor_2__C1 
+        = (1U & (((IData)(Zero_ME_7_8__DOT____VdfgRegularize_h40bac332_0_22) 
+                  | (IData)(Zero_ME_7_8__DOT____VdfgRegularize_h40bac332_0_23)) 
+                 >> 2U));
+    Zero_ME_7_8__DOT____Vcellout__u_only_dual_carry_compressor_1__C1 
+        = (1U & (((IData)(Zero_ME_7_8__DOT____VdfgRegularize_h40bac332_0_22) 
+                  | (IData)(Zero_ME_7_8__DOT____VdfgRegularize_h40bac332_0_23)) 
+                 >> 1U));
+    Zero_ME_7_8__DOT____Vcellout__u_only_dual_carry_compressor_3__C1 
+        = (1U & (((IData)(Zero_ME_7_8__DOT____VdfgRegularize_h40bac332_0_22) 
+                  | (IData)(Zero_ME_7_8__DOT____VdfgRegularize_h40bac332_0_23)) 
+                 >> 3U));
     Zero_ME_7_8__DOT____Vcellout__u_FA_1__sum = ((IData)(Zero_ME_7_8__DOT____Vcellinp__u_FA_1__x1) 
                                                  ^ 
                                                  ((IData)(Zero_ME_7_8__DOT____Vcellinp__u_FA_1__x2) 
@@ -352,56 +385,29 @@ VL_INLINE_OPT void VZero_ME_7_8___024root___ico_sequent__TOP__0(VZero_ME_7_8___0
                                                    | (((IData)(Zero_ME_7_8__DOT____Vcellinp__u_FA_1__x2) 
                                                        | (IData)(Zero_ME_7_8__DOT____Vcellinp__u_FA_1__x1)) 
                                                       & (IData)(Zero_ME_7_8__DOT____Vcellinp__u_FA_1__x3)));
-    Zero_ME_7_8__DOT__pp7 = ((0x80U & ((IData)(vlSelf->a) 
-                                       & (IData)(vlSelf->b))) 
-                             | (((IData)((((IData)(vlSelf->a) 
-                                           >> 6U) & 
-                                          ((IData)(vlSelf->b) 
-                                           >> 7U))) 
-                                 << 6U) | (((IData)(
-                                                    (((IData)(vlSelf->a) 
-                                                      >> 5U) 
-                                                     & ((IData)(vlSelf->b) 
-                                                        >> 7U))) 
-                                            << 5U) 
-                                           | (((IData)(
-                                                       (((IData)(vlSelf->a) 
-                                                         >> 4U) 
-                                                        & ((IData)(vlSelf->b) 
-                                                           >> 7U))) 
-                                               << 4U) 
-                                              | (((IData)(
-                                                          (((IData)(vlSelf->a) 
-                                                            >> 3U) 
-                                                           & ((IData)(vlSelf->b) 
-                                                              >> 7U))) 
-                                                  << 3U) 
-                                                 | (((IData)(Zero_ME_7_8__DOT____Vcellinp__u_HA_1__x2) 
-                                                     << 2U) 
-                                                    | (((IData)(Zero_ME_7_8__DOT____Vcellinp__u_FA_1__x3) 
-                                                        << 1U) 
-                                                       | (IData)(Zero_ME_7_8__DOT____VdfgRegularize_h40bac332_0_19))))))));
-    Zero_ME_7_8__DOT__pp5 = (((IData)((((IData)(vlSelf->a) 
-                                        >> 7U) & ((IData)(vlSelf->b) 
-                                                  >> 5U))) 
-                              << 7U) | (((IData)(Zero_ME_7_8__DOT____Vcellinp__u_FA_2__x2) 
-                                         << 6U) | (
-                                                   ((IData)(Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x3) 
-                                                    << 5U) 
-                                                   | (((IData)(Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_2__x4) 
-                                                       << 4U) 
-                                                      | (((IData)(Zero_ME_7_8__DOT____Vcellinp__u_FA_1__x1) 
-                                                          << 3U) 
-                                                         | (((IData)(Zero_ME_7_8__DOT____VdfgRegularize_h40bac332_0_15) 
-                                                             << 2U) 
-                                                            | ((2U 
-                                                                & ((IData)(vlSelf->a) 
-                                                                   & ((IData)(vlSelf->b) 
-                                                                      >> 4U))) 
-                                                               | (1U 
-                                                                  & ((IData)(vlSelf->a) 
-                                                                     & ((IData)(vlSelf->b) 
-                                                                        >> 5U))))))))));
+    Zero_ME_7_8__DOT____VdfgRegularize_h40bac332_0_24 
+        = ((((IData)(Zero_ME_7_8__DOT____VdfgRegularize_h40bac332_0_12) 
+             << 1U) | (1U & (((IData)(vlSelf->a) >> 2U) 
+                             & ((IData)(vlSelf->b) 
+                                >> 4U)))) | (((IData)(Zero_ME_7_8__DOT____VdfgRegularize_h40bac332_0_16) 
+                                              << 1U) 
+                                             | (1U 
+                                                & (((IData)(vlSelf->a) 
+                                                    >> 1U) 
+                                                   & ((IData)(vlSelf->b) 
+                                                      >> 5U)))));
+    Zero_ME_7_8__DOT__ECM_Carry = (((IData)(Zero_ME_7_8__DOT____VdfgRegularize_h40bac332_0_12) 
+                                    | (IData)(Zero_ME_7_8__DOT____VdfgRegularize_h40bac332_0_16)) 
+                                   & (IData)(Zero_ME_7_8__DOT____Vcellinp__u_only_dual_carry_compressor_3__x4));
+    Zero_ME_7_8__DOT__exact_4to2_cout3 = (((IData)(Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x1) 
+                                           & (IData)(Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x2)) 
+                                          | ((IData)(Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x3) 
+                                             & ((IData)(Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x1) 
+                                                | (IData)(Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x2))));
+    Zero_ME_7_8__DOT__u_exact_4to2_compressor_stage1_3__DOT____VdfgRegularize_h0d3b8a33_0_0 
+        = ((IData)(Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x1) 
+           ^ ((IData)(Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x2) 
+              ^ (IData)(Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x3)));
     Zero_ME_7_8__DOT__exact_4to2_cout2 = (((IData)(Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_2__x1) 
                                            & (IData)(Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_2__x2)) 
                                           | ((IData)(Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_2__x3) 
@@ -411,168 +417,24 @@ VL_INLINE_OPT void VZero_ME_7_8___024root___ico_sequent__TOP__0(VZero_ME_7_8___0
         = ((IData)(Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_2__x1) 
            ^ ((IData)(Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_2__x2) 
               ^ (IData)(Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_2__x3)));
-    Zero_ME_7_8__DOT__pp1 = (((IData)(Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_1__x1) 
-                              << 4U) | ((8U & (((IData)(vlSelf->a) 
-                                                >> 3U) 
-                                               & ((IData)(vlSelf->b) 
-                                                  << 2U))) 
-                                        | ((4U & (((IData)(vlSelf->a) 
-                                                   >> 3U) 
-                                                  & ((IData)(vlSelf->b) 
-                                                     << 1U))) 
-                                           | ((2U & 
-                                               (((IData)(vlSelf->a) 
-                                                 >> 3U) 
-                                                & (IData)(vlSelf->b))) 
-                                              | (1U 
-                                                 & (((IData)(vlSelf->a) 
-                                                     >> 3U) 
-                                                    & ((IData)(vlSelf->b) 
-                                                       >> 1U)))))));
-    Zero_ME_7_8__DOT__u_exact_4to2_compressor_stage1_3__DOT____VdfgRegularize_h0d3b8a33_0_0 
-        = ((IData)(Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x1) 
-           ^ ((IData)(Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x2) 
-              ^ (IData)(Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x3)));
-    Zero_ME_7_8__DOT__exact_4to2_cout3 = (((IData)(Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x1) 
-                                           & (IData)(Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x2)) 
-                                          | ((IData)(Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x3) 
-                                             & ((IData)(Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x1) 
-                                                | (IData)(Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x2))));
-    Zero_ME_7_8__DOT__pp2 = (((IData)(Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_2__x1) 
-                              << 5U) | (((IData)(Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_1__x2) 
-                                         << 4U) | (
-                                                   (8U 
-                                                    & (((IData)(vlSelf->a) 
-                                                        >> 2U) 
-                                                       & ((IData)(vlSelf->b) 
-                                                          << 1U))) 
-                                                   | ((4U 
-                                                       & (((IData)(vlSelf->a) 
-                                                           >> 2U) 
-                                                          & (IData)(vlSelf->b))) 
-                                                      | ((2U 
-                                                          & (((IData)(vlSelf->a) 
-                                                              >> 2U) 
-                                                             & ((IData)(vlSelf->b) 
-                                                                >> 1U))) 
-                                                         | (1U 
-                                                            & (((IData)(vlSelf->a) 
-                                                                & (IData)(vlSelf->b)) 
-                                                               >> 2U)))))));
+    Zero_ME_7_8__DOT__u_exact_4to2_compressor_stage1_1__DOT____VdfgRegularize_h0d3b8a33_0_0 
+        = ((IData)(Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_1__x1) 
+           ^ ((IData)(Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_1__x2) 
+              ^ (IData)(Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_1__x3)));
     Zero_ME_7_8__DOT__exact_4to2_cout1 = (((IData)(Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_1__x1) 
                                            & (IData)(Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_1__x2)) 
                                           | ((IData)(Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_1__x3) 
                                              & ((IData)(Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_1__x1) 
                                                 | (IData)(Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_1__x2))));
-    Zero_ME_7_8__DOT__u_exact_4to2_compressor_stage1_1__DOT____VdfgRegularize_h0d3b8a33_0_0 
-        = ((IData)(Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_1__x1) 
-           ^ ((IData)(Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_1__x2) 
-              ^ (IData)(Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_1__x3)));
-    Zero_ME_7_8__DOT__pp3 = (((IData)(Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x1) 
-                              << 6U) | (((IData)(Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_2__x2) 
-                                         << 5U) | (
-                                                   ((IData)(Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_1__x3) 
-                                                    << 4U) 
-                                                   | ((8U 
-                                                       & (((IData)(vlSelf->a) 
-                                                           >> 1U) 
-                                                          & (IData)(vlSelf->b))) 
-                                                      | ((4U 
-                                                          & (((IData)(vlSelf->a) 
-                                                              & (IData)(vlSelf->b)) 
-                                                             >> 1U)) 
-                                                         | ((2U 
-                                                             & (((IData)(vlSelf->a) 
-                                                                 >> 1U) 
-                                                                & ((IData)(vlSelf->b) 
-                                                                   >> 2U))) 
-                                                            | (1U 
-                                                               & (((IData)(vlSelf->a) 
-                                                                   >> 1U) 
-                                                                  & ((IData)(vlSelf->b) 
-                                                                     >> 3U)))))))));
-    vlSelf->Zero_ME_7_8__DOT__stage1_pp3[1U] = (1U 
-                                                & (IData)(Zero_ME_7_8__DOT__pp6));
-    vlSelf->Zero_ME_7_8__DOT__stage1_pp2[8U] = (1U 
-                                                & ((IData)(Zero_ME_7_8__DOT__pp6) 
-                                                   >> 6U));
-    vlSelf->Zero_ME_7_8__DOT__stage1_pp2[7U] = (1U 
-                                                & ((IData)(Zero_ME_7_8__DOT__pp6) 
-                                                   >> 5U));
-    vlSelf->Zero_ME_7_8__DOT__stage1_pp0[9U] = (1U 
-                                                & ((IData)(Zero_ME_7_8__DOT__pp6) 
-                                                   >> 7U));
-    vlSelf->Zero_ME_7_8__DOT__stage1_pp3[3U] = Zero_ME_7_8__DOT____Vcellout__u_HA_1__sum;
-    vlSelf->Zero_ME_7_8__DOT__stage1_pp1[6U] = Zero_ME_7_8__DOT____Vcellout__u_HA_1__carry;
-    vlSelf->Zero_ME_7_8__DOT__stage1_pp2[1U] = (1U 
-                                                & ((IData)(Zero_ME_7_8__DOT__pp4) 
-                                                   >> 1U));
-    vlSelf->Zero_ME_7_8__DOT__stage1_pp2[0U] = (1U 
-                                                & (IData)(Zero_ME_7_8__DOT__pp4));
-    vlSelf->Zero_ME_7_8__DOT__stage1_pp1[4U] = Zero_ME_7_8__DOT____Vcellout__u_FA_1__sum;
-    vlSelf->Zero_ME_7_8__DOT__stage1_pp1[5U] = Zero_ME_7_8__DOT____Vcellout__u_FA_1__carry;
-    vlSelf->Zero_ME_7_8__DOT__stage1_pp3[6U] = (1U 
-                                                & ((IData)(Zero_ME_7_8__DOT__pp7) 
-                                                   >> 5U));
-    vlSelf->Zero_ME_7_8__DOT__stage1_pp3[5U] = (1U 
-                                                & ((IData)(Zero_ME_7_8__DOT__pp7) 
-                                                   >> 4U));
-    vlSelf->Zero_ME_7_8__DOT__stage1_pp3[4U] = (1U 
-                                                & ((IData)(Zero_ME_7_8__DOT__pp7) 
-                                                   >> 3U));
-    vlSelf->Zero_ME_7_8__DOT__stage1_pp3[2U] = (1U 
-                                                & (((IData)(Zero_ME_7_8__DOT__pp6) 
-                                                    >> 1U) 
-                                                   | (IData)(Zero_ME_7_8__DOT__pp7)));
-    vlSelf->Zero_ME_7_8__DOT__stage1_pp0[0xaU] = (1U 
-                                                  & ((IData)(Zero_ME_7_8__DOT__pp7) 
-                                                     >> 7U));
-    vlSelf->Zero_ME_7_8__DOT__stage1_pp1[9U] = (1U 
-                                                & ((IData)(Zero_ME_7_8__DOT__pp7) 
-                                                   >> 6U));
-    vlSelf->Zero_ME_7_8__DOT__stage1_pp3[0U] = (1U 
-                                                & (IData)(Zero_ME_7_8__DOT__pp5));
-    vlSelf->Zero_ME_7_8__DOT__stage1_pp2[3U] = (1U 
-                                                & (((IData)(Zero_ME_7_8__DOT__pp4) 
-                                                    >> 3U) 
-                                                   | ((IData)(Zero_ME_7_8__DOT__pp5) 
-                                                      >> 2U)));
-    vlSelf->Zero_ME_7_8__DOT__stage1_pp2[2U] = (1U 
-                                                & (((IData)(Zero_ME_7_8__DOT__pp4) 
-                                                    >> 2U) 
-                                                   | ((IData)(Zero_ME_7_8__DOT__pp5) 
-                                                      >> 1U)));
-    vlSelf->Zero_ME_7_8__DOT__stage1_pp1[8U] = (1U 
-                                                & ((IData)(Zero_ME_7_8__DOT__pp5) 
-                                                   >> 7U));
-    vlSelf->Zero_ME_7_8__DOT__stage1_pp0[3U] = (1U 
-                                                & (((IData)(Zero_ME_7_8__DOT__pp0) 
-                                                    >> 3U) 
-                                                   | ((IData)(Zero_ME_7_8__DOT__pp1) 
-                                                      >> 3U)));
-    vlSelf->Zero_ME_7_8__DOT__stage1_pp0[2U] = (1U 
-                                                & (((IData)(Zero_ME_7_8__DOT__pp0) 
-                                                    >> 2U) 
-                                                   | ((IData)(Zero_ME_7_8__DOT__pp1) 
-                                                      >> 2U)));
-    vlSelf->Zero_ME_7_8__DOT__stage1_pp0[1U] = (1U 
-                                                & (((IData)(Zero_ME_7_8__DOT__pp0) 
-                                                    >> 1U) 
-                                                   | ((IData)(Zero_ME_7_8__DOT__pp1) 
-                                                      >> 1U)));
-    vlSelf->Zero_ME_7_8__DOT__stage1_pp0[0U] = (1U 
-                                                & ((IData)(Zero_ME_7_8__DOT__pp0) 
-                                                   | (IData)(Zero_ME_7_8__DOT__pp1)));
-    Zero_ME_7_8__DOT____Vcellout__u_exact_4to2_compressor_stage1_3__sum 
-        = ((IData)(Zero_ME_7_8__DOT__u_exact_4to2_compressor_stage1_3__DOT____VdfgRegularize_h0d3b8a33_0_0) 
-           ^ ((IData)(Zero_ME_7_8__DOT__exact_4to2_cout2) 
-              ^ (IData)(Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x4)));
-    Zero_ME_7_8__DOT____Vcellout__u_exact_4to2_compressor_stage1_3__carry 
-        = (((IData)(Zero_ME_7_8__DOT__u_exact_4to2_compressor_stage1_3__DOT____VdfgRegularize_h0d3b8a33_0_0) 
-            & (IData)(Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x4)) 
-           | ((IData)(Zero_ME_7_8__DOT__exact_4to2_cout2) 
-              & ((IData)(Zero_ME_7_8__DOT__u_exact_4to2_compressor_stage1_3__DOT____VdfgRegularize_h0d3b8a33_0_0) 
-                 | (IData)(Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x4))));
+    Zero_ME_7_8__DOT__cout_HA_stage3_1 = ((IData)(Zero_ME_7_8__DOT____Vcellout__u_only_dual_carry_compressor_1__C1) 
+                                          & (IData)(Zero_ME_7_8__DOT____Vcellout__u_only_dual_carry_compressor_1__C2));
+    Zero_ME_7_8__DOT____Vcellout__u_only_dual_carry_compressor_3__C2 
+        = (((IData)(Zero_ME_7_8__DOT____VdfgRegularize_h40bac332_0_24) 
+            >> 1U) & (IData)(Zero_ME_7_8__DOT____Vcellinp__u_only_dual_carry_compressor_3__x4));
+    Zero_ME_7_8__DOT____Vcellout__u_only_dual_carry_compressor_2__C2 
+        = (1U & ((IData)(Zero_ME_7_8__DOT____VdfgRegularize_h40bac332_0_24) 
+                 & ((IData)(vlSelf->a) & ((IData)(vlSelf->b) 
+                                          >> 6U))));
     Zero_ME_7_8__DOT____Vcellout__u_FA_2__carry = (
                                                    ((IData)(Zero_ME_7_8__DOT____Vcellinp__u_FA_2__x1) 
                                                     & (IData)(Zero_ME_7_8__DOT____Vcellinp__u_FA_2__x2)) 
@@ -583,16 +445,16 @@ VL_INLINE_OPT void VZero_ME_7_8___024root___ico_sequent__TOP__0(VZero_ME_7_8___0
                                                  ^ 
                                                  ((IData)(Zero_ME_7_8__DOT____Vcellinp__u_FA_2__x2) 
                                                   ^ (IData)(Zero_ME_7_8__DOT__exact_4to2_cout3)));
-    Zero_ME_7_8__DOT____Vcellout__u_exact_4to2_compressor_stage1_2__sum 
-        = ((IData)(Zero_ME_7_8__DOT__u_exact_4to2_compressor_stage1_2__DOT____VdfgRegularize_h0d3b8a33_0_0) 
-           ^ ((IData)(Zero_ME_7_8__DOT__exact_4to2_cout1) 
-              ^ (IData)(Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_2__x4)));
-    Zero_ME_7_8__DOT____Vcellout__u_exact_4to2_compressor_stage1_2__carry 
-        = (((IData)(Zero_ME_7_8__DOT__u_exact_4to2_compressor_stage1_2__DOT____VdfgRegularize_h0d3b8a33_0_0) 
-            & (IData)(Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_2__x4)) 
-           | ((IData)(Zero_ME_7_8__DOT__exact_4to2_cout1) 
-              & ((IData)(Zero_ME_7_8__DOT__u_exact_4to2_compressor_stage1_2__DOT____VdfgRegularize_h0d3b8a33_0_0) 
-                 | (IData)(Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_2__x4))));
+    Zero_ME_7_8__DOT____Vcellout__u_exact_4to2_compressor_stage1_3__carry 
+        = (((IData)(Zero_ME_7_8__DOT__u_exact_4to2_compressor_stage1_3__DOT____VdfgRegularize_h0d3b8a33_0_0) 
+            & (IData)(Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x4)) 
+           | ((IData)(Zero_ME_7_8__DOT__exact_4to2_cout2) 
+              & ((IData)(Zero_ME_7_8__DOT__u_exact_4to2_compressor_stage1_3__DOT____VdfgRegularize_h0d3b8a33_0_0) 
+                 | (IData)(Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x4))));
+    Zero_ME_7_8__DOT____Vcellout__u_exact_4to2_compressor_stage1_3__sum 
+        = ((IData)(Zero_ME_7_8__DOT__u_exact_4to2_compressor_stage1_3__DOT____VdfgRegularize_h0d3b8a33_0_0) 
+           ^ ((IData)(Zero_ME_7_8__DOT__exact_4to2_cout2) 
+              ^ (IData)(Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x4)));
     Zero_ME_7_8__DOT____Vcellout__u_exact_4to2_compressor_stage1_1__sum 
         = ((IData)(Zero_ME_7_8__DOT__u_exact_4to2_compressor_stage1_1__DOT____VdfgRegularize_h0d3b8a33_0_0) 
            ^ ((IData)(Zero_ME_7_8__DOT__ECM_Carry) 
@@ -603,74 +465,39 @@ VL_INLINE_OPT void VZero_ME_7_8___024root___ico_sequent__TOP__0(VZero_ME_7_8___0
            | ((IData)(Zero_ME_7_8__DOT__ECM_Carry) 
               & ((IData)(Zero_ME_7_8__DOT__u_exact_4to2_compressor_stage1_1__DOT____VdfgRegularize_h0d3b8a33_0_0) 
                  | (IData)(Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_1__x4))));
-    vlSelf->Zero_ME_7_8__DOT__stage1_pp1[3U] = (1U 
-                                                & (((IData)(Zero_ME_7_8__DOT__pp2) 
-                                                    | (IData)(Zero_ME_7_8__DOT__pp3)) 
-                                                   >> 3U));
-    vlSelf->Zero_ME_7_8__DOT__stage1_pp1[2U] = (1U 
-                                                & (((IData)(Zero_ME_7_8__DOT__pp2) 
-                                                    | (IData)(Zero_ME_7_8__DOT__pp3)) 
-                                                   >> 2U));
-    vlSelf->Zero_ME_7_8__DOT__stage1_pp1[1U] = (1U 
-                                                & (((IData)(Zero_ME_7_8__DOT__pp2) 
-                                                    | (IData)(Zero_ME_7_8__DOT__pp3)) 
-                                                   >> 1U));
-    vlSelf->Zero_ME_7_8__DOT__stage1_pp1[0U] = (1U 
-                                                & ((IData)(Zero_ME_7_8__DOT__pp2) 
-                                                   | (IData)(Zero_ME_7_8__DOT__pp3)));
-    vlSelf->Zero_ME_7_8__DOT__stage1_pp2[6U] = Zero_ME_7_8__DOT____Vcellout__u_exact_4to2_compressor_stage1_3__sum;
-    vlSelf->Zero_ME_7_8__DOT__stage1_pp0[7U] = Zero_ME_7_8__DOT____Vcellout__u_exact_4to2_compressor_stage1_3__carry;
-    vlSelf->Zero_ME_7_8__DOT__stage1_pp0[8U] = Zero_ME_7_8__DOT____Vcellout__u_FA_2__carry;
-    vlSelf->Zero_ME_7_8__DOT__stage1_pp1[7U] = Zero_ME_7_8__DOT____Vcellout__u_FA_2__sum;
-    vlSelf->Zero_ME_7_8__DOT__stage1_pp2[5U] = Zero_ME_7_8__DOT____Vcellout__u_exact_4to2_compressor_stage1_2__sum;
-    Zero_ME_7_8__DOT__stage2_exact_4to2_cout2 = (((IData)(Zero_ME_7_8__DOT____Vcellout__u_exact_4to2_compressor_stage1_2__carry) 
-                                                  & (IData)(Zero_ME_7_8__DOT____Vcellout__u_HA_1__carry)) 
-                                                 | ((IData)(Zero_ME_7_8__DOT____Vcellout__u_exact_4to2_compressor_stage1_3__sum) 
-                                                    & ((IData)(Zero_ME_7_8__DOT____Vcellout__u_exact_4to2_compressor_stage1_2__carry) 
-                                                       | (IData)(Zero_ME_7_8__DOT____Vcellout__u_HA_1__carry))));
-    Zero_ME_7_8__DOT__u_exact_4to2_compressor_stage2_2__DOT____VdfgRegularize_h0d3b8a33_0_0 
-        = ((IData)(Zero_ME_7_8__DOT____Vcellout__u_exact_4to2_compressor_stage1_2__carry) 
-           ^ ((IData)(Zero_ME_7_8__DOT____Vcellout__u_HA_1__carry) 
-              ^ (IData)(Zero_ME_7_8__DOT____Vcellout__u_exact_4to2_compressor_stage1_3__sum)));
-    vlSelf->Zero_ME_7_8__DOT__stage1_pp0[6U] = Zero_ME_7_8__DOT____Vcellout__u_exact_4to2_compressor_stage1_2__carry;
-    vlSelf->Zero_ME_7_8__DOT__stage1_pp0[4U] = Zero_ME_7_8__DOT____Vcellout__u_exact_4to2_compressor_stage1_1__sum;
-    Zero_ME_7_8__DOT__stage2_exact_4to2_cout1 = (((IData)(Zero_ME_7_8__DOT____Vcellout__u_exact_4to2_compressor_stage1_1__carry) 
-                                                  & (IData)(Zero_ME_7_8__DOT____Vcellout__u_FA_1__carry)) 
-                                                 | ((IData)(Zero_ME_7_8__DOT____Vcellout__u_exact_4to2_compressor_stage1_2__sum) 
-                                                    & ((IData)(Zero_ME_7_8__DOT____Vcellout__u_exact_4to2_compressor_stage1_1__carry) 
-                                                       | (IData)(Zero_ME_7_8__DOT____Vcellout__u_FA_1__carry))));
-    Zero_ME_7_8__DOT__u_exact_4to2_compressor_stage2_1__DOT____VdfgRegularize_h0d3b8a33_0_0 
-        = ((IData)(Zero_ME_7_8__DOT____Vcellout__u_exact_4to2_compressor_stage1_1__carry) 
-           ^ ((IData)(Zero_ME_7_8__DOT____Vcellout__u_FA_1__carry) 
-              ^ (IData)(Zero_ME_7_8__DOT____Vcellout__u_exact_4to2_compressor_stage1_2__sum)));
-    vlSelf->Zero_ME_7_8__DOT__stage1_pp0[5U] = Zero_ME_7_8__DOT____Vcellout__u_exact_4to2_compressor_stage1_1__carry;
-    Zero_ME_7_8__DOT____Vcellout__u_exact_4to2_compressor_stage2_2__carry 
-        = (((IData)(Zero_ME_7_8__DOT__u_exact_4to2_compressor_stage2_2__DOT____VdfgRegularize_h0d3b8a33_0_0) 
-            & vlSelf->Zero_ME_7_8__DOT__stage1_pp3[4U]) 
-           | ((IData)(Zero_ME_7_8__DOT__stage2_exact_4to2_cout1) 
-              & ((IData)(Zero_ME_7_8__DOT__u_exact_4to2_compressor_stage2_2__DOT____VdfgRegularize_h0d3b8a33_0_0) 
-                 | vlSelf->Zero_ME_7_8__DOT__stage1_pp3
-                 [4U])));
-    Zero_ME_7_8__DOT____Vcellout__u_exact_4to2_compressor_stage2_2__sum 
-        = ((IData)(Zero_ME_7_8__DOT__u_exact_4to2_compressor_stage2_2__DOT____VdfgRegularize_h0d3b8a33_0_0) 
-           ^ ((IData)(Zero_ME_7_8__DOT__stage2_exact_4to2_cout1) 
-              ^ vlSelf->Zero_ME_7_8__DOT__stage1_pp3
-              [4U]));
-    Zero_ME_7_8__DOT____Vcellout__u_exact_4to2_compressor_stage2_1__carry 
-        = ((IData)(Zero_ME_7_8__DOT__u_exact_4to2_compressor_stage2_1__DOT____VdfgRegularize_h0d3b8a33_0_0) 
-           & (IData)(Zero_ME_7_8__DOT____Vcellout__u_HA_1__sum));
-    Zero_ME_7_8__DOT____Vcellout__u_exact_4to2_compressor_stage2_1__sum 
-        = ((IData)(Zero_ME_7_8__DOT__u_exact_4to2_compressor_stage2_1__DOT____VdfgRegularize_h0d3b8a33_0_0) 
-           ^ (IData)(Zero_ME_7_8__DOT____Vcellout__u_HA_1__sum));
-    Zero_ME_7_8__DOT____Vcellout__u_only_dual_carry_compressor_2__C1 
-        = (vlSelf->Zero_ME_7_8__DOT__stage1_pp0[2U] 
-           | vlSelf->Zero_ME_7_8__DOT__stage1_pp1[2U]);
-    Zero_ME_7_8__DOT____Vcellout__u_only_dual_carry_compressor_1__C1 
-        = (vlSelf->Zero_ME_7_8__DOT__stage1_pp0[1U] 
-           | vlSelf->Zero_ME_7_8__DOT__stage1_pp1[1U]);
-    Zero_ME_7_8__DOT____Vcellout__u_only_dual_carry_compressor_3__C1 
-        = (vlSelf->Zero_ME_7_8__DOT__stage1_pp0[3U] 
-           | vlSelf->Zero_ME_7_8__DOT__stage1_pp1[3U]);
+    Zero_ME_7_8__DOT____Vcellout__u_exact_4to2_compressor_stage1_2__carry 
+        = (((IData)(Zero_ME_7_8__DOT__u_exact_4to2_compressor_stage1_2__DOT____VdfgRegularize_h0d3b8a33_0_0) 
+            & (IData)(Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_2__x4)) 
+           | ((IData)(Zero_ME_7_8__DOT__exact_4to2_cout1) 
+              & ((IData)(Zero_ME_7_8__DOT__u_exact_4to2_compressor_stage1_2__DOT____VdfgRegularize_h0d3b8a33_0_0) 
+                 | (IData)(Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_2__x4))));
+    Zero_ME_7_8__DOT____Vcellout__u_exact_4to2_compressor_stage1_2__sum 
+        = ((IData)(Zero_ME_7_8__DOT__u_exact_4to2_compressor_stage1_2__DOT____VdfgRegularize_h0d3b8a33_0_0) 
+           ^ ((IData)(Zero_ME_7_8__DOT__exact_4to2_cout1) 
+              ^ (IData)(Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage1_2__x4)));
+    Zero_ME_7_8__DOT__cout_FA_stage3_1 = (((IData)(Zero_ME_7_8__DOT____Vcellout__u_only_dual_carry_compressor_2__C1) 
+                                           & (IData)(Zero_ME_7_8__DOT____Vcellout__u_only_dual_carry_compressor_2__C2)) 
+                                          | (((IData)(Zero_ME_7_8__DOT____Vcellout__u_only_dual_carry_compressor_2__C2) 
+                                              | (IData)(Zero_ME_7_8__DOT____Vcellout__u_only_dual_carry_compressor_2__C1)) 
+                                             & (IData)(Zero_ME_7_8__DOT__cout_HA_stage3_1)));
+    Zero_ME_7_8__DOT__stage2_exact_4to2_cout4 = (((IData)(Zero_ME_7_8__DOT____Vcellout__u_FA_2__carry) 
+                                                  & (IData)(Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage2_4__x2)) 
+                                                 | ((IData)(Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage2_4__x3) 
+                                                    & ((IData)(Zero_ME_7_8__DOT____Vcellout__u_FA_2__carry) 
+                                                       | (IData)(Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage2_4__x2))));
+    Zero_ME_7_8__DOT__u_exact_4to2_compressor_stage2_4__DOT____VdfgRegularize_h0d3b8a33_0_0 
+        = ((IData)(Zero_ME_7_8__DOT____Vcellout__u_FA_2__carry) 
+           ^ ((IData)(Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage2_4__x2) 
+              ^ (IData)(Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage2_4__x3)));
+    Zero_ME_7_8__DOT__stage2_exact_4to2_cout3 = (((IData)(Zero_ME_7_8__DOT____Vcellout__u_exact_4to2_compressor_stage1_3__carry) 
+                                                  & (IData)(Zero_ME_7_8__DOT____Vcellout__u_FA_2__sum)) 
+                                                 | ((IData)(Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage2_3__x3) 
+                                                    & ((IData)(Zero_ME_7_8__DOT____Vcellout__u_exact_4to2_compressor_stage1_3__carry) 
+                                                       | (IData)(Zero_ME_7_8__DOT____Vcellout__u_FA_2__sum))));
+    Zero_ME_7_8__DOT__u_exact_4to2_compressor_stage2_3__DOT____VdfgRegularize_h0d3b8a33_0_0 
+        = ((IData)(Zero_ME_7_8__DOT____Vcellout__u_exact_4to2_compressor_stage1_3__carry) 
+           ^ ((IData)(Zero_ME_7_8__DOT____Vcellout__u_FA_2__sum) 
+              ^ (IData)(Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage2_3__x3)));
     Zero_ME_7_8__DOT____Vcellout__u_FA_stage2_2__carry 
         = (((IData)(Zero_ME_7_8__DOT____Vcellout__u_exact_4to2_compressor_stage1_1__sum) 
             & (IData)(Zero_ME_7_8__DOT____Vcellout__u_FA_1__sum)) 
@@ -681,99 +508,75 @@ VL_INLINE_OPT void VZero_ME_7_8___024root___ico_sequent__TOP__0(VZero_ME_7_8___0
         = ((IData)(Zero_ME_7_8__DOT____Vcellout__u_exact_4to2_compressor_stage1_1__sum) 
            ^ ((IData)(Zero_ME_7_8__DOT____Vcellout__u_FA_1__sum) 
               ^ (IData)(Zero_ME_7_8__DOT____Vcellout__u_only_dual_carry_compressor_3__C1)));
-    vlSelf->Zero_ME_7_8__DOT__stage1_pp2[4U] = Zero_ME_7_8__DOT____Vcellout__u_only_dual_carry_compressor_3__C1;
-    Zero_ME_7_8__DOT____Vcellout__u_FA_stage2_1__carry 
-        = ((vlSelf->Zero_ME_7_8__DOT__stage1_pp0[0U] 
-            & vlSelf->Zero_ME_7_8__DOT__stage1_pp1[0U]) 
-           | ((vlSelf->Zero_ME_7_8__DOT__stage1_pp1
-               [0U] & vlSelf->Zero_ME_7_8__DOT__stage1_pp2
-               [0U]) | (vlSelf->Zero_ME_7_8__DOT__stage1_pp0
-                        [0U] & vlSelf->Zero_ME_7_8__DOT__stage1_pp2
-                        [0U])));
-    Zero_ME_7_8__DOT____Vcellout__u_FA_stage2_1__sum 
-        = (vlSelf->Zero_ME_7_8__DOT__stage1_pp0[0U] 
-           ^ (vlSelf->Zero_ME_7_8__DOT__stage1_pp1[0U] 
-              ^ vlSelf->Zero_ME_7_8__DOT__stage1_pp2
-              [0U]));
-    Zero_ME_7_8__DOT__stage2_exact_4to2_cout4 = (((IData)(Zero_ME_7_8__DOT____Vcellout__u_FA_2__carry) 
-                                                  & vlSelf->Zero_ME_7_8__DOT__stage1_pp1
-                                                  [8U]) 
-                                                 | (vlSelf->Zero_ME_7_8__DOT__stage1_pp2
-                                                    [8U] 
-                                                    & ((IData)(Zero_ME_7_8__DOT____Vcellout__u_FA_2__carry) 
-                                                       | vlSelf->Zero_ME_7_8__DOT__stage1_pp1
-                                                       [8U])));
-    Zero_ME_7_8__DOT__stage2_exact_4to2_cout3 = (((IData)(Zero_ME_7_8__DOT____Vcellout__u_exact_4to2_compressor_stage1_3__carry) 
-                                                  & (IData)(Zero_ME_7_8__DOT____Vcellout__u_FA_2__sum)) 
-                                                 | (vlSelf->Zero_ME_7_8__DOT__stage1_pp2
-                                                    [7U] 
-                                                    & ((IData)(Zero_ME_7_8__DOT____Vcellout__u_exact_4to2_compressor_stage1_3__carry) 
-                                                       | (IData)(Zero_ME_7_8__DOT____Vcellout__u_FA_2__sum))));
-    Zero_ME_7_8__DOT__u_exact_4to2_compressor_stage2_4__DOT____VdfgRegularize_h0d3b8a33_0_0 
-        = ((IData)(Zero_ME_7_8__DOT____Vcellout__u_FA_2__carry) 
-           ^ (vlSelf->Zero_ME_7_8__DOT__stage1_pp1[8U] 
-              ^ vlSelf->Zero_ME_7_8__DOT__stage1_pp2
-              [8U]));
-    Zero_ME_7_8__DOT____Vcellout__u_only_dual_carry_compressor_3__C2 
-        = (vlSelf->Zero_ME_7_8__DOT__stage1_pp2[3U] 
-           & vlSelf->Zero_ME_7_8__DOT__stage1_pp3[2U]);
-    Zero_ME_7_8__DOT__u_exact_4to2_compressor_stage2_3__DOT____VdfgRegularize_h0d3b8a33_0_0 
-        = ((IData)(Zero_ME_7_8__DOT____Vcellout__u_exact_4to2_compressor_stage1_3__carry) 
-           ^ ((IData)(Zero_ME_7_8__DOT____Vcellout__u_FA_2__sum) 
-              ^ vlSelf->Zero_ME_7_8__DOT__stage1_pp2
-              [7U]));
-    Zero_ME_7_8__DOT____Vcellout__u_only_dual_carry_compressor_2__C2 
-        = (vlSelf->Zero_ME_7_8__DOT__stage1_pp2[2U] 
-           & vlSelf->Zero_ME_7_8__DOT__stage1_pp3[1U]);
-    Zero_ME_7_8__DOT____Vcellout__u_only_dual_carry_compressor_1__C2 
-        = (vlSelf->Zero_ME_7_8__DOT__stage1_pp2[1U] 
-           & vlSelf->Zero_ME_7_8__DOT__stage1_pp3[0U]);
+    Zero_ME_7_8__DOT__stage2_exact_4to2_cout2 = (((IData)(Zero_ME_7_8__DOT____Vcellout__u_exact_4to2_compressor_stage1_2__carry) 
+                                                  & (IData)(Zero_ME_7_8__DOT____Vcellout__u_HA_1__carry)) 
+                                                 | ((IData)(Zero_ME_7_8__DOT____Vcellout__u_exact_4to2_compressor_stage1_3__sum) 
+                                                    & ((IData)(Zero_ME_7_8__DOT____Vcellout__u_exact_4to2_compressor_stage1_2__carry) 
+                                                       | (IData)(Zero_ME_7_8__DOT____Vcellout__u_HA_1__carry))));
+    Zero_ME_7_8__DOT__u_exact_4to2_compressor_stage2_2__DOT____VdfgRegularize_h0d3b8a33_0_0 
+        = ((IData)(Zero_ME_7_8__DOT____Vcellout__u_exact_4to2_compressor_stage1_2__carry) 
+           ^ ((IData)(Zero_ME_7_8__DOT____Vcellout__u_HA_1__carry) 
+              ^ (IData)(Zero_ME_7_8__DOT____Vcellout__u_exact_4to2_compressor_stage1_3__sum)));
+    Zero_ME_7_8__DOT__stage2_exact_4to2_cout1 = (((IData)(Zero_ME_7_8__DOT____Vcellout__u_exact_4to2_compressor_stage1_1__carry) 
+                                                  & (IData)(Zero_ME_7_8__DOT____Vcellout__u_FA_1__carry)) 
+                                                 | ((IData)(Zero_ME_7_8__DOT____Vcellout__u_exact_4to2_compressor_stage1_2__sum) 
+                                                    & ((IData)(Zero_ME_7_8__DOT____Vcellout__u_exact_4to2_compressor_stage1_1__carry) 
+                                                       | (IData)(Zero_ME_7_8__DOT____Vcellout__u_FA_1__carry))));
+    Zero_ME_7_8__DOT__u_exact_4to2_compressor_stage2_1__DOT____VdfgRegularize_h0d3b8a33_0_0 
+        = ((IData)(Zero_ME_7_8__DOT____Vcellout__u_exact_4to2_compressor_stage1_1__carry) 
+           ^ ((IData)(Zero_ME_7_8__DOT____Vcellout__u_FA_1__carry) 
+              ^ (IData)(Zero_ME_7_8__DOT____Vcellout__u_exact_4to2_compressor_stage1_2__sum)));
     Zero_ME_7_8__DOT____Vcellout__u_FA_stage2_3__carry 
-        = ((vlSelf->Zero_ME_7_8__DOT__stage1_pp0[9U] 
-            & vlSelf->Zero_ME_7_8__DOT__stage1_pp1[9U]) 
-           | ((vlSelf->Zero_ME_7_8__DOT__stage1_pp1
-               [9U] | vlSelf->Zero_ME_7_8__DOT__stage1_pp0
-               [9U]) & (IData)(Zero_ME_7_8__DOT__stage2_exact_4to2_cout4)));
+        = (((IData)(Zero_ME_7_8__DOT____Vcellinp__u_FA_stage2_3__x1) 
+            & (IData)(Zero_ME_7_8__DOT____Vcellinp__u_FA_stage2_3__x2)) 
+           | (((IData)(Zero_ME_7_8__DOT____Vcellinp__u_FA_stage2_3__x2) 
+               | (IData)(Zero_ME_7_8__DOT____Vcellinp__u_FA_stage2_3__x1)) 
+              & (IData)(Zero_ME_7_8__DOT__stage2_exact_4to2_cout4)));
     Zero_ME_7_8__DOT____Vcellout__u_FA_stage2_3__sum 
-        = (vlSelf->Zero_ME_7_8__DOT__stage1_pp0[9U] 
-           ^ (vlSelf->Zero_ME_7_8__DOT__stage1_pp1[9U] 
+        = ((IData)(Zero_ME_7_8__DOT____Vcellinp__u_FA_stage2_3__x1) 
+           ^ ((IData)(Zero_ME_7_8__DOT____Vcellinp__u_FA_stage2_3__x2) 
               ^ (IData)(Zero_ME_7_8__DOT__stage2_exact_4to2_cout4)));
     Zero_ME_7_8__DOT____Vcellout__u_exact_4to2_compressor_stage2_4__carry 
         = (((IData)(Zero_ME_7_8__DOT__u_exact_4to2_compressor_stage2_4__DOT____VdfgRegularize_h0d3b8a33_0_0) 
-            & vlSelf->Zero_ME_7_8__DOT__stage1_pp3[6U]) 
+            & (IData)(Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage2_4__x4)) 
            | ((IData)(Zero_ME_7_8__DOT__stage2_exact_4to2_cout3) 
               & ((IData)(Zero_ME_7_8__DOT__u_exact_4to2_compressor_stage2_4__DOT____VdfgRegularize_h0d3b8a33_0_0) 
-                 | vlSelf->Zero_ME_7_8__DOT__stage1_pp3
-                 [6U])));
+                 | (IData)(Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage2_4__x4))));
     Zero_ME_7_8__DOT____Vcellout__u_exact_4to2_compressor_stage2_4__sum 
         = ((IData)(Zero_ME_7_8__DOT__u_exact_4to2_compressor_stage2_4__DOT____VdfgRegularize_h0d3b8a33_0_0) 
            ^ ((IData)(Zero_ME_7_8__DOT__stage2_exact_4to2_cout3) 
-              ^ vlSelf->Zero_ME_7_8__DOT__stage1_pp3
-              [6U]));
-    Zero_ME_7_8__DOT____Vcellout__u_exact_4to2_compressor_stage2_3__carry 
-        = (((IData)(Zero_ME_7_8__DOT__u_exact_4to2_compressor_stage2_3__DOT____VdfgRegularize_h0d3b8a33_0_0) 
-            & vlSelf->Zero_ME_7_8__DOT__stage1_pp3[5U]) 
-           | ((IData)(Zero_ME_7_8__DOT__stage2_exact_4to2_cout2) 
-              & ((IData)(Zero_ME_7_8__DOT__u_exact_4to2_compressor_stage2_3__DOT____VdfgRegularize_h0d3b8a33_0_0) 
-                 | vlSelf->Zero_ME_7_8__DOT__stage1_pp3
-                 [5U])));
-    Zero_ME_7_8__DOT____Vcellout__u_exact_4to2_compressor_stage2_3__sum 
-        = ((IData)(Zero_ME_7_8__DOT__u_exact_4to2_compressor_stage2_3__DOT____VdfgRegularize_h0d3b8a33_0_0) 
-           ^ ((IData)(Zero_ME_7_8__DOT__stage2_exact_4to2_cout2) 
-              ^ vlSelf->Zero_ME_7_8__DOT__stage1_pp3
-              [5U]));
-    Zero_ME_7_8__DOT__cout_HA_stage3_1 = ((IData)(Zero_ME_7_8__DOT____Vcellout__u_only_dual_carry_compressor_1__C1) 
-                                          & (IData)(Zero_ME_7_8__DOT____Vcellout__u_only_dual_carry_compressor_1__C2));
-    Zero_ME_7_8__DOT__cout_FA_stage3_1 = (((IData)(Zero_ME_7_8__DOT____Vcellout__u_only_dual_carry_compressor_2__C1) 
-                                           & (IData)(Zero_ME_7_8__DOT____Vcellout__u_only_dual_carry_compressor_2__C2)) 
-                                          | (((IData)(Zero_ME_7_8__DOT____Vcellout__u_only_dual_carry_compressor_2__C2) 
-                                              | (IData)(Zero_ME_7_8__DOT____Vcellout__u_only_dual_carry_compressor_2__C1)) 
-                                             & (IData)(Zero_ME_7_8__DOT__cout_HA_stage3_1)));
+              ^ (IData)(Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage2_4__x4)));
     Zero_ME_7_8__DOT__cout_FA_stage3_2 = (((IData)(Zero_ME_7_8__DOT____Vcellout__u_FA_stage2_2__sum) 
                                            & (IData)(Zero_ME_7_8__DOT____Vcellout__u_only_dual_carry_compressor_3__C2)) 
                                           | (((IData)(Zero_ME_7_8__DOT____Vcellout__u_only_dual_carry_compressor_3__C2) 
                                               | (IData)(Zero_ME_7_8__DOT____Vcellout__u_FA_stage2_2__sum)) 
                                              & (IData)(Zero_ME_7_8__DOT__cout_FA_stage3_1)));
+    Zero_ME_7_8__DOT____Vcellout__u_exact_4to2_compressor_stage2_3__carry 
+        = (((IData)(Zero_ME_7_8__DOT__u_exact_4to2_compressor_stage2_3__DOT____VdfgRegularize_h0d3b8a33_0_0) 
+            & (IData)(Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage2_3__x4)) 
+           | ((IData)(Zero_ME_7_8__DOT__stage2_exact_4to2_cout2) 
+              & ((IData)(Zero_ME_7_8__DOT__u_exact_4to2_compressor_stage2_3__DOT____VdfgRegularize_h0d3b8a33_0_0) 
+                 | (IData)(Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage2_3__x4))));
+    Zero_ME_7_8__DOT____Vcellout__u_exact_4to2_compressor_stage2_3__sum 
+        = ((IData)(Zero_ME_7_8__DOT__u_exact_4to2_compressor_stage2_3__DOT____VdfgRegularize_h0d3b8a33_0_0) 
+           ^ ((IData)(Zero_ME_7_8__DOT__stage2_exact_4to2_cout2) 
+              ^ (IData)(Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage2_3__x4)));
+    Zero_ME_7_8__DOT____Vcellout__u_exact_4to2_compressor_stage2_2__carry 
+        = (((IData)(Zero_ME_7_8__DOT__u_exact_4to2_compressor_stage2_2__DOT____VdfgRegularize_h0d3b8a33_0_0) 
+            & (IData)(Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage2_2__x4)) 
+           | ((IData)(Zero_ME_7_8__DOT__stage2_exact_4to2_cout1) 
+              & ((IData)(Zero_ME_7_8__DOT__u_exact_4to2_compressor_stage2_2__DOT____VdfgRegularize_h0d3b8a33_0_0) 
+                 | (IData)(Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage2_2__x4))));
+    Zero_ME_7_8__DOT____Vcellout__u_exact_4to2_compressor_stage2_2__sum 
+        = ((IData)(Zero_ME_7_8__DOT__u_exact_4to2_compressor_stage2_2__DOT____VdfgRegularize_h0d3b8a33_0_0) 
+           ^ ((IData)(Zero_ME_7_8__DOT__stage2_exact_4to2_cout1) 
+              ^ (IData)(Zero_ME_7_8__DOT____Vcellinp__u_exact_4to2_compressor_stage2_2__x4)));
+    Zero_ME_7_8__DOT____Vcellout__u_exact_4to2_compressor_stage2_1__carry 
+        = ((IData)(Zero_ME_7_8__DOT__u_exact_4to2_compressor_stage2_1__DOT____VdfgRegularize_h0d3b8a33_0_0) 
+           & (IData)(Zero_ME_7_8__DOT____Vcellout__u_HA_1__sum));
+    Zero_ME_7_8__DOT____Vcellout__u_exact_4to2_compressor_stage2_1__sum 
+        = ((IData)(Zero_ME_7_8__DOT__u_exact_4to2_compressor_stage2_1__DOT____VdfgRegularize_h0d3b8a33_0_0) 
+           ^ (IData)(Zero_ME_7_8__DOT____Vcellout__u_HA_1__sum));
     Zero_ME_7_8__DOT__cout_FA_stage3_3 = (((IData)(Zero_ME_7_8__DOT____Vcellout__u_FA_stage2_2__carry) 
                                            & (IData)(Zero_ME_7_8__DOT____Vcellout__u_exact_4to2_compressor_stage2_1__sum)) 
                                           | (((IData)(Zero_ME_7_8__DOT____Vcellout__u_exact_4to2_compressor_stage2_1__sum) 
@@ -799,15 +602,13 @@ VL_INLINE_OPT void VZero_ME_7_8___024root___ico_sequent__TOP__0(VZero_ME_7_8___0
                                           | (((IData)(Zero_ME_7_8__DOT____Vcellout__u_FA_stage2_3__sum) 
                                               | (IData)(Zero_ME_7_8__DOT____Vcellout__u_exact_4to2_compressor_stage2_4__carry)) 
                                              & (IData)(Zero_ME_7_8__DOT__cout_FA_stage3_6)));
-    vlSelf->final_sum = (8U | (((((IData)(Zero_ME_7_8__DOT____Vcellout__u_FA_stage2_3__carry) 
-                                  & vlSelf->Zero_ME_7_8__DOT__stage1_pp0
-                                  [0xaU]) | ((vlSelf->Zero_ME_7_8__DOT__stage1_pp0
-                                              [0xaU] 
-                                              | (IData)(Zero_ME_7_8__DOT____Vcellout__u_FA_stage2_3__carry)) 
-                                             & (IData)(Zero_ME_7_8__DOT__cout_FA_stage3_7))) 
+    vlSelf->final_sum = (4U | (((((IData)(Zero_ME_7_8__DOT____Vcellout__u_FA_stage2_3__carry) 
+                                  & (IData)(Zero_ME_7_8__DOT____Vcellinp__u_FA_stage3_8__x2)) 
+                                 | (((IData)(Zero_ME_7_8__DOT____Vcellinp__u_FA_stage3_8__x2) 
+                                     | (IData)(Zero_ME_7_8__DOT____Vcellout__u_FA_stage2_3__carry)) 
+                                    & (IData)(Zero_ME_7_8__DOT__cout_FA_stage3_7))) 
                                 << 0xfU) | ((((IData)(Zero_ME_7_8__DOT____Vcellout__u_FA_stage2_3__carry) 
-                                              ^ (vlSelf->Zero_ME_7_8__DOT__stage1_pp0
-                                                 [0xaU] 
+                                              ^ ((IData)(Zero_ME_7_8__DOT____Vcellinp__u_FA_stage3_8__x2) 
                                                  ^ (IData)(Zero_ME_7_8__DOT__cout_FA_stage3_7))) 
                                              << 0xeU) 
                                             | ((((IData)(Zero_ME_7_8__DOT____Vcellout__u_exact_4to2_compressor_stage2_4__carry) 
@@ -848,10 +649,22 @@ VL_INLINE_OPT void VZero_ME_7_8___024root___ico_sequent__TOP__0(VZero_ME_7_8___0
                                                                  | ((((IData)(Zero_ME_7_8__DOT____Vcellout__u_only_dual_carry_compressor_1__C1) 
                                                                       ^ (IData)(Zero_ME_7_8__DOT____Vcellout__u_only_dual_carry_compressor_1__C2)) 
                                                                      << 6U) 
-                                                                    | (((IData)(Zero_ME_7_8__DOT____Vcellout__u_FA_stage2_1__carry) 
-                                                                        << 5U) 
-                                                                       | ((IData)(Zero_ME_7_8__DOT____Vcellout__u_FA_stage2_1__sum) 
-                                                                          << 4U)))))))))))));
+                                                                    | (((0x20U 
+                                                                         & ((((IData)(Zero_ME_7_8__DOT____VdfgRegularize_h40bac332_0_22) 
+                                                                              & (IData)(Zero_ME_7_8__DOT____VdfgRegularize_h40bac332_0_23)) 
+                                                                             | (((IData)(Zero_ME_7_8__DOT____VdfgRegularize_h40bac332_0_23) 
+                                                                                | (IData)(Zero_ME_7_8__DOT____VdfgRegularize_h40bac332_0_22)) 
+                                                                                & (IData)(Zero_ME_7_8__DOT____Vcellinp__u_FA_stage2_1__x3))) 
+                                                                            << 5U)) 
+                                                                        | (0x10U 
+                                                                           & (((IData)(Zero_ME_7_8__DOT____VdfgRegularize_h40bac332_0_22) 
+                                                                               ^ 
+                                                                               ((IData)(Zero_ME_7_8__DOT____VdfgRegularize_h40bac332_0_23) 
+                                                                                ^ (IData)(Zero_ME_7_8__DOT____Vcellinp__u_FA_stage2_1__x3))) 
+                                                                              << 4U))) 
+                                                                       | (8U 
+                                                                          & ((IData)(vlSelf->b) 
+                                                                             >> 1U))))))))))))));
 }
 
 void VZero_ME_7_8___024root___eval_triggers__ico(VZero_ME_7_8___024root* vlSelf);

@@ -54,8 +54,8 @@ int main(int argc, char** argv) {
 
     // Calculate mean error
     double mean_error = static_cast<double>(total_error) / num_tests;
-    // long double MRED = total_RED / 65025.0;
-    long double MRED = total_RED / 65536.0;
+    long double MRED = total_RED / 65025.0;
+    // long double MRED = total_RED / 65536.0;
 
 
     // Print final statistics

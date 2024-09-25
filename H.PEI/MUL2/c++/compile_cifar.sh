@@ -26,18 +26,18 @@ clang++ -std=c++20 \
     $OPENCV_CFLAGS \
     -I$VERILATOR_OBJ_DIR \
     -I$VERILATOR_INCLUDE_DIR \
-    image_processing.cpp \
-    $VERILATOR_OBJ_DIR/VMUL4__ALL.cpp \
+    image_processing_cifar.cpp \
+    $VERILATOR_OBJ_DIR/VMUL2__ALL.cpp \
     $VERILATED_CPP \
     $VERILATED_THREADS_CPP \
     $VERILATED_TIMING_CPP \
-    -o image_processing \
+    -o image_processing_cifar \
     $OPENCV_LIBS \
     -lpthread
 
 # 检查编译是否成功
 if [ $? -eq 0 ]; then
-    echo "Compilation successful. Executable 'image_processing' created."
+    echo "Compilation successful. Executable 'image_processing_cifar' created."
 else
     echo "Compilation failed."
 fi

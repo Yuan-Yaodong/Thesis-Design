@@ -33,10 +33,10 @@ module MUL2(
 
 
     // Stage 1
-    wire stage1_pp0 [14:0];
-    wire stage1_pp1 [12:0];
-    wire stage1_pp2 [4:0];
-    wire stage1_pp3 [4:0];
+    wire [14:0] stage1_pp0;
+    wire [12:0] stage1_pp1;
+    wire [4:0] stage1_pp2;
+    wire [4:0] stage1_pp3;
 
 assign stage1_pp0 [1:0] = { pp0[1], pp0[0]};
 // assign stage1_pp3[0] = pp4[0];
@@ -204,8 +204,8 @@ assign stage1_pp3[4:2] = { pp7[5], pp7[4], pp7[3] } ;
 
 // Stage 2
 
-wire stage2_pp0 [6:0];
-wire stage2_pp1 [6:0];
+wire [6:0] stage2_pp0;
+wire [6:0] stage2_pp1;
 
 assign stage2_pp1 [0] = stage1_pp3 [0];
 

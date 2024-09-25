@@ -22,10 +22,6 @@ class alignas(VL_CACHE_LINE_BYTES) VMUL4___024root final : public VerilatedModul
     CData/*0:0*/ __VactContinue;
     VL_OUT16(final_sum,15,0);
     IData/*31:0*/ __VactIterCount;
-    VlUnpacked<CData/*0:0*/, 15> MUL4__DOT__stage1_pp0;
-    VlUnpacked<CData/*0:0*/, 13> MUL4__DOT__stage1_pp1;
-    VlUnpacked<CData/*0:0*/, 5> MUL4__DOT__stage1_pp2;
-    VlUnpacked<CData/*0:0*/, 5> MUL4__DOT__stage1_pp3;
     VlTriggerVec<1> __VstlTriggered;
     VlTriggerVec<1> __VicoTriggered;
     VlTriggerVec<0> __VactTriggered;

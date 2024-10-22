@@ -602,7 +602,7 @@ VL_INLINE_OPT void VZero_ME_7_8___024root___ico_sequent__TOP__0(VZero_ME_7_8___0
                                           | (((IData)(Zero_ME_7_8__DOT____Vcellout__u_FA_stage2_3__sum) 
                                               | (IData)(Zero_ME_7_8__DOT____Vcellout__u_exact_4to2_compressor_stage2_4__carry)) 
                                              & (IData)(Zero_ME_7_8__DOT__cout_FA_stage3_6)));
-    vlSelf->final_sum = (4U | (((((IData)(Zero_ME_7_8__DOT____Vcellout__u_FA_stage2_3__carry) 
+    vlSelf->final_sum = (8U | (((((IData)(Zero_ME_7_8__DOT____Vcellout__u_FA_stage2_3__carry) 
                                   & (IData)(Zero_ME_7_8__DOT____Vcellinp__u_FA_stage3_8__x2)) 
                                  | (((IData)(Zero_ME_7_8__DOT____Vcellinp__u_FA_stage3_8__x2) 
                                      | (IData)(Zero_ME_7_8__DOT____Vcellout__u_FA_stage2_3__carry)) 
@@ -649,22 +649,19 @@ VL_INLINE_OPT void VZero_ME_7_8___024root___ico_sequent__TOP__0(VZero_ME_7_8___0
                                                                  | ((((IData)(Zero_ME_7_8__DOT____Vcellout__u_only_dual_carry_compressor_1__C1) 
                                                                       ^ (IData)(Zero_ME_7_8__DOT____Vcellout__u_only_dual_carry_compressor_1__C2)) 
                                                                      << 6U) 
-                                                                    | (((0x20U 
-                                                                         & ((((IData)(Zero_ME_7_8__DOT____VdfgRegularize_h40bac332_0_22) 
-                                                                              & (IData)(Zero_ME_7_8__DOT____VdfgRegularize_h40bac332_0_23)) 
-                                                                             | (((IData)(Zero_ME_7_8__DOT____VdfgRegularize_h40bac332_0_23) 
+                                                                    | ((0x20U 
+                                                                        & ((((IData)(Zero_ME_7_8__DOT____VdfgRegularize_h40bac332_0_22) 
+                                                                             & (IData)(Zero_ME_7_8__DOT____VdfgRegularize_h40bac332_0_23)) 
+                                                                            | (((IData)(Zero_ME_7_8__DOT____VdfgRegularize_h40bac332_0_23) 
                                                                                 | (IData)(Zero_ME_7_8__DOT____VdfgRegularize_h40bac332_0_22)) 
-                                                                                & (IData)(Zero_ME_7_8__DOT____Vcellinp__u_FA_stage2_1__x3))) 
-                                                                            << 5U)) 
-                                                                        | (0x10U 
-                                                                           & (((IData)(Zero_ME_7_8__DOT____VdfgRegularize_h40bac332_0_22) 
-                                                                               ^ 
-                                                                               ((IData)(Zero_ME_7_8__DOT____VdfgRegularize_h40bac332_0_23) 
-                                                                                ^ (IData)(Zero_ME_7_8__DOT____Vcellinp__u_FA_stage2_1__x3))) 
-                                                                              << 4U))) 
-                                                                       | (8U 
-                                                                          & ((IData)(vlSelf->b) 
-                                                                             >> 1U))))))))))))));
+                                                                               & (IData)(Zero_ME_7_8__DOT____Vcellinp__u_FA_stage2_1__x3))) 
+                                                                           << 5U)) 
+                                                                       | (0x10U 
+                                                                          & (((IData)(Zero_ME_7_8__DOT____VdfgRegularize_h40bac332_0_22) 
+                                                                              ^ 
+                                                                              ((IData)(Zero_ME_7_8__DOT____VdfgRegularize_h40bac332_0_23) 
+                                                                               ^ (IData)(Zero_ME_7_8__DOT____Vcellinp__u_FA_stage2_1__x3))) 
+                                                                             << 4U))))))))))))));
 }
 
 void VZero_ME_7_8___024root___eval_triggers__ico(VZero_ME_7_8___024root* vlSelf);

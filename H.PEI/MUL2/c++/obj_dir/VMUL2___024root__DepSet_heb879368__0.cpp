@@ -22,12 +22,6 @@ VL_INLINE_OPT void VMUL2___024root___ico_sequent__TOP__0(VMUL2___024root* vlSelf
     VMUL2__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     VL_DEBUG_IF(VL_DBG_MSGF("+    VMUL2___024root___ico_sequent__TOP__0\n"); );
     // Init
-    CData/*7:0*/ MUL2__DOT__pp0;
-    MUL2__DOT__pp0 = 0;
-    CData/*7:0*/ MUL2__DOT__pp6;
-    MUL2__DOT__pp6 = 0;
-    CData/*7:0*/ MUL2__DOT__pp7;
-    MUL2__DOT__pp7 = 0;
     CData/*0:0*/ MUL2__DOT____Vcellout__u_HA_stage1_1__carry;
     MUL2__DOT____Vcellout__u_HA_stage1_1__carry = 0;
     CData/*0:0*/ MUL2__DOT____Vcellout__u_HA_stage1_1__sum;
@@ -202,26 +196,48 @@ VL_INLINE_OPT void VMUL2___024root___ico_sequent__TOP__0(VMUL2___024root* vlSelf
     MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage2_2__carry = 0;
     CData/*0:0*/ MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage2_2__sum;
     MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage2_2__sum = 0;
+    CData/*0:0*/ MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage2_2__x4;
+    MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage2_2__x4 = 0;
     CData/*0:0*/ MUL2__DOT__stage2_exact_4to2_cout3;
     MUL2__DOT__stage2_exact_4to2_cout3 = 0;
     CData/*0:0*/ MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage2_3__carry;
     MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage2_3__carry = 0;
     CData/*0:0*/ MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage2_3__sum;
     MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage2_3__sum = 0;
+    CData/*0:0*/ MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage2_3__x4;
+    MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage2_3__x4 = 0;
+    CData/*0:0*/ MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage2_3__x3;
+    MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage2_3__x3 = 0;
     CData/*0:0*/ MUL2__DOT__stage2_exact_4to2_cout4;
     MUL2__DOT__stage2_exact_4to2_cout4 = 0;
     CData/*0:0*/ MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage2_4__carry;
     MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage2_4__carry = 0;
     CData/*0:0*/ MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage2_4__sum;
     MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage2_4__sum = 0;
+    CData/*0:0*/ MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage2_4__x4;
+    MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage2_4__x4 = 0;
+    CData/*0:0*/ MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage2_4__x3;
+    MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage2_4__x3 = 0;
+    CData/*0:0*/ MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage2_4__x2;
+    MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage2_4__x2 = 0;
     CData/*0:0*/ MUL2__DOT____Vcellout__u_FA_3__carry;
     MUL2__DOT____Vcellout__u_FA_3__carry = 0;
     CData/*0:0*/ MUL2__DOT____Vcellout__u_FA_3__sum;
     MUL2__DOT____Vcellout__u_FA_3__sum = 0;
+    CData/*0:0*/ MUL2__DOT____Vcellinp__u_FA_3__x2;
+    MUL2__DOT____Vcellinp__u_FA_3__x2 = 0;
+    CData/*0:0*/ MUL2__DOT____Vcellinp__u_FA_3__x1;
+    MUL2__DOT____Vcellinp__u_FA_3__x1 = 0;
     CData/*0:0*/ MUL2__DOT__cout_HA_stage3_1;
     MUL2__DOT__cout_HA_stage3_1 = 0;
+    CData/*0:0*/ MUL2__DOT____Vcellinp__u_HA_stage3_1__x2;
+    MUL2__DOT____Vcellinp__u_HA_stage3_1__x2 = 0;
+    CData/*0:0*/ MUL2__DOT____Vcellinp__u_HA_stage3_1__x1;
+    MUL2__DOT____Vcellinp__u_HA_stage3_1__x1 = 0;
     CData/*0:0*/ MUL2__DOT__cout_FA_stage3_1;
     MUL2__DOT__cout_FA_stage3_1 = 0;
+    CData/*0:0*/ MUL2__DOT____Vcellinp__u_FA_stage3_1__x2;
+    MUL2__DOT____Vcellinp__u_FA_stage3_1__x2 = 0;
     CData/*0:0*/ MUL2__DOT__cout_FA_stage3_2;
     MUL2__DOT__cout_FA_stage3_2 = 0;
     CData/*0:0*/ MUL2__DOT__cout_FA_stage3_3;
@@ -248,10 +264,8 @@ VL_INLINE_OPT void VMUL2___024root___ico_sequent__TOP__0(VMUL2___024root* vlSelf
     MUL2__DOT__cout_FA_stage3_11 = 0;
     CData/*0:0*/ MUL2__DOT__cout_FA_stage3_12;
     MUL2__DOT__cout_FA_stage3_12 = 0;
-    CData/*0:0*/ MUL2__DOT____VdfgRegularize_h82dde16c_0_9;
-    MUL2__DOT____VdfgRegularize_h82dde16c_0_9 = 0;
-    CData/*0:0*/ MUL2__DOT____VdfgRegularize_h82dde16c_0_16;
-    MUL2__DOT____VdfgRegularize_h82dde16c_0_16 = 0;
+    CData/*0:0*/ MUL2__DOT____Vcellinp__u_FA_stage3_13__x2;
+    MUL2__DOT____Vcellinp__u_FA_stage3_13__x2 = 0;
     CData/*0:0*/ MUL2__DOT__u_exact_4to2_compressor_stage1_11__DOT____VdfgRegularize_h0d3b8a33_0_0;
     MUL2__DOT__u_exact_4to2_compressor_stage1_11__DOT____VdfgRegularize_h0d3b8a33_0_0 = 0;
     CData/*0:0*/ MUL2__DOT__u_exact_4to2_compressor_stage1_12__DOT____VdfgRegularize_h0d3b8a33_0_0;
@@ -275,6 +289,44 @@ VL_INLINE_OPT void VMUL2___024root___ico_sequent__TOP__0(VMUL2___024root* vlSelf
     CData/*0:0*/ __VdfgRegularize_h6171c202_0_0;
     __VdfgRegularize_h6171c202_0_0 = 0;
     // Body
+    MUL2__DOT____Vcellinp__u_FA_stage3_13__x2 = (1U 
+                                                 & (((IData)(vlSelf->a) 
+                                                     & (IData)(vlSelf->b)) 
+                                                    >> 7U));
+    MUL2__DOT____Vcellinp__u_FA_3__x1 = (IData)((((IData)(vlSelf->a) 
+                                                  >> 7U) 
+                                                 & ((IData)(vlSelf->b) 
+                                                    >> 6U)));
+    MUL2__DOT____Vcellinp__u_FA_3__x2 = (IData)((((IData)(vlSelf->a) 
+                                                  >> 6U) 
+                                                 & ((IData)(vlSelf->b) 
+                                                    >> 7U)));
+    MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage2_4__x4 
+        = (IData)((((IData)(vlSelf->a) >> 5U) & ((IData)(vlSelf->b) 
+                                                 >> 7U)));
+    MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage2_3__x4 
+        = (IData)((((IData)(vlSelf->a) >> 4U) & ((IData)(vlSelf->b) 
+                                                 >> 7U)));
+    MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage2_4__x2 
+        = (IData)((((IData)(vlSelf->a) >> 7U) & ((IData)(vlSelf->b) 
+                                                 >> 5U)));
+    MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage2_4__x3 
+        = (1U & (((IData)(vlSelf->a) & (IData)(vlSelf->b)) 
+                 >> 6U));
+    MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage2_2__x4 
+        = (IData)((((IData)(vlSelf->a) >> 3U) & ((IData)(vlSelf->b) 
+                                                 >> 7U)));
+    MUL2__DOT____Vcellinp__u_FA_stage3_4__x2 = (1U 
+                                                & ((((IData)(vlSelf->a) 
+                                                     >> 1U) 
+                                                    & ((IData)(vlSelf->b) 
+                                                       >> 4U)) 
+                                                   | ((IData)(vlSelf->a) 
+                                                      & ((IData)(vlSelf->b) 
+                                                         >> 5U))));
+    MUL2__DOT____Vcellinp__u_UCAC1_3__x1 = (1U & (((IData)(vlSelf->a) 
+                                                   >> 5U) 
+                                                  & (IData)(vlSelf->b)));
     MUL2__DOT____Vcellinp__u_UCAC1_3__x2 = (1U & (((IData)(vlSelf->a) 
                                                    >> 4U) 
                                                   & ((IData)(vlSelf->b) 
@@ -287,6 +339,13 @@ VL_INLINE_OPT void VMUL2___024root___ico_sequent__TOP__0(VMUL2___024root* vlSelf
                                                    >> 2U) 
                                                   & ((IData)(vlSelf->b) 
                                                      >> 3U)));
+    MUL2__DOT____Vcellinp__u_FA_stage3_3__x2 = (1U 
+                                                & ((IData)(vlSelf->a) 
+                                                   & ((IData)(vlSelf->b) 
+                                                      >> 4U)));
+    MUL2__DOT____Vcellinp__u_UCAC1_2__x1 = (1U & (((IData)(vlSelf->a) 
+                                                   >> 4U) 
+                                                  & (IData)(vlSelf->b)));
     MUL2__DOT____Vcellinp__u_UCAC1_2__x2 = (1U & (((IData)(vlSelf->a) 
                                                    >> 3U) 
                                                   & ((IData)(vlSelf->b) 
@@ -298,6 +357,9 @@ VL_INLINE_OPT void VMUL2___024root___ico_sequent__TOP__0(VMUL2___024root* vlSelf
                                                    >> 1U) 
                                                   & ((IData)(vlSelf->b) 
                                                      >> 3U)));
+    MUL2__DOT____Vcellinp__u_UCAC1_1__x1 = (1U & (((IData)(vlSelf->a) 
+                                                   >> 3U) 
+                                                  & (IData)(vlSelf->b)));
     MUL2__DOT____Vcellinp__u_UCAC1_1__x2 = (1U & (((IData)(vlSelf->a) 
                                                    >> 2U) 
                                                   & ((IData)(vlSelf->b) 
@@ -309,64 +371,85 @@ VL_INLINE_OPT void VMUL2___024root___ico_sequent__TOP__0(VMUL2___024root* vlSelf
     MUL2__DOT____Vcellinp__u_UCAC1_1__x4 = (1U & ((IData)(vlSelf->a) 
                                                   & ((IData)(vlSelf->b) 
                                                      >> 3U)));
-    MUL2__DOT____VdfgRegularize_h82dde16c_0_9 = (1U 
-                                                 & ((IData)(vlSelf->a) 
-                                                    & (IData)(vlSelf->b)));
-    vlSelf->MUL2__DOT__stage1_pp1[1U] = (1U & ((IData)(vlSelf->a) 
-                                               & ((IData)(vlSelf->b) 
-                                                  >> 2U)));
-    vlSelf->MUL2__DOT__stage1_pp1[0U] = (1U & ((IData)(vlSelf->a) 
-                                               & ((IData)(vlSelf->b) 
-                                                  >> 1U)));
-    vlSelf->MUL2__DOT__stage1_pp1[0xbU] = (IData)((
-                                                   ((IData)(vlSelf->a) 
-                                                    >> 7U) 
-                                                   & ((IData)(vlSelf->b) 
-                                                      >> 5U)));
-    MUL2__DOT____VdfgRegularize_h82dde16c_0_16 = (1U 
-                                                  & ((IData)(vlSelf->a) 
-                                                     & ((IData)(vlSelf->b) 
-                                                        >> 5U)));
-    MUL2__DOT____Vcellinp__u_FA_stage3_3__x2 = (1U 
+    MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage2_3__x3 
+        = (1U & (((IData)(vlSelf->a) >> 5U) & ((IData)(vlSelf->b) 
+                                               >> 6U)));
+    MUL2__DOT____Vcellinp__u_FA_stage3_1__x2 = (1U 
                                                 & ((IData)(vlSelf->a) 
                                                    & ((IData)(vlSelf->b) 
-                                                      >> 4U)));
+                                                      >> 2U)));
+    MUL2__DOT____Vcellinp__u_HA_stage3_1__x1 = (1U 
+                                                & (((IData)(vlSelf->a) 
+                                                    >> 1U) 
+                                                   & (IData)(vlSelf->b)));
+    MUL2__DOT____Vcellinp__u_HA_stage3_1__x2 = (1U 
+                                                & ((IData)(vlSelf->a) 
+                                                   & ((IData)(vlSelf->b) 
+                                                      >> 1U)));
+    MUL2__DOT____Vcellinp__u_FA_stage1_3__x1 = (IData)(
+                                                       (((IData)(vlSelf->a) 
+                                                         >> 7U) 
+                                                        & ((IData)(vlSelf->b) 
+                                                           >> 4U)));
+    MUL2__DOT____Vcellinp__u_FA_stage1_3__x2 = (1U 
+                                                & (((IData)(vlSelf->a) 
+                                                    >> 6U) 
+                                                   & ((IData)(vlSelf->b) 
+                                                      >> 5U)));
     MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_11__x4 
         = (1U & (((IData)(vlSelf->a) >> 4U) & ((IData)(vlSelf->b) 
                                                >> 3U)));
-    MUL2__DOT____Vcellinp__u_UCAC1_3__x1 = (1U & (((IData)(vlSelf->a) 
+    MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_12__x4 
+        = ((IData)(vlSelf->a) & ((IData)(vlSelf->b) 
+                                 >> 7U));
+    MUL2__DOT____Vcellinp__u_HA_stage1_1__x1 = (1U 
+                                                & (((IData)(vlSelf->a) 
+                                                    >> 2U) 
+                                                   & (IData)(vlSelf->b)));
+    MUL2__DOT____Vcellinp__u_HA_stage1_1__x2 = (1U 
+                                                & (((IData)(vlSelf->a) 
+                                                    & (IData)(vlSelf->b)) 
+                                                   >> 1U));
+    MUL2__DOT____Vcellinp__u_FA_stage1_2__x1 = (1U 
+                                                & (((IData)(vlSelf->a) 
+                                                    >> 3U) 
+                                                   & ((IData)(vlSelf->b) 
+                                                      >> 6U)));
+    MUL2__DOT____Vcellinp__u_FA_stage1_2__x2 = (IData)(
+                                                       (((IData)(vlSelf->a) 
+                                                         >> 2U) 
+                                                        & ((IData)(vlSelf->b) 
+                                                           >> 7U)));
+    MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_4__x4 
+        = (1U & (((IData)(vlSelf->a) >> 4U) & ((IData)(vlSelf->b) 
+                                               >> 6U)));
+    MUL2__DOT____Vcellinp__u_FA_stage1_1__x1 = (1U 
+                                                & (((IData)(vlSelf->a) 
+                                                    >> 2U) 
+                                                   & ((IData)(vlSelf->b) 
+                                                      >> 4U)));
+    MUL2__DOT____Vcellinp__u_FA_stage1_1__x2 = (1U 
+                                                & (((IData)(vlSelf->a) 
+                                                    >> 1U) 
+                                                   & ((IData)(vlSelf->b) 
+                                                      >> 5U)));
+    MUL2__DOT____Vcellinp__u_FA_stage1_1__x3 = (1U 
+                                                & ((IData)(vlSelf->a) 
+                                                   & ((IData)(vlSelf->b) 
+                                                      >> 6U)));
+    MUL2__DOT____Vcellinp__u_UCAC1_4__x1 = (1U & (((IData)(vlSelf->a) 
+                                                   >> 6U) 
+                                                  & (IData)(vlSelf->b)));
+    MUL2__DOT____Vcellinp__u_UCAC1_4__x2 = (1U & (((IData)(vlSelf->a) 
                                                    >> 5U) 
-                                                  & (IData)(vlSelf->b)));
-    MUL2__DOT____Vcellinp__u_UCAC1_2__x1 = (1U & (((IData)(vlSelf->a) 
-                                                   >> 4U) 
-                                                  & (IData)(vlSelf->b)));
-    MUL2__DOT____Vcellinp__u_UCAC1_1__x1 = (1U & (((IData)(vlSelf->a) 
-                                                   >> 3U) 
-                                                  & (IData)(vlSelf->b)));
+                                                  & ((IData)(vlSelf->b) 
+                                                     >> 1U)));
     MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_21__x4 
         = (1U & (((IData)(vlSelf->a) & (IData)(vlSelf->b)) 
                  >> 4U));
     MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x4 
         = (1U & (((IData)(vlSelf->a) >> 4U) & ((IData)(vlSelf->b) 
                                                >> 5U)));
-    MUL2__DOT____Vcellinp__u_FA_stage1_3__x2 = (1U 
-                                                & (((IData)(vlSelf->a) 
-                                                    >> 6U) 
-                                                   & ((IData)(vlSelf->b) 
-                                                      >> 5U)));
-    MUL2__DOT____Vcellinp__u_FA_stage1_3__x1 = (IData)(
-                                                       (((IData)(vlSelf->a) 
-                                                         >> 7U) 
-                                                        & ((IData)(vlSelf->b) 
-                                                           >> 4U)));
-    MUL2__DOT____Vcellinp__u_HA_stage1_1__x2 = (1U 
-                                                & (((IData)(vlSelf->a) 
-                                                    & (IData)(vlSelf->b)) 
-                                                   >> 1U));
-    MUL2__DOT____Vcellinp__u_UCAC1_4__x2 = (1U & (((IData)(vlSelf->a) 
-                                                   >> 5U) 
-                                                  & ((IData)(vlSelf->b) 
-                                                     >> 1U)));
     MUL2__DOT____Vcellinp__u_UCAC1_4__x3 = (1U & (((IData)(vlSelf->a) 
                                                    >> 4U) 
                                                   & ((IData)(vlSelf->b) 
@@ -374,22 +457,41 @@ VL_INLINE_OPT void VMUL2___024root___ico_sequent__TOP__0(VMUL2___024root* vlSelf
     MUL2__DOT____Vcellinp__u_UCAC1_4__x4 = (1U & (((IData)(vlSelf->a) 
                                                    & (IData)(vlSelf->b)) 
                                                   >> 3U));
-    MUL2__DOT____Vcellinp__u_HA_stage1_1__x1 = (1U 
-                                                & (((IData)(vlSelf->a) 
-                                                    >> 2U) 
-                                                   & (IData)(vlSelf->b)));
-    MUL2__DOT____Vcellinp__u_UCAC1_4__x1 = (1U & (((IData)(vlSelf->a) 
-                                                   >> 6U) 
-                                                  & (IData)(vlSelf->b)));
-    MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_4__x4 
-        = (1U & (((IData)(vlSelf->a) >> 4U) & ((IData)(vlSelf->b) 
+    MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_12__x1 
+        = (1U & (((IData)(vlSelf->a) >> 3U) & ((IData)(vlSelf->b) 
+                                               >> 4U)));
+    MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_12__x2 
+        = (1U & (((IData)(vlSelf->a) >> 2U) & ((IData)(vlSelf->b) 
+                                               >> 5U)));
+    MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_12__x3 
+        = (1U & (((IData)(vlSelf->a) >> 1U) & ((IData)(vlSelf->b) 
                                                >> 6U)));
+    MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_4__x1 
+        = (IData)((((IData)(vlSelf->a) >> 7U) & ((IData)(vlSelf->b) 
+                                                 >> 3U)));
+    MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_4__x2 
+        = (1U & (((IData)(vlSelf->a) >> 6U) & ((IData)(vlSelf->b) 
+                                               >> 4U)));
+    MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_4__x3 
+        = (1U & (((IData)(vlSelf->a) & (IData)(vlSelf->b)) 
+                 >> 5U));
+    MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_11__x1 
+        = (IData)((((IData)(vlSelf->a) >> 7U) & (IData)(vlSelf->b)));
     MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_11__x2 
         = (1U & (((IData)(vlSelf->a) >> 6U) & ((IData)(vlSelf->b) 
                                                >> 1U)));
     MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_11__x3 
         = (1U & (((IData)(vlSelf->a) >> 5U) & ((IData)(vlSelf->b) 
                                                >> 2U)));
+    MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_22__x1 
+        = (1U & (((IData)(vlSelf->a) >> 3U) & ((IData)(vlSelf->b) 
+                                               >> 5U)));
+    MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_22__x2 
+        = (1U & (((IData)(vlSelf->a) >> 2U) & ((IData)(vlSelf->b) 
+                                               >> 6U)));
+    MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_22__x3 
+        = (IData)((((IData)(vlSelf->a) >> 1U) & ((IData)(vlSelf->b) 
+                                                 >> 7U)));
     MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x1 
         = (IData)((((IData)(vlSelf->a) >> 7U) & ((IData)(vlSelf->b) 
                                                  >> 2U)));
@@ -399,30 +501,6 @@ VL_INLINE_OPT void VMUL2___024root___ico_sequent__TOP__0(VMUL2___024root* vlSelf
     MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x3 
         = (1U & (((IData)(vlSelf->a) >> 5U) & ((IData)(vlSelf->b) 
                                                >> 4U)));
-    MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_4__x3 
-        = (1U & (((IData)(vlSelf->a) & (IData)(vlSelf->b)) 
-                 >> 5U));
-    MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_4__x1 
-        = (IData)((((IData)(vlSelf->a) >> 7U) & ((IData)(vlSelf->b) 
-                                                 >> 3U)));
-    MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_4__x2 
-        = (1U & (((IData)(vlSelf->a) >> 6U) & ((IData)(vlSelf->b) 
-                                               >> 4U)));
-    MUL2__DOT____Vcellinp__u_FA_stage1_1__x2 = (1U 
-                                                & (((IData)(vlSelf->a) 
-                                                    >> 1U) 
-                                                   & ((IData)(vlSelf->b) 
-                                                      >> 5U)));
-    MUL2__DOT____Vcellinp__u_FA_stage1_1__x1 = (1U 
-                                                & (((IData)(vlSelf->a) 
-                                                    >> 2U) 
-                                                   & ((IData)(vlSelf->b) 
-                                                      >> 4U)));
-    MUL2__DOT____Vcellinp__u_FA_stage1_2__x1 = (1U 
-                                                & (((IData)(vlSelf->a) 
-                                                    >> 3U) 
-                                                   & ((IData)(vlSelf->b) 
-                                                      >> 6U)));
     MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_21__x1 
         = (IData)((((IData)(vlSelf->a) >> 7U) & ((IData)(vlSelf->b) 
                                                  >> 1U)));
@@ -432,45 +510,6 @@ VL_INLINE_OPT void VMUL2___024root___ico_sequent__TOP__0(VMUL2___024root* vlSelf
     MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_21__x3 
         = (1U & (((IData)(vlSelf->a) >> 5U) & ((IData)(vlSelf->b) 
                                                >> 3U)));
-    MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_11__x1 
-        = (IData)((((IData)(vlSelf->a) >> 7U) & (IData)(vlSelf->b)));
-    MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_22__x1 
-        = (1U & (((IData)(vlSelf->a) >> 3U) & ((IData)(vlSelf->b) 
-                                               >> 5U)));
-    MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_12__x2 
-        = (1U & (((IData)(vlSelf->a) >> 2U) & ((IData)(vlSelf->b) 
-                                               >> 5U)));
-    MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_12__x1 
-        = (1U & (((IData)(vlSelf->a) >> 3U) & ((IData)(vlSelf->b) 
-                                               >> 4U)));
-    MUL2__DOT____Vcellinp__u_FA_stage1_1__x3 = (1U 
-                                                & ((IData)(vlSelf->a) 
-                                                   & ((IData)(vlSelf->b) 
-                                                      >> 6U)));
-    MUL2__DOT____Vcellinp__u_FA_stage1_2__x2 = (IData)(
-                                                       (((IData)(vlSelf->a) 
-                                                         >> 2U) 
-                                                        & ((IData)(vlSelf->b) 
-                                                           >> 7U)));
-    MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_12__x4 
-        = ((IData)(vlSelf->a) & ((IData)(vlSelf->b) 
-                                 >> 7U));
-    MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_22__x2 
-        = (1U & (((IData)(vlSelf->a) >> 2U) & ((IData)(vlSelf->b) 
-                                               >> 6U)));
-    MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_12__x3 
-        = (1U & (((IData)(vlSelf->a) >> 1U) & ((IData)(vlSelf->b) 
-                                               >> 6U)));
-    MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_22__x3 
-        = (IData)((((IData)(vlSelf->a) >> 1U) & ((IData)(vlSelf->b) 
-                                                 >> 7U)));
-    MUL2__DOT____Vcellinp__u_FA_stage3_4__x2 = (1U 
-                                                & ((((IData)(vlSelf->a) 
-                                                     >> 1U) 
-                                                    & ((IData)(vlSelf->b) 
-                                                       >> 4U)) 
-                                                   | (IData)(MUL2__DOT____VdfgRegularize_h82dde16c_0_16)));
-    vlSelf->MUL2__DOT__stage1_pp1[3U] = MUL2__DOT____Vcellinp__u_FA_stage3_3__x2;
     MUL2__DOT____Vcellout__u_UCAC1_3__sum = (((IData)(MUL2__DOT____Vcellinp__u_UCAC1_3__x1) 
                                               & (IData)(MUL2__DOT____Vcellinp__u_UCAC1_3__x2)) 
                                              | ((((IData)(MUL2__DOT____Vcellinp__u_UCAC1_3__x1) 
@@ -495,63 +534,12 @@ VL_INLINE_OPT void VMUL2___024root___ico_sequent__TOP__0(VMUL2___024root* vlSelf
                                                     | (IData)(MUL2__DOT____Vcellinp__u_UCAC1_1__x4))) 
                                                 | ((IData)(MUL2__DOT____Vcellinp__u_UCAC1_1__x3) 
                                                    & (IData)(MUL2__DOT____Vcellinp__u_UCAC1_1__x4))));
-    __VdfgRegularize_h6171c202_0_0 = ((IData)(MUL2__DOT____Vcellinp__u_UCAC1_4__x3) 
-                                      | (IData)(MUL2__DOT____Vcellinp__u_UCAC1_4__x4));
-    MUL2__DOT____Vcellout__u_HA_stage1_1__sum = ((IData)(MUL2__DOT____Vcellinp__u_HA_stage1_1__x1) 
-                                                 ^ (IData)(MUL2__DOT____Vcellinp__u_HA_stage1_1__x2));
+    MUL2__DOT__cout_HA_stage3_1 = ((IData)(MUL2__DOT____Vcellinp__u_HA_stage3_1__x1) 
+                                   & (IData)(MUL2__DOT____Vcellinp__u_HA_stage3_1__x2));
     MUL2__DOT____Vcellout__u_HA_stage1_1__carry = ((IData)(MUL2__DOT____Vcellinp__u_HA_stage1_1__x1) 
                                                    & (IData)(MUL2__DOT____Vcellinp__u_HA_stage1_1__x2));
-    MUL2__DOT__exact_4to2_cout3 = (((IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x1) 
-                                    & (IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x2)) 
-                                   | ((IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x3) 
-                                      & ((IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x1) 
-                                         | (IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x2))));
-    MUL2__DOT__u_exact_4to2_compressor_stage1_3__DOT____VdfgRegularize_h0d3b8a33_0_0 
-        = ((IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x1) 
-           ^ ((IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x2) 
-              ^ (IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x3)));
-    MUL2__DOT__u_exact_4to2_compressor_stage1_4__DOT____VdfgRegularize_h0d3b8a33_0_0 
-        = ((IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_4__x1) 
-           ^ ((IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_4__x2) 
-              ^ (IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_4__x3)));
-    MUL2__DOT__exact_4to2_cout4 = (((IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_4__x1) 
-                                    & (IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_4__x2)) 
-                                   | ((IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_4__x3) 
-                                      & ((IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_4__x1) 
-                                         | (IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_4__x2))));
-    MUL2__DOT__u_exact_4to2_compressor_stage1_21__DOT____VdfgRegularize_h0d3b8a33_0_0 
-        = ((IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_21__x1) 
-           ^ ((IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_21__x2) 
-              ^ (IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_21__x3)));
-    MUL2__DOT__exact_4to2_cout21 = (((IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_21__x1) 
-                                     & (IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_21__x2)) 
-                                    | ((IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_21__x3) 
-                                       & ((IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_21__x1) 
-                                          | (IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_21__x2))));
-    MUL2__DOT__pp0 = (((IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_11__x1) 
-                       << 7U) | (((IData)(MUL2__DOT____Vcellinp__u_UCAC1_4__x1) 
-                                  << 6U) | (((IData)(MUL2__DOT____Vcellinp__u_UCAC1_3__x1) 
-                                             << 5U) 
-                                            | (((IData)(MUL2__DOT____Vcellinp__u_UCAC1_2__x1) 
-                                                << 4U) 
-                                               | (((IData)(MUL2__DOT____Vcellinp__u_UCAC1_1__x1) 
-                                                   << 3U) 
-                                                  | (((IData)(MUL2__DOT____Vcellinp__u_HA_stage1_1__x1) 
-                                                      << 2U) 
-                                                     | ((2U 
-                                                         & ((IData)(vlSelf->a) 
-                                                            & ((IData)(vlSelf->b) 
-                                                               << 1U))) 
-                                                        | (IData)(MUL2__DOT____VdfgRegularize_h82dde16c_0_9))))))));
-    MUL2__DOT__u_exact_4to2_compressor_stage1_11__DOT____VdfgRegularize_h0d3b8a33_0_0 
-        = ((IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_11__x1) 
-           ^ ((IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_11__x2) 
-              ^ (IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_11__x3)));
-    MUL2__DOT__exact_4to2_cout11 = (((IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_11__x1) 
-                                     & (IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_11__x2)) 
-                                    | ((IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_11__x3) 
-                                       & ((IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_11__x1) 
-                                          | (IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_11__x2))));
+    MUL2__DOT____Vcellout__u_HA_stage1_1__sum = ((IData)(MUL2__DOT____Vcellinp__u_HA_stage1_1__x1) 
+                                                 ^ (IData)(MUL2__DOT____Vcellinp__u_HA_stage1_1__x2));
     MUL2__DOT____Vcellout__u_FA_stage1_1__sum = ((IData)(MUL2__DOT____Vcellinp__u_FA_stage1_1__x1) 
                                                  ^ 
                                                  ((IData)(MUL2__DOT____Vcellinp__u_FA_stage1_1__x2) 
@@ -561,31 +549,35 @@ VL_INLINE_OPT void VMUL2___024root___ico_sequent__TOP__0(VMUL2___024root* vlSelf
                                    | (((IData)(MUL2__DOT____Vcellinp__u_FA_stage1_1__x2) 
                                        | (IData)(MUL2__DOT____Vcellinp__u_FA_stage1_1__x1)) 
                                       & (IData)(MUL2__DOT____Vcellinp__u_FA_stage1_1__x3)));
-    MUL2__DOT__pp6 = (((IData)((((IData)(vlSelf->a) 
-                                 >> 7U) & ((IData)(vlSelf->b) 
-                                           >> 6U))) 
-                       << 7U) | ((0x40U & ((IData)(vlSelf->a) 
-                                           & (IData)(vlSelf->b))) 
-                                 | ((0x20U & ((IData)(vlSelf->a) 
-                                              & ((IData)(vlSelf->b) 
-                                                 >> 1U))) 
-                                    | (((IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_4__x4) 
-                                        << 4U) | (((IData)(MUL2__DOT____Vcellinp__u_FA_stage1_2__x1) 
-                                                   << 3U) 
-                                                  | (((IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_22__x2) 
-                                                      << 2U) 
-                                                     | (((IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_12__x3) 
-                                                         << 1U) 
-                                                        | (IData)(MUL2__DOT____Vcellinp__u_FA_stage1_1__x3))))))));
+    __VdfgRegularize_h6171c202_0_0 = ((IData)(MUL2__DOT____Vcellinp__u_UCAC1_4__x3) 
+                                      | (IData)(MUL2__DOT____Vcellinp__u_UCAC1_4__x4));
+    MUL2__DOT__u_exact_4to2_compressor_stage1_12__DOT____VdfgRegularize_h0d3b8a33_0_0 
+        = ((IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_12__x1) 
+           ^ ((IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_12__x2) 
+              ^ (IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_12__x3)));
     MUL2__DOT__exact_4to2_cout12 = (((IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_12__x1) 
                                      & (IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_12__x2)) 
                                     | ((IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_12__x3) 
                                        & ((IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_12__x1) 
                                           | (IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_12__x2))));
-    MUL2__DOT__u_exact_4to2_compressor_stage1_12__DOT____VdfgRegularize_h0d3b8a33_0_0 
-        = ((IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_12__x1) 
-           ^ ((IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_12__x2) 
-              ^ (IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_12__x3)));
+    MUL2__DOT__exact_4to2_cout4 = (((IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_4__x1) 
+                                    & (IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_4__x2)) 
+                                   | ((IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_4__x3) 
+                                      & ((IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_4__x1) 
+                                         | (IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_4__x2))));
+    MUL2__DOT__u_exact_4to2_compressor_stage1_4__DOT____VdfgRegularize_h0d3b8a33_0_0 
+        = ((IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_4__x1) 
+           ^ ((IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_4__x2) 
+              ^ (IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_4__x3)));
+    MUL2__DOT__u_exact_4to2_compressor_stage1_11__DOT____VdfgRegularize_h0d3b8a33_0_0 
+        = ((IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_11__x1) 
+           ^ ((IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_11__x2) 
+              ^ (IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_11__x3)));
+    MUL2__DOT__exact_4to2_cout11 = (((IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_11__x1) 
+                                     & (IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_11__x2)) 
+                                    | ((IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_11__x3) 
+                                       & ((IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_11__x1) 
+                                          | (IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_11__x2))));
     MUL2__DOT__u_exact_4to2_compressor_stage1_22__DOT____VdfgRegularize_h0d3b8a33_0_0 
         = ((IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_22__x1) 
            ^ ((IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_22__x2) 
@@ -595,36 +587,29 @@ VL_INLINE_OPT void VMUL2___024root___ico_sequent__TOP__0(VMUL2___024root* vlSelf
                                     | ((IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_22__x3) 
                                        & ((IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_22__x1) 
                                           | (IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_22__x2))));
-    MUL2__DOT__pp7 = ((0x80U & ((IData)(vlSelf->a) 
-                                & (IData)(vlSelf->b))) 
-                      | (((IData)((((IData)(vlSelf->a) 
-                                    >> 6U) & ((IData)(vlSelf->b) 
-                                              >> 7U))) 
-                          << 6U) | (((IData)((((IData)(vlSelf->a) 
-                                               >> 5U) 
-                                              & ((IData)(vlSelf->b) 
-                                                 >> 7U))) 
-                                     << 5U) | (((IData)(
-                                                        (((IData)(vlSelf->a) 
-                                                          >> 4U) 
-                                                         & ((IData)(vlSelf->b) 
-                                                            >> 7U))) 
-                                                << 4U) 
-                                               | (((IData)(
-                                                           (((IData)(vlSelf->a) 
-                                                             >> 3U) 
-                                                            & ((IData)(vlSelf->b) 
-                                                               >> 7U))) 
-                                                   << 3U) 
-                                                  | (((IData)(MUL2__DOT____Vcellinp__u_FA_stage1_2__x2) 
-                                                      << 2U) 
-                                                     | (((IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_22__x3) 
-                                                         << 1U) 
-                                                        | (IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_12__x4))))))));
-    vlSelf->MUL2__DOT__stage1_pp1[4U] = MUL2__DOT____Vcellinp__u_FA_stage3_4__x2;
-    vlSelf->MUL2__DOT__stage1_pp0[5U] = MUL2__DOT____Vcellout__u_UCAC1_3__sum;
-    vlSelf->MUL2__DOT__stage1_pp0[4U] = MUL2__DOT____Vcellout__u_UCAC1_2__sum;
-    vlSelf->MUL2__DOT__stage1_pp0[3U] = MUL2__DOT____Vcellout__u_UCAC1_1__sum;
+    MUL2__DOT__exact_4to2_cout3 = (((IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x1) 
+                                    & (IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x2)) 
+                                   | ((IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x3) 
+                                      & ((IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x1) 
+                                         | (IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x2))));
+    MUL2__DOT__u_exact_4to2_compressor_stage1_3__DOT____VdfgRegularize_h0d3b8a33_0_0 
+        = ((IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x1) 
+           ^ ((IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x2) 
+              ^ (IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x3)));
+    MUL2__DOT__u_exact_4to2_compressor_stage1_21__DOT____VdfgRegularize_h0d3b8a33_0_0 
+        = ((IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_21__x1) 
+           ^ ((IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_21__x2) 
+              ^ (IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_21__x3)));
+    MUL2__DOT__exact_4to2_cout21 = (((IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_21__x1) 
+                                     & (IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_21__x2)) 
+                                    | ((IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_21__x3) 
+                                       & ((IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_21__x1) 
+                                          | (IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_21__x2))));
+    MUL2__DOT__cout_FA_stage3_1 = (((IData)(MUL2__DOT____Vcellout__u_HA_stage1_1__sum) 
+                                    & (IData)(MUL2__DOT____Vcellinp__u_FA_stage3_1__x2)) 
+                                   | (((IData)(MUL2__DOT____Vcellinp__u_FA_stage3_1__x2) 
+                                       | (IData)(MUL2__DOT____Vcellout__u_HA_stage1_1__sum)) 
+                                      & (IData)(MUL2__DOT__cout_HA_stage3_1)));
     MUL2__DOT____Vcellout__u_UCAC1_4__sum = (((IData)(MUL2__DOT____Vcellinp__u_UCAC1_4__x1) 
                                               & (IData)(MUL2__DOT____Vcellinp__u_UCAC1_4__x2)) 
                                              | ((((IData)(MUL2__DOT____Vcellinp__u_UCAC1_4__x1) 
@@ -635,58 +620,6 @@ VL_INLINE_OPT void VMUL2___024root___ico_sequent__TOP__0(VMUL2___024root* vlSelf
     MUL2__DOT__ECM_Carry = ((IData)(MUL2__DOT____Vcellinp__u_UCAC1_4__x1) 
                             | ((IData)(MUL2__DOT____Vcellinp__u_UCAC1_4__x2) 
                                | (IData)(__VdfgRegularize_h6171c202_0_0)));
-    vlSelf->MUL2__DOT__stage1_pp0[2U] = MUL2__DOT____Vcellout__u_HA_stage1_1__sum;
-    vlSelf->MUL2__DOT__stage1_pp1[2U] = MUL2__DOT____Vcellout__u_HA_stage1_1__carry;
-    MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage1_4__carry 
-        = (((IData)(MUL2__DOT__u_exact_4to2_compressor_stage1_4__DOT____VdfgRegularize_h0d3b8a33_0_0) 
-            & (IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_4__x4)) 
-           | ((IData)(MUL2__DOT__exact_4to2_cout3) 
-              & ((IData)(MUL2__DOT__u_exact_4to2_compressor_stage1_4__DOT____VdfgRegularize_h0d3b8a33_0_0) 
-                 | (IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_4__x4))));
-    MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage1_4__sum 
-        = ((IData)(MUL2__DOT__u_exact_4to2_compressor_stage1_4__DOT____VdfgRegularize_h0d3b8a33_0_0) 
-           ^ ((IData)(MUL2__DOT__exact_4to2_cout3) 
-              ^ (IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_4__x4)));
-    MUL2__DOT____Vcellout__u_FA_stage1_3__carry = (
-                                                   ((IData)(MUL2__DOT____Vcellinp__u_FA_stage1_3__x1) 
-                                                    & (IData)(MUL2__DOT____Vcellinp__u_FA_stage1_3__x2)) 
-                                                   | (((IData)(MUL2__DOT____Vcellinp__u_FA_stage1_3__x2) 
-                                                       | (IData)(MUL2__DOT____Vcellinp__u_FA_stage1_3__x1)) 
-                                                      & (IData)(MUL2__DOT__exact_4to2_cout4)));
-    MUL2__DOT____Vcellout__u_FA_stage1_3__sum = ((IData)(MUL2__DOT____Vcellinp__u_FA_stage1_3__x1) 
-                                                 ^ 
-                                                 ((IData)(MUL2__DOT____Vcellinp__u_FA_stage1_3__x2) 
-                                                  ^ (IData)(MUL2__DOT__exact_4to2_cout4)));
-    MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage1_3__carry 
-        = (((IData)(MUL2__DOT__u_exact_4to2_compressor_stage1_3__DOT____VdfgRegularize_h0d3b8a33_0_0) 
-            & (IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x4)) 
-           | ((IData)(MUL2__DOT__exact_4to2_cout21) 
-              & ((IData)(MUL2__DOT__u_exact_4to2_compressor_stage1_3__DOT____VdfgRegularize_h0d3b8a33_0_0) 
-                 | (IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x4))));
-    MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage1_3__sum 
-        = ((IData)(MUL2__DOT__u_exact_4to2_compressor_stage1_3__DOT____VdfgRegularize_h0d3b8a33_0_0) 
-           ^ ((IData)(MUL2__DOT__exact_4to2_cout21) 
-              ^ (IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x4)));
-    vlSelf->MUL2__DOT__stage1_pp0[1U] = (1U & ((IData)(MUL2__DOT__pp0) 
-                                               >> 1U));
-    vlSelf->MUL2__DOT__stage1_pp0[0U] = (1U & (IData)(MUL2__DOT__pp0));
-    MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage1_21__sum 
-        = ((IData)(MUL2__DOT__u_exact_4to2_compressor_stage1_21__DOT____VdfgRegularize_h0d3b8a33_0_0) 
-           ^ ((IData)(MUL2__DOT__exact_4to2_cout11) 
-              ^ (IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_21__x4)));
-    MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage1_21__carry 
-        = (((IData)(MUL2__DOT__u_exact_4to2_compressor_stage1_21__DOT____VdfgRegularize_h0d3b8a33_0_0) 
-            & (IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_21__x4)) 
-           | ((IData)(MUL2__DOT__exact_4to2_cout11) 
-              & ((IData)(MUL2__DOT__u_exact_4to2_compressor_stage1_21__DOT____VdfgRegularize_h0d3b8a33_0_0) 
-                 | (IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_21__x4))));
-    vlSelf->MUL2__DOT__stage1_pp1[5U] = MUL2__DOT____Vcellout__u_FA_stage1_1__sum;
-    vlSelf->MUL2__DOT__stage1_pp0[0xdU] = (1U & ((IData)(MUL2__DOT__pp6) 
-                                                 >> 7U));
-    vlSelf->MUL2__DOT__stage1_pp2[4U] = (1U & ((IData)(MUL2__DOT__pp6) 
-                                               >> 6U));
-    vlSelf->MUL2__DOT__stage1_pp2[3U] = (1U & ((IData)(MUL2__DOT__pp6) 
-                                               >> 5U));
     MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage1_12__sum 
         = ((IData)(MUL2__DOT__u_exact_4to2_compressor_stage1_12__DOT____VdfgRegularize_h0d3b8a33_0_0) 
            ^ ((IData)(MUL2__DOT__stage1_FA1_carry) 
@@ -697,6 +630,16 @@ VL_INLINE_OPT void VMUL2___024root___ico_sequent__TOP__0(VMUL2___024root* vlSelf
            | ((IData)(MUL2__DOT__stage1_FA1_carry) 
               & ((IData)(MUL2__DOT__u_exact_4to2_compressor_stage1_12__DOT____VdfgRegularize_h0d3b8a33_0_0) 
                  | (IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_12__x4))));
+    MUL2__DOT____Vcellout__u_FA_stage1_3__carry = (
+                                                   ((IData)(MUL2__DOT____Vcellinp__u_FA_stage1_3__x1) 
+                                                    & (IData)(MUL2__DOT____Vcellinp__u_FA_stage1_3__x2)) 
+                                                   | (((IData)(MUL2__DOT____Vcellinp__u_FA_stage1_3__x2) 
+                                                       | (IData)(MUL2__DOT____Vcellinp__u_FA_stage1_3__x1)) 
+                                                      & (IData)(MUL2__DOT__exact_4to2_cout4)));
+    MUL2__DOT____Vcellout__u_FA_stage1_3__sum = ((IData)(MUL2__DOT____Vcellinp__u_FA_stage1_3__x1) 
+                                                 ^ 
+                                                 ((IData)(MUL2__DOT____Vcellinp__u_FA_stage1_3__x2) 
+                                                  ^ (IData)(MUL2__DOT__exact_4to2_cout4)));
     MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage1_22__sum 
         = ((IData)(MUL2__DOT__u_exact_4to2_compressor_stage1_22__DOT____VdfgRegularize_h0d3b8a33_0_0) 
            ^ (IData)(MUL2__DOT__exact_4to2_cout12));
@@ -712,17 +655,41 @@ VL_INLINE_OPT void VMUL2___024root___ico_sequent__TOP__0(VMUL2___024root* vlSelf
                                                    | (((IData)(MUL2__DOT____Vcellinp__u_FA_stage1_2__x2) 
                                                        | (IData)(MUL2__DOT____Vcellinp__u_FA_stage1_2__x1)) 
                                                       & (IData)(MUL2__DOT__exact_4to2_cout22)));
-    vlSelf->MUL2__DOT__stage1_pp0[0xeU] = (1U & ((IData)(MUL2__DOT__pp7) 
-                                                 >> 7U));
-    vlSelf->MUL2__DOT__stage1_pp3[4U] = (1U & ((IData)(MUL2__DOT__pp7) 
-                                               >> 5U));
-    vlSelf->MUL2__DOT__stage1_pp3[3U] = (1U & ((IData)(MUL2__DOT__pp7) 
-                                               >> 4U));
-    vlSelf->MUL2__DOT__stage1_pp3[2U] = (1U & ((IData)(MUL2__DOT__pp7) 
-                                               >> 3U));
-    vlSelf->MUL2__DOT__stage1_pp1[0xcU] = (1U & ((IData)(MUL2__DOT__pp7) 
-                                                 >> 6U));
-    vlSelf->MUL2__DOT__stage1_pp0[6U] = MUL2__DOT____Vcellout__u_UCAC1_4__sum;
+    MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage1_4__carry 
+        = (((IData)(MUL2__DOT__u_exact_4to2_compressor_stage1_4__DOT____VdfgRegularize_h0d3b8a33_0_0) 
+            & (IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_4__x4)) 
+           | ((IData)(MUL2__DOT__exact_4to2_cout3) 
+              & ((IData)(MUL2__DOT__u_exact_4to2_compressor_stage1_4__DOT____VdfgRegularize_h0d3b8a33_0_0) 
+                 | (IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_4__x4))));
+    MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage1_4__sum 
+        = ((IData)(MUL2__DOT__u_exact_4to2_compressor_stage1_4__DOT____VdfgRegularize_h0d3b8a33_0_0) 
+           ^ ((IData)(MUL2__DOT__exact_4to2_cout3) 
+              ^ (IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_4__x4)));
+    MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage1_21__sum 
+        = ((IData)(MUL2__DOT__u_exact_4to2_compressor_stage1_21__DOT____VdfgRegularize_h0d3b8a33_0_0) 
+           ^ ((IData)(MUL2__DOT__exact_4to2_cout11) 
+              ^ (IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_21__x4)));
+    MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage1_21__carry 
+        = (((IData)(MUL2__DOT__u_exact_4to2_compressor_stage1_21__DOT____VdfgRegularize_h0d3b8a33_0_0) 
+            & (IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_21__x4)) 
+           | ((IData)(MUL2__DOT__exact_4to2_cout11) 
+              & ((IData)(MUL2__DOT__u_exact_4to2_compressor_stage1_21__DOT____VdfgRegularize_h0d3b8a33_0_0) 
+                 | (IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_21__x4))));
+    MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage1_3__carry 
+        = (((IData)(MUL2__DOT__u_exact_4to2_compressor_stage1_3__DOT____VdfgRegularize_h0d3b8a33_0_0) 
+            & (IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x4)) 
+           | ((IData)(MUL2__DOT__exact_4to2_cout21) 
+              & ((IData)(MUL2__DOT__u_exact_4to2_compressor_stage1_3__DOT____VdfgRegularize_h0d3b8a33_0_0) 
+                 | (IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x4))));
+    MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage1_3__sum 
+        = ((IData)(MUL2__DOT__u_exact_4to2_compressor_stage1_3__DOT____VdfgRegularize_h0d3b8a33_0_0) 
+           ^ ((IData)(MUL2__DOT__exact_4to2_cout21) 
+              ^ (IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_3__x4)));
+    MUL2__DOT__cout_FA_stage3_2 = (((IData)(MUL2__DOT____Vcellout__u_UCAC1_1__sum) 
+                                    & (IData)(MUL2__DOT____Vcellout__u_HA_stage1_1__carry)) 
+                                   | (((IData)(MUL2__DOT____Vcellout__u_HA_stage1_1__carry) 
+                                       | (IData)(MUL2__DOT____Vcellout__u_UCAC1_1__sum)) 
+                                      & (IData)(MUL2__DOT__cout_FA_stage3_1)));
     MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage1_11__sum 
         = ((IData)(MUL2__DOT__u_exact_4to2_compressor_stage1_11__DOT____VdfgRegularize_h0d3b8a33_0_0) 
            ^ ((IData)(MUL2__DOT__ECM_Carry) ^ (IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_11__x4)));
@@ -731,28 +698,24 @@ VL_INLINE_OPT void VMUL2___024root___ico_sequent__TOP__0(VMUL2___024root* vlSelf
             & (IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_11__x4)) 
            | ((IData)(MUL2__DOT__ECM_Carry) & ((IData)(MUL2__DOT__u_exact_4to2_compressor_stage1_11__DOT____VdfgRegularize_h0d3b8a33_0_0) 
                                                | (IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage1_11__x4))));
-    vlSelf->MUL2__DOT__stage1_pp0[0xbU] = MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage1_4__carry;
-    vlSelf->MUL2__DOT__stage1_pp2[2U] = MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage1_4__sum;
-    vlSelf->MUL2__DOT__stage1_pp0[0xcU] = MUL2__DOT____Vcellout__u_FA_stage1_3__carry;
-    vlSelf->MUL2__DOT__stage1_pp1[0xaU] = MUL2__DOT____Vcellout__u_FA_stage1_3__sum;
-    vlSelf->MUL2__DOT__stage1_pp0[0xaU] = MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage1_3__carry;
-    vlSelf->MUL2__DOT__stage1_pp2[1U] = MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage1_3__sum;
-    vlSelf->MUL2__DOT__stage1_pp2[0U] = MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage1_21__sum;
-    vlSelf->MUL2__DOT__stage1_pp0[9U] = MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage1_21__carry;
-    vlSelf->MUL2__DOT__stage1_pp1[6U] = MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage1_12__sum;
-    vlSelf->MUL2__DOT__stage1_pp1[7U] = MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage1_12__carry;
-    vlSelf->MUL2__DOT__stage1_pp3[0U] = MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage1_22__sum;
-    MUL2__DOT__stage2_exact_4to2_cout1 = (((IData)(MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage1_21__carry) 
-                                           & (IData)(MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage1_22__carry)) 
-                                          | ((IData)(MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage1_3__sum) 
-                                             & ((IData)(MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage1_21__carry) 
-                                                | (IData)(MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage1_22__carry))));
-    MUL2__DOT__u_exact_4to2_compressor_stage2_1__DOT____VdfgRegularize_h0d3b8a33_0_0 
-        = ((IData)(MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage1_21__carry) 
-           ^ ((IData)(MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage1_22__carry) 
-              ^ (IData)(MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage1_3__sum)));
-    vlSelf->MUL2__DOT__stage1_pp1[8U] = MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage1_22__carry;
-    vlSelf->MUL2__DOT__stage1_pp3[1U] = MUL2__DOT____Vcellout__u_FA_stage1_2__sum;
+    MUL2__DOT__stage2_exact_4to2_cout4 = (((IData)(MUL2__DOT____Vcellout__u_FA_stage1_3__carry) 
+                                           & (IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage2_4__x2)) 
+                                          | ((IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage2_4__x3) 
+                                             & ((IData)(MUL2__DOT____Vcellout__u_FA_stage1_3__carry) 
+                                                | (IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage2_4__x2))));
+    MUL2__DOT__u_exact_4to2_compressor_stage2_4__DOT____VdfgRegularize_h0d3b8a33_0_0 
+        = ((IData)(MUL2__DOT____Vcellout__u_FA_stage1_3__carry) 
+           ^ ((IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage2_4__x2) 
+              ^ (IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage2_4__x3)));
+    MUL2__DOT__stage2_exact_4to2_cout3 = (((IData)(MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage1_4__carry) 
+                                           & (IData)(MUL2__DOT____Vcellout__u_FA_stage1_3__sum)) 
+                                          | ((IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage2_3__x3) 
+                                             & ((IData)(MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage1_4__carry) 
+                                                | (IData)(MUL2__DOT____Vcellout__u_FA_stage1_3__sum))));
+    MUL2__DOT__u_exact_4to2_compressor_stage2_3__DOT____VdfgRegularize_h0d3b8a33_0_0 
+        = ((IData)(MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage1_4__carry) 
+           ^ ((IData)(MUL2__DOT____Vcellout__u_FA_stage1_3__sum) 
+              ^ (IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage2_3__x3)));
     MUL2__DOT__stage2_exact_4to2_cout2 = (((IData)(MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage1_3__carry) 
                                            & (IData)(MUL2__DOT____Vcellout__u_FA_stage1_2__carry)) 
                                           | ((IData)(MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage1_4__sum) 
@@ -762,8 +725,20 @@ VL_INLINE_OPT void VMUL2___024root___ico_sequent__TOP__0(VMUL2___024root* vlSelf
         = ((IData)(MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage1_3__carry) 
            ^ ((IData)(MUL2__DOT____Vcellout__u_FA_stage1_2__carry) 
               ^ (IData)(MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage1_4__sum)));
-    vlSelf->MUL2__DOT__stage1_pp1[9U] = MUL2__DOT____Vcellout__u_FA_stage1_2__carry;
-    vlSelf->MUL2__DOT__stage1_pp0[7U] = MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage1_11__sum;
+    MUL2__DOT__stage2_exact_4to2_cout1 = (((IData)(MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage1_21__carry) 
+                                           & (IData)(MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage1_22__carry)) 
+                                          | ((IData)(MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage1_3__sum) 
+                                             & ((IData)(MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage1_21__carry) 
+                                                | (IData)(MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage1_22__carry))));
+    MUL2__DOT__u_exact_4to2_compressor_stage2_1__DOT____VdfgRegularize_h0d3b8a33_0_0 
+        = ((IData)(MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage1_21__carry) 
+           ^ ((IData)(MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage1_22__carry) 
+              ^ (IData)(MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage1_3__sum)));
+    MUL2__DOT__cout_FA_stage3_3 = (((IData)(MUL2__DOT____Vcellout__u_UCAC1_2__sum) 
+                                    & (IData)(MUL2__DOT____Vcellinp__u_FA_stage3_3__x2)) 
+                                   | (((IData)(MUL2__DOT____Vcellinp__u_FA_stage3_3__x2) 
+                                       | (IData)(MUL2__DOT____Vcellout__u_UCAC1_2__sum)) 
+                                      & (IData)(MUL2__DOT__cout_FA_stage3_2)));
     MUL2__DOT____Vcellout__u_FA_stage2_1__carry = (
                                                    ((IData)(MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage1_11__carry) 
                                                     & (IData)(MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage1_12__carry)) 
@@ -774,97 +749,50 @@ VL_INLINE_OPT void VMUL2___024root___ico_sequent__TOP__0(VMUL2___024root* vlSelf
                                                  ^ 
                                                  ((IData)(MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage1_12__carry) 
                                                   ^ (IData)(MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage1_21__sum)));
-    vlSelf->MUL2__DOT__stage1_pp0[8U] = MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage1_11__carry;
-    MUL2__DOT__stage2_exact_4to2_cout3 = (((IData)(MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage1_4__carry) 
-                                           & (IData)(MUL2__DOT____Vcellout__u_FA_stage1_3__sum)) 
-                                          | (vlSelf->MUL2__DOT__stage1_pp2
-                                             [3U] & 
-                                             ((IData)(MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage1_4__carry) 
-                                              | (IData)(MUL2__DOT____Vcellout__u_FA_stage1_3__sum))));
-    MUL2__DOT__u_exact_4to2_compressor_stage2_3__DOT____VdfgRegularize_h0d3b8a33_0_0 
-        = ((IData)(MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage1_4__carry) 
-           ^ ((IData)(MUL2__DOT____Vcellout__u_FA_stage1_3__sum) 
-              ^ vlSelf->MUL2__DOT__stage1_pp2[3U]));
+    MUL2__DOT____Vcellout__u_FA_3__carry = (((IData)(MUL2__DOT____Vcellinp__u_FA_3__x1) 
+                                             & (IData)(MUL2__DOT____Vcellinp__u_FA_3__x2)) 
+                                            | (((IData)(MUL2__DOT____Vcellinp__u_FA_3__x2) 
+                                                | (IData)(MUL2__DOT____Vcellinp__u_FA_3__x1)) 
+                                               & (IData)(MUL2__DOT__stage2_exact_4to2_cout4)));
+    MUL2__DOT____Vcellout__u_FA_3__sum = ((IData)(MUL2__DOT____Vcellinp__u_FA_3__x1) 
+                                          ^ ((IData)(MUL2__DOT____Vcellinp__u_FA_3__x2) 
+                                             ^ (IData)(MUL2__DOT__stage2_exact_4to2_cout4)));
+    MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage2_4__carry 
+        = (((IData)(MUL2__DOT__u_exact_4to2_compressor_stage2_4__DOT____VdfgRegularize_h0d3b8a33_0_0) 
+            & (IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage2_4__x4)) 
+           | ((IData)(MUL2__DOT__stage2_exact_4to2_cout3) 
+              & ((IData)(MUL2__DOT__u_exact_4to2_compressor_stage2_4__DOT____VdfgRegularize_h0d3b8a33_0_0) 
+                 | (IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage2_4__x4))));
+    MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage2_4__sum 
+        = ((IData)(MUL2__DOT__u_exact_4to2_compressor_stage2_4__DOT____VdfgRegularize_h0d3b8a33_0_0) 
+           ^ ((IData)(MUL2__DOT__stage2_exact_4to2_cout3) 
+              ^ (IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage2_4__x4)));
+    MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage2_3__carry 
+        = (((IData)(MUL2__DOT__u_exact_4to2_compressor_stage2_3__DOT____VdfgRegularize_h0d3b8a33_0_0) 
+            & (IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage2_3__x4)) 
+           | ((IData)(MUL2__DOT__stage2_exact_4to2_cout2) 
+              & ((IData)(MUL2__DOT__u_exact_4to2_compressor_stage2_3__DOT____VdfgRegularize_h0d3b8a33_0_0) 
+                 | (IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage2_3__x4))));
+    MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage2_3__sum 
+        = ((IData)(MUL2__DOT__u_exact_4to2_compressor_stage2_3__DOT____VdfgRegularize_h0d3b8a33_0_0) 
+           ^ ((IData)(MUL2__DOT__stage2_exact_4to2_cout2) 
+              ^ (IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage2_3__x4)));
+    MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage2_2__carry 
+        = (((IData)(MUL2__DOT__u_exact_4to2_compressor_stage2_2__DOT____VdfgRegularize_h0d3b8a33_0_0) 
+            & (IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage2_2__x4)) 
+           | ((IData)(MUL2__DOT__stage2_exact_4to2_cout1) 
+              & ((IData)(MUL2__DOT__u_exact_4to2_compressor_stage2_2__DOT____VdfgRegularize_h0d3b8a33_0_0) 
+                 | (IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage2_2__x4))));
+    MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage2_2__sum 
+        = ((IData)(MUL2__DOT__u_exact_4to2_compressor_stage2_2__DOT____VdfgRegularize_h0d3b8a33_0_0) 
+           ^ ((IData)(MUL2__DOT__stage2_exact_4to2_cout1) 
+              ^ (IData)(MUL2__DOT____Vcellinp__u_exact_4to2_compressor_stage2_2__x4)));
     MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage2_1__carry 
         = ((IData)(MUL2__DOT__u_exact_4to2_compressor_stage2_1__DOT____VdfgRegularize_h0d3b8a33_0_0) 
            & (IData)(MUL2__DOT____Vcellout__u_FA_stage1_2__sum));
     MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage2_1__sum 
         = ((IData)(MUL2__DOT__u_exact_4to2_compressor_stage2_1__DOT____VdfgRegularize_h0d3b8a33_0_0) 
            ^ (IData)(MUL2__DOT____Vcellout__u_FA_stage1_2__sum));
-    MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage2_2__carry 
-        = (((IData)(MUL2__DOT__u_exact_4to2_compressor_stage2_2__DOT____VdfgRegularize_h0d3b8a33_0_0) 
-            & vlSelf->MUL2__DOT__stage1_pp3[2U]) | 
-           ((IData)(MUL2__DOT__stage2_exact_4to2_cout1) 
-            & ((IData)(MUL2__DOT__u_exact_4to2_compressor_stage2_2__DOT____VdfgRegularize_h0d3b8a33_0_0) 
-               | vlSelf->MUL2__DOT__stage1_pp3[2U])));
-    MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage2_2__sum 
-        = ((IData)(MUL2__DOT__u_exact_4to2_compressor_stage2_2__DOT____VdfgRegularize_h0d3b8a33_0_0) 
-           ^ ((IData)(MUL2__DOT__stage2_exact_4to2_cout1) 
-              ^ vlSelf->MUL2__DOT__stage1_pp3[2U]));
-    MUL2__DOT__stage2_exact_4to2_cout4 = (((IData)(MUL2__DOT____Vcellout__u_FA_stage1_3__carry) 
-                                           & vlSelf->MUL2__DOT__stage1_pp1
-                                           [0xbU]) 
-                                          | (vlSelf->MUL2__DOT__stage1_pp2
-                                             [4U] & 
-                                             ((IData)(MUL2__DOT____Vcellout__u_FA_stage1_3__carry) 
-                                              | vlSelf->MUL2__DOT__stage1_pp1
-                                              [0xbU])));
-    MUL2__DOT__u_exact_4to2_compressor_stage2_4__DOT____VdfgRegularize_h0d3b8a33_0_0 
-        = ((IData)(MUL2__DOT____Vcellout__u_FA_stage1_3__carry) 
-           ^ (vlSelf->MUL2__DOT__stage1_pp1[0xbU] ^ 
-              vlSelf->MUL2__DOT__stage1_pp2[4U]));
-    MUL2__DOT__cout_HA_stage3_1 = (vlSelf->MUL2__DOT__stage1_pp0
-                                   [1U] & vlSelf->MUL2__DOT__stage1_pp1
-                                   [0U]);
-    MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage2_3__carry 
-        = (((IData)(MUL2__DOT__u_exact_4to2_compressor_stage2_3__DOT____VdfgRegularize_h0d3b8a33_0_0) 
-            & vlSelf->MUL2__DOT__stage1_pp3[3U]) | 
-           ((IData)(MUL2__DOT__stage2_exact_4to2_cout2) 
-            & ((IData)(MUL2__DOT__u_exact_4to2_compressor_stage2_3__DOT____VdfgRegularize_h0d3b8a33_0_0) 
-               | vlSelf->MUL2__DOT__stage1_pp3[3U])));
-    MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage2_3__sum 
-        = ((IData)(MUL2__DOT__u_exact_4to2_compressor_stage2_3__DOT____VdfgRegularize_h0d3b8a33_0_0) 
-           ^ ((IData)(MUL2__DOT__stage2_exact_4to2_cout2) 
-              ^ vlSelf->MUL2__DOT__stage1_pp3[3U]));
-    MUL2__DOT____Vcellout__u_FA_3__carry = ((vlSelf->MUL2__DOT__stage1_pp0
-                                             [0xdU] 
-                                             & vlSelf->MUL2__DOT__stage1_pp1
-                                             [0xcU]) 
-                                            | ((vlSelf->MUL2__DOT__stage1_pp1
-                                                [0xcU] 
-                                                | vlSelf->MUL2__DOT__stage1_pp0
-                                                [0xdU]) 
-                                               & (IData)(MUL2__DOT__stage2_exact_4to2_cout4)));
-    MUL2__DOT____Vcellout__u_FA_3__sum = (vlSelf->MUL2__DOT__stage1_pp0
-                                          [0xdU] ^ 
-                                          (vlSelf->MUL2__DOT__stage1_pp1
-                                           [0xcU] ^ (IData)(MUL2__DOT__stage2_exact_4to2_cout4)));
-    MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage2_4__carry 
-        = (((IData)(MUL2__DOT__u_exact_4to2_compressor_stage2_4__DOT____VdfgRegularize_h0d3b8a33_0_0) 
-            & vlSelf->MUL2__DOT__stage1_pp3[4U]) | 
-           ((IData)(MUL2__DOT__stage2_exact_4to2_cout3) 
-            & ((IData)(MUL2__DOT__u_exact_4to2_compressor_stage2_4__DOT____VdfgRegularize_h0d3b8a33_0_0) 
-               | vlSelf->MUL2__DOT__stage1_pp3[4U])));
-    MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage2_4__sum 
-        = ((IData)(MUL2__DOT__u_exact_4to2_compressor_stage2_4__DOT____VdfgRegularize_h0d3b8a33_0_0) 
-           ^ ((IData)(MUL2__DOT__stage2_exact_4to2_cout3) 
-              ^ vlSelf->MUL2__DOT__stage1_pp3[4U]));
-    MUL2__DOT__cout_FA_stage3_1 = (((IData)(MUL2__DOT____Vcellout__u_HA_stage1_1__sum) 
-                                    & vlSelf->MUL2__DOT__stage1_pp1
-                                    [1U]) | ((vlSelf->MUL2__DOT__stage1_pp1
-                                              [1U] 
-                                              | (IData)(MUL2__DOT____Vcellout__u_HA_stage1_1__sum)) 
-                                             & (IData)(MUL2__DOT__cout_HA_stage3_1)));
-    MUL2__DOT__cout_FA_stage3_2 = (((IData)(MUL2__DOT____Vcellout__u_UCAC1_1__sum) 
-                                    & (IData)(MUL2__DOT____Vcellout__u_HA_stage1_1__carry)) 
-                                   | (((IData)(MUL2__DOT____Vcellout__u_HA_stage1_1__carry) 
-                                       | (IData)(MUL2__DOT____Vcellout__u_UCAC1_1__sum)) 
-                                      & (IData)(MUL2__DOT__cout_FA_stage3_1)));
-    MUL2__DOT__cout_FA_stage3_3 = (((IData)(MUL2__DOT____Vcellout__u_UCAC1_2__sum) 
-                                    & (IData)(MUL2__DOT____Vcellinp__u_FA_stage3_3__x2)) 
-                                   | (((IData)(MUL2__DOT____Vcellinp__u_FA_stage3_3__x2) 
-                                       | (IData)(MUL2__DOT____Vcellout__u_UCAC1_2__sum)) 
-                                      & (IData)(MUL2__DOT__cout_FA_stage3_2)));
     MUL2__DOT__cout_FA_stage3_4 = (((IData)(MUL2__DOT____Vcellout__u_UCAC1_3__sum) 
                                     & (IData)(MUL2__DOT____Vcellinp__u_FA_stage3_4__x2)) 
                                    | (((IData)(MUL2__DOT____Vcellinp__u_FA_stage3_4__x2) 
@@ -911,13 +839,13 @@ VL_INLINE_OPT void VMUL2___024root___ico_sequent__TOP__0(VMUL2___024root* vlSelf
                                         | (IData)(MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage2_4__carry)) 
                                        & (IData)(MUL2__DOT__cout_FA_stage3_11)));
     vlSelf->final_sum = (((((IData)(MUL2__DOT____Vcellout__u_FA_3__carry) 
-                            & vlSelf->MUL2__DOT__stage1_pp0
-                            [0xeU]) | ((vlSelf->MUL2__DOT__stage1_pp0
-                                        [0xeU] | (IData)(MUL2__DOT____Vcellout__u_FA_3__carry)) 
-                                       & (IData)(MUL2__DOT__cout_FA_stage3_12))) 
+                            & (IData)(MUL2__DOT____Vcellinp__u_FA_stage3_13__x2)) 
+                           | (((IData)(MUL2__DOT____Vcellinp__u_FA_stage3_13__x2) 
+                               | (IData)(MUL2__DOT____Vcellout__u_FA_3__carry)) 
+                              & (IData)(MUL2__DOT__cout_FA_stage3_12))) 
                           << 0xfU) | ((((IData)(MUL2__DOT____Vcellout__u_FA_3__carry) 
-                                        ^ (vlSelf->MUL2__DOT__stage1_pp0
-                                           [0xeU] ^ (IData)(MUL2__DOT__cout_FA_stage3_12))) 
+                                        ^ ((IData)(MUL2__DOT____Vcellinp__u_FA_stage3_13__x2) 
+                                           ^ (IData)(MUL2__DOT__cout_FA_stage3_12))) 
                                        << 0xeU) | (
                                                    (((IData)(MUL2__DOT____Vcellout__u_exact_4to2_compressor_stage2_4__carry) 
                                                      ^ 
@@ -976,17 +904,15 @@ VL_INLINE_OPT void VMUL2___024root___ico_sequent__TOP__0(VMUL2___024root* vlSelf
                                                                                 << 3U) 
                                                                                 | ((((IData)(MUL2__DOT____Vcellout__u_HA_stage1_1__sum) 
                                                                                 ^ 
-                                                                                (vlSelf->MUL2__DOT__stage1_pp1
-                                                                                [1U] 
+                                                                                ((IData)(MUL2__DOT____Vcellinp__u_FA_stage3_1__x2) 
                                                                                 ^ (IData)(MUL2__DOT__cout_HA_stage3_1))) 
                                                                                 << 2U) 
-                                                                                | (((vlSelf->MUL2__DOT__stage1_pp0
-                                                                                [1U] 
-                                                                                ^ 
-                                                                                vlSelf->MUL2__DOT__stage1_pp1
-                                                                                [0U]) 
+                                                                                | ((((IData)(MUL2__DOT____Vcellinp__u_HA_stage3_1__x1) 
+                                                                                ^ (IData)(MUL2__DOT____Vcellinp__u_HA_stage3_1__x2)) 
                                                                                 << 1U) 
-                                                                                | (IData)(MUL2__DOT____VdfgRegularize_h82dde16c_0_9))))))))))))))));
+                                                                                | (1U 
+                                                                                & ((IData)(vlSelf->a) 
+                                                                                & (IData)(vlSelf->b))))))))))))))))));
 }
 
 void VMUL2___024root___eval_triggers__ico(VMUL2___024root* vlSelf);

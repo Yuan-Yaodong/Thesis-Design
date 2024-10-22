@@ -18,7 +18,7 @@ VMUL2__Syms::VMUL2__Syms(VerilatedContext* contextp, const char* namep, VMUL2* m
     , TOP{this, namep}
 {
         // Check resources
-        Verilated::stackCheck(529);
+        Verilated::stackCheck(557);
     // Configure time unit / time precision
     _vm_contextp__->timeunit(-12);
     _vm_contextp__->timeprecision(-12);

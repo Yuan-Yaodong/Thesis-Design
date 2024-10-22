@@ -46,8 +46,10 @@ cv::Mat blend_images(const cv::Mat& img1, const cv::Mat& img2, bool use_approx) 
                 } else {
                     blended = static_cast<uint16_t>(img1.at<cv::Vec3b>(i, j)[c]) * img2.at<cv::Vec3b>(i, j)[c];
                 }
-                // 计算几何平均
-                uint8_t blended_value = static_cast<uint8_t>(std::round(std::sqrt(blended)));
+                // // 计算几何平均
+                // uint8_t blended_value = static_cast<uint8_t>(std::round(std::sqrt(blended)));
+                // 使用普通乘法并除以256
+                uint8_t blended_value = static_cast<uint8_t>(blended / 256);
                 result.at<cv::Vec3b>(i, j)[c] = blended_value;
             }
         }

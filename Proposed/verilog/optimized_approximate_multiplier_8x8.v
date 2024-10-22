@@ -244,12 +244,11 @@ FA u_FA_3(
 
 
 
-// Stage 3
+// // Stage 3
 
-
-// assign final_sum [5:0] = { stage2_pp0[0], 5'b00110 };                     // proposed[1]
-// assign final_sum [5:0] = { stage2_pp0[0], a[4], a[3], a[2], 2'b00 };      // proposed[2]
-assign final_sum [5:0] = { stage2_pp0[0], a[4], a[3], a[2], b[1], b[0] };    // proposed[3]
+assign final_sum [5:0] = { stage2_pp0[0], 5'b00110 };                     // proposed[1]
+// // assign final_sum [5:0] = { stage2_pp0[0], a[4], a[3], a[2], 2'b00 };      // proposed[2]
+// // assign final_sum [5:0] = { stage2_pp0[0], a[4], a[3], a[2], b[1], b[0] };    // proposed[3]
 
 
 wire cout_HA_stage3_1;

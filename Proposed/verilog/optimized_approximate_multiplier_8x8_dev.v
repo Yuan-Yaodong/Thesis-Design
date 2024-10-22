@@ -3,7 +3,7 @@
 `include "./exact_4to2_compressor.v"
 `include "./FA.v"
 `include "./HA.v"
-`include "../../H.PEI/MUL2/verilog/FA.v"
+
 
 module optimized_approximate_multiplier_8x8(
     input CLK,
@@ -24,23 +24,23 @@ module optimized_approximate_multiplier_8x8(
 
     // Generate partial products
     // total 49 and gates 
-    assign pp0 = {a[7] & b[0], a[6] & b[0], a[5] & b[0]}; // 3 and gates 
-    assign pp1 = {a[7] & b[1], a[6] & b[1], a[5] & b[1], a[4] & b[1]}; // 4 and gates
-    assign pp2 = {a[7] & b[2], a[6] & b[2], a[5] & b[2], a[4] & b[2], a[3] & b[2]}; // 5 and gates
-    assign pp3 = {a[7] & b[3], a[6] & b[3], a[5] & b[3], a[4] & b[3], a[3] & b[3], a[2] & b[3]}; // 6 and gates
-    assign pp4 = {a[7] & b[4], a[6] & b[4], a[5] & b[4], a[4] & b[4], a[3] & b[4], a[2] & b[4], a[1] & b[4]}; // 7 and gates
-    assign pp5 = {a[7] & b[5], a[6] & b[5], a[5] & b[5], a[4] & b[5], a[3] & b[5], a[2] & b[5], a[1] & b[5], a[0] & b[5]}; // 8 and gates
+    assign pp0 = {a[7] & b[0], a[6] & b[0]}; // 2 and gates 
+    assign pp1 = {a[7] & b[1], a[6] & b[1], a[5] & b[1]}; // 3 and gates
+    assign pp2 = {a[7] & b[2], a[6] & b[2], a[5] & b[2], a[4] & b[2]}; // 4 and gates
+    assign pp3 = {a[7] & b[3], a[6] & b[3], a[5] & b[3], a[4] & b[3], a[3] & b[3]}; // 5 and gates
+    assign pp4 = {a[7] & b[4], a[6] & b[4], a[5] & b[4], a[4] & b[4], a[3] & b[4], a[2] & b[4]}; // 6 and gates
+    assign pp5 = {a[7] & b[5], a[6] & b[5], a[5] & b[5], a[4] & b[5], a[3] & b[5], a[2] & b[5], a[1] & b[5]}; // 7 and gates
     assign pp6 = {a[7] & b[6], a[6] & b[6], a[5] & b[6], a[4] & b[6], a[3] & b[6], a[2] & b[6], a[1] & b[6], a[0] & b[6]}; // 8 and gates    
     assign pp7 = {a[7] & b[7], a[6] & b[7], a[5] & b[7], a[4] & b[7], a[3] & b[7], a[2] & b[7], a[1] & b[7], a[0] & b[7]}; // 8 and gates
 
 
     // Stage 1
-    wire stage1_pp0 [9:0];
-    wire stage1_pp1 [7:0];
-    wire stage1_pp2 [3:0];
-    wire stage1_pp3 [3:0];
+    wire [8:0] stage1_pp0;
+    wire [7:0] stage1_pp1;
+    wire [3:0] stage1_pp2;
+    wire [3:0] stage1_pp3;
 
-assign stage1_pp0 [9:8] = { pp7[7], pp6[7]};
+assign stage1_pp0 [8:7] = { pp7[7], pp6[7]};
 assign stage1_pp1 [7:6] = { pp7[6], pp5[7]};
 assign stage1_pp2 [3:2] = { pp6[6], pp6[5]};
 assign stage1_pp3 [3:1] = { pp7[5], pp7[4], pp7[3]};
@@ -48,13 +48,13 @@ assign stage1_pp3 [3:1] = { pp7[5], pp7[4], pp7[3]};
 
     // 实例化 only_sum_compressor
 
-    only_sum_compressor u_only_sum_compressor_1(
-        .x1  	( pp0[0]   ),
-        .x2  	( pp1[0]   ),
-        .x3  	( pp2[0]   ),
-        .x4  	( pp3[0]   ),
-        .sum 	( stage1_pp0[0]  )
-    );
+    // only_sum_compressor u_only_sum_compressor_1(
+    //     .x1  	( pp0[0]   ),
+    //     .x2  	( pp1[0]   ),
+    //     .x3  	( pp2[0]   ),
+    //     .x4  	( pp3[0]   ),
+    //     .sum 	( stage1_pp0[0]  )
+    // );
 
     only_sum_compressor u_only_sum_compressor_2(
         .x1  	( pp0[1]   ),
@@ -163,29 +163,25 @@ HA u_HA_1(
 
 // Stage 2
 
-wire stage2_pp0 [9:0];
-wire stage2_pp1 [7:0];
-// assign stage2_pp0 [3:0] = stage1_pp0 [3:0];
+wire [9:0] stage2_pp0;
+wire [7:0] stage2_pp1;
+assign stage2_pp0 [3:0] = stage1_pp0 [3:0];
 assign stage2_pp0 [2:0] = stage1_pp0 [2:0];
-assign stage2_pp1 [2:0] = { 1'b0, stage1_pp1 [1:0] };
-// assign stage2_pp1 [2:0] = stage1_pp1 [2:0];
+assign stage2_pp1 [1:0] = stage1_pp1 [1:0];
+assign stage2_pp1 [2:0] = stage1_pp1 [2:0];
 assign stage2_pp1 [7] = stage1_pp0[9];
 
 
 
-// wire stage1_pp2_extra = (pp0[7] & pp1[6]) | (pp1[6] & pp2[5]) | (pp2[5] & pp3[4]) ;
-// wire stage1_pp2_extra = 1'b0;
-wire stage1_pp2_extra = pp0[7] ;
-
-
-wire u_FA_extra_carry;
-FA u_FA_extra(
-    .x1    	( stage1_pp0[3]     ),
-    .x2    	( stage1_pp1[2]     ),
-    .x3    	( stage1_pp2_extra    ),
-    .sum   	( stage2_pp0[3]    ),
-    .carry 	( u_FA_extra_carry  )
-);
+// wire stage1_pp2_extra = pp0[7];
+// wire u_FA_extra_carry;
+// FA u_FA_extra(
+//     .x1    	( stage2_pp0[3]     ),
+//     .x2    	( stage1_pp1[2]     ),
+//     .x3    	( stage1_pp2_extra    ),
+//     .sum   	( stage2_pp0[3]    ),
+//     .carry 	( u_FA_extra_carry  )
+// );
 
 
 
@@ -195,7 +191,7 @@ exact_4to2_compressor u_exact_4to2_compressor_stage2_1(
     .x2    	( stage1_pp1[3]     ),
     .x3    	( stage1_pp2[0]     ),
     .x4    	( stage1_pp3[0]     ),
-    .cin   	( u_FA_extra_carry    ),
+    .cin   	( 1'b0    ),
     .sum   	( stage2_pp0[4]    ),
     .carry 	( stage2_pp0[5]  ),
     .cout  	( stage2_exact_4to2_cout1   )
@@ -248,13 +244,11 @@ FA u_FA_3(
 
 
 
-// Stage 3
+// // Stage 3
 
-
-// assign final_sum [5:0] = { stage2_pp0[0], a[3], 4'b0110 };
-
-assign final_sum [5:0] = { stage2_pp0[0], 5'b00110 };
-// assign final_sum [5:0] = { stage2_pp0[0], 5'b00000 };
+assign final_sum [5:0] = { stage2_pp0[0], 5'b00110 };                     // proposed[1]
+// // assign final_sum [5:0] = { stage2_pp0[0], a[4], a[3], a[2], 2'b00 };      // proposed[2]
+// // assign final_sum [5:0] = { stage2_pp0[0], a[4], a[3], a[2], b[1], b[0] };    // proposed[3]
 
 
 wire cout_HA_stage3_1;
@@ -275,27 +269,20 @@ wire cout_FA_stage3_1;
     );
 
 
-// wire cout_FA_stage3_2;
-//     FA u_FA_stage3_2(
-//         .x1    	( stage2_pp0[3]     ),
-//         .x2    	( stage2_pp1[2]     ),
-//         .x3    	( cout_FA_stage3_1     ),
-//         .sum   	( final_sum[8]    ),
-//         .carry 	( cout_FA_stage3_2  )
-//     );
-
-wire cout_HA_stage3_extra;
-    HA u_HA_stage3_extra(
+wire cout_FA_stage3_2;
+    FA u_FA_stage3_2(
         .x1    	( stage2_pp0[3]     ),
-        .x2    	( cout_FA_stage3_1     ),
+        .x2    	( stage2_pp1[2]     ),
+        .x3    	( cout_FA_stage3_1     ),
         .sum   	( final_sum[8]    ),
-        .carry 	( cout_HA_stage3_extra  )
+        .carry 	( cout_FA_stage3_2  )
     );
+
 
 wire cout_HA_stage3_2;
 HA u_HA_stage3_2(
     .x1    	( stage2_pp0[4]     ),
-    .x2    	( cout_HA_stage3_extra     ),
+    .x2    	( cout_FA_stage3_2     ),
     .sum   	( final_sum[9]    ),
     .carry 	( cout_HA_stage3_2  )
 );
